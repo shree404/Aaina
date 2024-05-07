@@ -47,8 +47,8 @@ function BestSeller(){
                        <div key={index} className="product-details-container-single-product">
                        <article>
                        <img src={product.bestsellerImage} alt="Image of Maroon Lehenga" />
-                       <p id="product-details-container-single-product__name">{product.bestsellerName} </p>
-                       <p id="product-details-container-single-product__price"> {product.bestsellerPrice} </p>
+                       <p className="product-details-container-single-product__name">{product.bestsellerName} </p>
+                       <p className="product-details-container-single-product__price"> {product.bestsellerPrice} </p>
                    </article>
                        </div>  
                        </Col>
@@ -62,8 +62,8 @@ function BestSeller(){
                        <div key={index} className="product-details-container-single-product">
                        <article>
                        <img src={product.bestsellerImage} alt="Image of Maroon Lehenga" />
-                       <p id="product-details-container-single-product__name">{product.bestsellerName} </p>
-                       <p id="product-details-container-single-product__price"> {product.bestsellerPrice} </p>
+                       <p className="product-details-container-single-product__name">{product.bestsellerName} </p>
+                       <p className="product-details-container-single-product__price"> {product.bestsellerPrice} </p>
                    </article>
                        </div>  
                        </Col>

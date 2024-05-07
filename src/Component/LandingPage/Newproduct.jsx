@@ -47,8 +47,8 @@ function NewProduct(){
                        <div key={index} className="product-details-container-single-product">
                        <article>
                        <img src={product.productimgae} alt="Image of Maroon Lehenga" />
-                       <p id="product-details-container-single-product__name">{product.productName} </p>
-                       <p id="product-details-container-single-product__price"> {product.productPrice} </p>
+                       <p className="product-details-container-single-product__name">{product.productName} </p>
+                       <p className="product-details-container-single-product__price"> {product.productPrice} </p>
                    </article>
                        </div>  
                        </Col>
@@ -62,8 +62,8 @@ function NewProduct(){
                        <div key={index} className="product-details-container-single-product">
                        <article>
                        <img src={product.productimgae} alt="Image of Maroon Lehenga" />
-                       <p id="product-details-container-single-product__name">{product.productName} </p>
-                       <p id="product-details-container-single-product__price"> {product.productPrice} </p>
+                       <p className="product-details-container-single-product__name">{product.productName} </p>
+                       <p className="product-details-container-single-product__price"> {product.productPrice} </p>
                    </article>
                        </div>  
                        </Col>
