@@ -1,0 +1,76 @@
+.categoryContainer{
+    color: var(--neutral-900, #18181B);
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    line-height: 1.12rem;
+    gap: 1rem; 
+    &-Women{
+        width: 20%;
+        height: auto;
+    }
+    &__Topic{
+        font-size: 0.99rem;
+        font-weight: 500;
+        font-family: Lora;
+        margin-bottom: 1rem;
+    }
+    &__list{
+        font-family: "Tenor Sans";
+        font-size: 0.99rem;
+        font-weight: 400;
+        margin-top: 1rem;
+    }
+    &-Men{
+        width: 20%;
+        height: auto;   
+    }
+    &-Bridal{
+        width: 20%;
+        height: auto;
+    }
+    &-Lehenga{
+        width: 20%;
+        height: auto;
+        text-align: center;
+        background-color: #F4F4F5;
+        &__p{
+            text-align: center;
+            font-family: "Tenor Sans";
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+    &-cancel{
+        justify-content: end;
+        &__button{
+            border: none;
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+    .categoryContainer{
+        font-size: larger;
+        display: flex;
+        gap: 2rem;
+        &-Women{
+            width: 40%;
+            height: auto;
+        }
+        &-Men{
+            width: 40%;
+            height: auto;
+        }
+        &-Bridal{
+            width: 70%;
+            height: auto;
+        }
+        &-Lehenga{
+            width: 100%;
+            display: none;
+        }
+    }
+}
