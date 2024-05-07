@@ -37,6 +37,17 @@ function Nav() {
                   className="Navbar-Container-middleSection-Category__icon"
                 />{" "}
               </button>
+              <button
+                onClick={ToggleCategory}
+                className="Navbar-Container-middleSection-Category__button2"
+              >
+                <img
+                  src={menu}
+                  alt="Menu Icon"
+                  className="Navbar-Container-middleSection-Category__icon"
+                />{" "}
+              </button>
+
             </div>
           </div>
           <div className="Navbar-Container-middleSection-SearchOption">
@@ -72,7 +83,7 @@ function Nav() {
             </div>
           </div>
           <div className="Navbar-Container-CartSection">
-            <div>
+            <div className="Navbar-Container-CartSection__p">
               Bag <br /> 2 Items
             </div>
             <div>
