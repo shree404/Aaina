@@ -1,7 +1,6 @@
 import React from "react";
 import image from "../../Assets/LandingPage/category.png";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+
 
 function Category({ Close }) {
   return (

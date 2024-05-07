@@ -106,64 +106,68 @@
     justify-content: space-between;
     align-items: center;
   }
+
+
   
-  
-  
-  
-  .Mobile {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-  &-Header {
-    &__logo {
-        flex-wrap: wrap;
-      height: auto;
-      width: 100%;
-    }
-  }
-  &-Nav {
-    &-Button {
-      height: auto;
-      width: auto;
-      color: var(--black, #231f20);
-      text-align: center;
-      font-size: 1.12rem;
-      font-weight: 500;
-      background-color: white;
-      border: none;
-    }
-    &__menu {
-      height: 1.12rem;
-      width: 1.12rem;
-    }
-  }
-  }
-  
-  
-  
-  .Mobile-Nav-Container{
+.MobileNav{
     display: none;
+    &-Container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      &__menu{
+        & button{
+          border: none;
+          background-color: white;
+          height: 50%;
+          width: 50%;
+          & img{
+          }
+        }
+      }
+      &__DropdownMenu{
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+      }
+    }
   }
   
-  @media screen and (max-width: 360px) {
+  #MobileNav-Container{
+    &__Dropdownbutton{
+        border: none;
+        font-size: 1.25rem;
+        background-color: white;
+        color: var(--neutral-900, #18181B);
+    }
+    &__Dropdownitem{
+        font-size: 1.25rem;
+    }
+  }
+
+  @media screen and (max-width:576px) {
+    .MobileNav{
+      display: inline;
+    }
     .navBar{
       display: none;
-    }
-    .Mobile-Nav-Container{
-        display: block;
+      &-Container__button{
+        font-size: 1rem;
       }
+    }
+    .Navbar-Container-CartSection{
+        font-size: 1.25rem;
+        text-align: center;
+    }
   }
   
   
   
-  @media screen and (min-width: 361px) and (max-width: 1024px) {
-  .Mobile-Nav-Container {
-    display: none;
-  }
-  .navBar {
-    display: block;
-  }
-  }
+
+
+
   
+
+
   
