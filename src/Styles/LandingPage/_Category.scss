@@ -50,27 +50,8 @@
         }
     }
 }
-
-@media screen and (max-width:360px) {
-    .categoryContainer{
-        font-size: larger;
-        display: flex;
-        gap: 2rem;
-        &-Women{
-            width: 40%;
-            height: auto;
-        }
-        &-Men{
-            width: 40%;
-            height: auto;
-        }
-        &-Bridal{
-            width: 70%;
-            height: auto;
-        }
-        &-Lehenga{
-            width: 100%;
-            display: none;
-        }
+@media screen and (min-width:576px) and (max-width:1024px) {
+    .categoryContainer-Lehenga{
+        display: none;
     }
 }

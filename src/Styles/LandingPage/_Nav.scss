@@ -1,5 +1,5 @@
 .Navbar-Container {
-    font-family: Taviraj;
+    font-family: "Taviraj", serif;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -34,6 +34,11 @@
           text-align: center;
           font-size: 1.12rem;
           font-weight: 500;
+          border: none;
+          background-color: white;
+        }
+        &__button2{
+          display: none;
           border: none;
           background-color: white;
         }
@@ -159,6 +164,36 @@
     .Navbar-Container-CartSection{
         font-size: 1.25rem;
         text-align: center;
+    }
+  }
+
+  @media screen and (min-width:576px) and (max-width:1024px) {
+    .Navbar-Container{
+      gap:0rem;
+      float: left;
+      &-middleSection{
+        &-Category{
+          &__button{
+            display: none;
+          }
+          &__button2{
+            display: inline;
+            margin-left: 1rem;
+            margin-right: 1rem;
+          }
+        }
+        &-SearchOption{
+          &__area{
+            width: 20rem;
+          }
+        }
+      }
+     &-CartSection{
+      margin-left: 1rem;
+      &__p{
+        display: none;
+      }
+     } 
     }
   }
   
