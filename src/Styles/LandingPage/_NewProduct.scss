@@ -1,5 +1,7 @@
 .NewProduct{
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .product-details-container{
@@ -7,21 +9,25 @@
     font-family: "Taviraj", serif;
     height: auto;
     width: 20rem;
-    
+    &-single-product{
     &__name{
         color: $text-color;
         font-size: 1rem;
-        font-family: Taviraj;
         font-style: normal;
         font-weight: 500;
         text-transform: capitalize;  
+        line-height: 1.4rem;
+        letter-spacing: 0.02rem;
+        color: var(--neutral-900, #18181B);
     }
     &__price{
         color: $text-color;
-        font-family: Taviraj;
         font-weight: 500;
         font-size: 1.12rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.032rem;
     }
+}
 }
 
 h1{
