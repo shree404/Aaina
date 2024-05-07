@@ -1,0 +1,41 @@
+.NewProduct{
+    text-align: center;
+}
+
+.product-details-container{
+    $text-color: var(--neutral-900, #18181B);
+    font-family: "Taviraj", serif;
+    height: auto;
+    width: 20rem;
+    
+    &__name{
+        color: $text-color;
+        font-size: 1rem;
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: 500;
+        text-transform: capitalize;  
+    }
+    &__price{
+        color: $text-color;
+        font-family: Taviraj;
+        font-weight: 500;
+        font-size: 1.12rem;
+    }
+}
+
+h1{
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--secondary-500, #2A2940);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Taviraj", serif;
+}
+
+@media screen and (min-width:767px) and (max-width:1024px) {
+    .NewProduct-md{
+        display: none;
+    }
+}
