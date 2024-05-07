@@ -4,6 +4,8 @@ import NewProduct from "../Component/LandingPage/Newproduct";
 import BestSeller from "../Component/LandingPage/BestSeller";
 import Kurti from "../Component/LandingPage/Kurti";
 import BrideGroom from "../Component/LandingPage/BrideGroom";
+import Testimonials from "../Component/LandingPage/Testimonials";
+import Footer from "../Component/LandingPage/Footer";
 
 function LandingPage(){
     return(
@@ -14,6 +16,8 @@ function LandingPage(){
         <BestSeller/>
         <Kurti/>
         <BrideGroom/>
+        <Testimonials/>
+        <Footer/>
         </>
     )
 }

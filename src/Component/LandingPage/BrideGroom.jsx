@@ -38,7 +38,7 @@ function BrideGroom(){
           <div>
             <Row className="justify-content-md-sm-xs-center">
               <Col md={12} sm={12} xs={12} >
-                <h1>kurti</h1>
+                <h1>Bride and Groom</h1>
               </Col>
             </Row>
           </div>

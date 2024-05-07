@@ -13,7 +13,6 @@
     &-middleSection{
         justify-content: center; 
         font-style: normal; 
-        width: 30rem;
         &__description{
             color: var(--secondary-500, #2A2940);
             font-family: Lora;
@@ -48,4 +47,19 @@
         }
     }
 }
+}
+
+@media screen and (min-width:767px) and (max-width:1024px) {
+    .container-BrideandGroomSection {
+        &-buynow{
+            &-middleSection{
+                &__description{
+                    font-size: 1rem;
+                }
+                &__description2{
+                    font-size: 0.88rem;
+                }
+            }
+        }
+    }
 }
