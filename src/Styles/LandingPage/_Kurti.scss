@@ -6,7 +6,6 @@
     &-middleSection {
         align-items: center;
         font-style: normal;
-        width: 30rem;
         &__description {
           color: var(--secondary-500, #2a2940);
           font-family: Lora;
@@ -36,7 +35,6 @@
           height: 2.5rem;
           width: 9rem;
           border: none;
-          font: 700;
           color: white;
         }
       }
@@ -51,4 +49,19 @@
 }
 .kurta2{
     width: 100%;
+}
+
+@media screen and (min-width:767px) and (max-width:1024px) {
+    .container-kurtiSection {
+        &-buynow{
+            &-middleSection{
+                &__description{
+                    font-size: 1rem;
+                }
+                &__description2{
+                    font-size: 0.88rem;
+                }
+            }
+        }
+    }
 }

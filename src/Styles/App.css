@@ -289,15 +289,17 @@ h1 {
   display: none;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 576px) {
   .NewProduct-md {
     display: none;
+  }
+  .NewProduct-S-md {
+    display: inline;
   }
 }
 .container-kurtiSection-buynow-middleSection {
   align-items: center;
   font-style: normal;
-  width: 30rem;
 }
 .container-kurtiSection-buynow-middleSection__description {
   color: var(--secondary-500, #2a2940);
@@ -328,7 +330,6 @@ h1 {
   height: 2.5rem;
   width: 9rem;
   border: none;
-  font: 700;
   color: white;
 }
 .kurta1 {
@@ -339,6 +340,14 @@ h1 {
   width: 100%;
 }
 
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .container-kurtiSection-buynow-middleSection__description {
+    font-size: 1rem;
+  }
+  .container-kurtiSection-buynow-middleSection__description2 {
+    font-size: 0.88rem;
+  }
+}
 .container-BrideandGroomSection {
   margin-bottom: 2rem;
   text-align: center;
@@ -353,7 +362,6 @@ h1 {
 .container-BrideandGroomSection-buynow-middleSection {
   justify-content: center;
   font-style: normal;
-  width: 30rem;
 }
 .container-BrideandGroomSection-buynow-middleSection__description {
   color: var(--secondary-500, #2A2940);
@@ -386,4 +394,250 @@ h1 {
   border: none;
   font: 700;
   color: white;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .container-BrideandGroomSection-buynow-middleSection__description {
+    font-size: 1rem;
+  }
+  .container-BrideandGroomSection-buynow-middleSection__description2 {
+    font-size: 0.88rem;
+  }
+}
+.client-review-container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  color: var(--secondary-500, #2A2940);
+  margin-top: 2rem;
+}
+.client-review-container-description {
+  height: auto;
+  display: flex;
+  justify-content: start;
+}
+.client-review-container-description-description p {
+  margin-top: 1rem;
+  text-align: right;
+  font-family: "Tenor Sans";
+  font-size: 1.12rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.client-review-container-description-user-description {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.client-review-container-description-user-description__name {
+  height: auto;
+  width: auto;
+  border-right: 1px solid #000;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-family: "Lora", serif;
+  font-size: 1.12rem;
+}
+.client-review-container-description-user-description__position {
+  color: #505050;
+  font-family: "Tenor Sans";
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Testimonials-Md {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .Testimonials-Md {
+    display: inline;
+  }
+  .Testimonials {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .client-review-container-description {
+    font-size: 1rem;
+  }
+  .client-review-container-description-user-description__name {
+    font-size: 0.88rem;
+  }
+  .client-review-container-description-user-description__position {
+    font-size: 0.88rem;
+  }
+}
+.footer {
+  font-family: "Taviraj", sans-serif;
+  background-color: black;
+  color: white;
+}
+.footer-container {
+  margin-top: 2rem;
+  line-height: 180%;
+}
+.footer-container dt {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+.footer-container dd {
+  margin-bottom: 0.25rem;
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 28.8px */
+  text-transform: capitalize;
+}
+.footer-container__divider {
+  border: none;
+  border-left: #fff solid 2px;
+}
+.footer-container__location {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  text-transform: capitalize;
+}
+.footer-end-section-icons {
+  margin-top: 1rem;
+}
+.footer-end-section-privacy {
+  display: flex;
+}
+.footer-end-section-privacy li {
+  list-style: none;
+}
+
+.LehengaImages {
+  font-style: normal;
+}
+.LehengaImages-col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.LehengaImages__img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.LehengaImages__img:hover {
+  border: 3px solid #6f40ec;
+}
+.LehengaImages-description__p1 {
+  color: var(--neutral-800, #27272a);
+  text-overflow: ellipsis;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.6rempx;
+  text-transform: capitalize;
+  font-family: "Taviraj", serif;
+}
+.LehengaImages-description__p2 {
+  color: var(--black, #231f20);
+  font-family: "Lora", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.LehengaImages-description__p3 {
+  color: rgba(0, 0, 0, 0.64);
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+.LehengaImages-description__p4 {
+  color: var(--success, #219653);
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  text-transform: capitalize;
+}
+.LehengaImages-description__p5 {
+  color: rgba(0, 0, 0, 0.85);
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  text-transform: capitalize;
+}
+.LehengaImages-description__button {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  background-color: white;
+  color: var(--10, #000);
+  text-align: center;
+  font-family: "Taviraj", serif;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.25rem; /* 142.857% */
+  text-transform: uppercase;
+}
+.LehengaImages-description__p6 {
+  color: rgba(0, 0, 0, 0.85);
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem; /* 125% */
+  text-transform: capitalize;
+}
+.LehengaImages-description__buttonadd {
+  border-radius: 4px;
+  border: 2px solid var(--tertiary, #ee636f);
+  background-color: white;
+  align-items: center;
+  height: 3rem;
+  width: 11rem;
+  color: var(--tertiary, #EE636F);
+  font-family: "Taviraj", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 160%;
+  margin-right: 0.75rem;
+}
+.LehengaImages-description__buttonbuy {
+  background-color: var(--primary-2, #a47bff);
+  border: none;
+  color: var(--0, #fdf6fb);
+  font-family: "Taviraj", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 160%;
+  height: 3rem;
+  width: 11rem;
+  border-radius: 4px;
+  align-items: center;
+}
+
+#LehengaImages-description__button2 {
+  width: 3rem;
+  height: 2.75rem;
+  margin-top: 0.75rem;
+  background-color: #e6e6e6;
+  border: none;
+  color: var(--10, #000);
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
 }/*# sourceMappingURL=App.css.map */
