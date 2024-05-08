@@ -4,6 +4,7 @@
   font-style: normal;
   &-col1{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -121,4 +122,20 @@ margin-right: 0.75rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
+}
+
+@media screen and (max-width:576px) {
+    .LehengaImages{
+    &-col1{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    &__uparrow{
+        display: none;
+    }
+    &__downarrow{
+        display: none;
+    }
+}
 }

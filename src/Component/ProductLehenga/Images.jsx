@@ -30,11 +30,11 @@ function ProductImages() {
     <>
       <div className="LehengaImages">
         <Container>
-          <Row>
-            <Col md={2}>
+          <Row className="justify-content-sm-xs-center">
+            <Col md={{span:2, order:1}} sm={{span:12, order:2}} xs={{span:12, order:2}}>
               <div className="LehengaImages-col1">
                 <div>
-                    <img src={up} alt="Up arrow" />
+                    <img src={up} alt="Up arrow" className="LehengaImages__uparrow" />
                 </div>
                 <div>
                   <img
@@ -65,14 +65,14 @@ function ProductImages() {
                   />
                 </div>
                 <div>
-                    <img src={down} alt="Down Arrow" />
+                    <img src={down} alt="Down Arrow"  className="LehengaImages__downarrow"/>
                 </div>
               </div>
             </Col>
-            <Col md={5}>
+            <Col md={{span:5, order:2}} sm={{span:12, order:1}} xs={{span:12, order:1}} >
               <img src={img2} alt="Image of Lehenga" />
             </Col>
-            <Col md={5}>
+            <Col md={{span:5, order:3}} sm={{span:12, order:3}} xs={{span:12, order:3}} >
               <p className="LehengaImages-description">
                 <span className=" LehengaImages-description__p1">Purple Embroidered Lehenga Choli</span> <br /> <br />
                 <span className="LehengaImages-description__p2">Rs. 6000</span> <br />
