@@ -526,6 +526,7 @@ h1 {
 }
 .LehengaImages-col1 {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -640,4 +641,18 @@ h1 {
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
+}
+
+@media screen and (max-width: 576px) {
+  .LehengaImages-col1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .LehengaImages__uparrow {
+    display: none;
+  }
+  .LehengaImages__downarrow {
+    display: none;
+  }
 }/*# sourceMappingURL=App.css.map */
