@@ -12,6 +12,8 @@ import remove from "../../Assets/ProductLehenga/remove.svg";
 import whatsapp from "../../Assets/ProductLehenga/whatsapp.svg";
 import up from "../../Assets/ProductLehenga/4.svg";
 import down from "../../Assets/ProductLehenga/3.svg";
+import LehengaDescription from "./description";
+import InformationLehenga from "./Information";
 
 function ProductImages() {
   const [quantity, setQuantity] = useState(1);
@@ -25,6 +27,21 @@ function ProductImages() {
   const increaseValue = () => {
     setQuantity(quantity + 1);
   };
+
+  const [togglefirst , setTogglefirst] = useState(true);
+  const [togglesecond , setTogglesecond]=useState(false);
+
+
+   const showComponent = (component) => {
+        if (component === 'LehengaDescription') {
+          setTogglefirst(true);
+            setTogglesecond(false);
+        } else if (component === 'InformationLehenga') {
+          setTogglefirst(false);
+          setTogglesecond(true);
+        }
+    };
+
   return (
     <>
       <div className="LehengaImages">
@@ -85,7 +102,11 @@ function ProductImages() {
               sm={{ span: 12, order: 1 }}
               xs={{ span: 12, order: 1 }}
             >
-              <img src={img2} alt="Image of Lehenga" className="LehengaImages__imgbig" />
+              <img
+                src={img2}
+                alt="Image of Lehenga"
+                className="LehengaImages__imgbig"
+              />
             </Col>
             <Col
               md={{ span: 5, order: 3 }}
@@ -177,16 +198,25 @@ function ProductImages() {
           </Row>
           <Row>
             <Col>
-            <button className="LehengaImages-Row2__button">Description</button>
-            <button className="LehengaImages-Row2__button">INFORMATION</button>
+              <button className="LehengaImages-Row2__button" onClick={() => showComponent('LehengaDescription')}>
+                Description
+              </button>
+              <button className="LehengaImages-Row2__button"  onClick={() => showComponent('InformationLehenga')}>
+                INFORMATION
+              </button>
             </Col>
+          </Row>
+          <Row>
+            <Col md={12}>
+            {togglefirst && <LehengaDescription/> }
+            {togglesecond &&  <InformationLehenga/>}</Col>
           </Row>
         </Container>
       </div>
       <div className="LehengaImages-md">
-      <Container>
-        <Row>
-        <Col
+        <Container>
+          <Row>
+            <Col
               md={{ span: 4, order: 1 }}
               sm={{ span: 12, order: 2 }}
               xs={{ span: 12, order: 2 }}
@@ -241,15 +271,15 @@ function ProductImages() {
               sm={{ span: 12, order: 1 }}
               xs={{ span: 12, order: 1 }}
             >
-              <img src={img2} alt="Image of Lehenga" className="LehengaImages__imgbig" />
+              <img
+                src={img2}
+                alt="Image of Lehenga"
+                className="LehengaImages__imgbig"
+              />
             </Col>
-        </Row>
-        <Row>
-        <Col
-              md={{ span: 12 }}
-              sm={{ span: 12 }}
-              xs={{ span: 12}}
-            >
+          </Row>
+          <Row>
+            <Col md={{ span: 12 }} sm={{ span: 12 }} xs={{ span: 12 }}>
               <p className="LehengaImages-description">
                 <span className=" LehengaImages-description__p1">
                   Purple Embroidered Lehenga Choli
@@ -332,14 +362,23 @@ function ProductImages() {
                 </span>
               </p>
             </Col>
-        </Row>
-        <Row>
+          </Row>
+          <Row>
             <Col>
-            <button className="LehengaImages-Row2__button">Description</button>
-            <button className="LehengaImages-Row2__button">INFORMATION</button>
+              <button className="LehengaImages-Row2__button"  onClick={() => showComponent('LehengaDescription')} >
+                Description
+              </button>
+              <button className="LehengaImages-Row2__button" onClick={() => showComponent('InformationLehenga')}>
+                INFORMATION
+              </button>
             </Col>
           </Row>
-      </Container>
+          <Row>
+            <Col md={12}>
+            {togglefirst && <LehengaDescription/> }
+            {togglesecond &&  <InformationLehenga/>}</Col>
+          </Row>
+        </Container>
       </div>
     </>
   );
