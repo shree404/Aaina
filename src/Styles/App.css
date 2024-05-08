@@ -594,7 +594,7 @@ h1 {
   text-transform: uppercase;
 }
 .LehengaImages-description__button:focus {
-  background-color: var(--tertiary, #EE636F);
+  background-color: var(--tertiary, #ee636f);
   color: white;
 }
 .LehengaImages-description__p6 {
@@ -612,7 +612,7 @@ h1 {
   align-items: center;
   height: 3rem;
   width: 11rem;
-  color: var(--tertiary, #EE636F);
+  color: var(--tertiary, #ee636f);
   font-family: "Taviraj", serif;
   font-size: 1rem;
   font-weight: 600;
@@ -634,7 +634,7 @@ h1 {
 }
 .LehengaImages-Row2__button {
   border: none;
-  border-bottom: 2px solid #F0E9FF;
+  border-bottom: 2px solid #f0e9ff;
   background-color: white;
   width: 10rem;
   height: 3.5rem;
@@ -648,7 +648,7 @@ h1 {
 }
 .LehengaImages-Row2__button:focus {
   border: none;
-  border-bottom: 2px solid var(--primary-3, #6926FF);
+  border-bottom: 2px solid var(--primary-3, #6926ff);
 }
 
 #LehengaImages-description__button2 {
@@ -695,4 +695,86 @@ h1 {
   .LehengaImages-md {
     display: inline;
   }
+}
+.Description {
+  color: var(--neutral-700, #3F3F46);
+  font-family: "Taviraj", serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  margin-top: 1.5rem;
+}
+
+.LehengaInformation {
+  font-style: normal;
+  margin-top: 1.5rem;
+  line-height: 180%;
+}
+.LehengaInformation__h1 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Lora", serif;
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+.LehengaInformation__name1 {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+.LehengaInformation__data1 {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 400;
+}
+.LehengaInformation__name {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+.LehengaInformation__name2 {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+.LehengaInformation__name3 {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 1.25rem;
+}
+.LehengaInformation__name4 {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+.LehengaInformation__data {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.LehengaInformation__h2 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Lora", serif;
+  font-size: 1.12rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.LehengaInformation__h3 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Lora", serif;
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin-top: 2rem;
 }/*# sourceMappingURL=App.css.map */
