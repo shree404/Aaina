@@ -1,0 +1,124 @@
+.LehengaImages {
+  $Taviraj: "Taviraj", serif;
+  $Lora: "Lora", serif;
+  font-style: normal;
+  &-col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  &__img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    &:hover {
+      border: 3px solid #6f40ec;
+    }
+  }
+  &-description {
+    &__p1 {
+      color: var(--neutral-800, #27272a);
+      text-overflow: ellipsis;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 2.6rempx;
+      text-transform: capitalize;
+      font-family: $Taviraj;
+    }
+    &__p2 {
+      color: var(--black, #231f20);
+      font-family: $Lora;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.5rem;
+    }
+    &__p3 {
+      color: rgba(0, 0, 0, 0.64);
+      font-family: $Lora;
+      font-size: 0.6rem;
+      font-weight: 400;
+      line-height: 140%;
+    }
+    &__p4 {
+      color: var(--success, #219653);
+      font-family: $Lora;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.25rem;
+      text-transform: capitalize;
+    }
+    &__p5 {
+      color: rgba(0, 0, 0, 0.85);
+      font-family: $Lora;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.25rem;
+      text-transform: capitalize;
+    }
+    &__button {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-top: 0.5rem;
+      margin-right: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #e6e6e6;
+      background-color: white;
+      color: var(--10, #000);
+      text-align: center;
+      font-family: $Taviraj;
+      font-size: 0.88rem;
+      font-weight: 400;
+      line-height: 1.25rem; /* 142.857% */
+      text-transform: uppercase;
+    }
+    &__p6 {
+      color: rgba(0, 0, 0, 0.85);
+
+      font-family: $Lora;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.25rem; /* 125% */
+      text-transform: capitalize;
+    }
+    &__buttonadd {
+      border-radius: 4px;
+      border: 2px solid var(--tertiary, #ee636f);
+      background-color: white;
+      align-items: center;
+      height: 3rem;
+      width: 11rem;
+      color: var(--tertiary, #EE636F);
+font-family: $Taviraj;
+font-size: 1rem;
+font-weight: 600;
+line-height: 160%;
+margin-right: 0.75rem;
+    }
+    &__buttonbuy {
+      background-color: var(--primary-2, #a47bff);
+      border: none;
+      color: var(--0, #fdf6fb);
+      font-family: $Taviraj;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 160%;
+      height: 3rem;
+      width: 11rem;
+      border-radius: 4px;
+      align-items: center;
+    }
+  }
+}
+#LehengaImages-description__button2 {
+  width: 3rem;
+  height: 2.75rem;
+  margin-top: 0.75rem;
+  background-color: #e6e6e6;
+  border: none;
+  color: var(--10, #000);
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+}

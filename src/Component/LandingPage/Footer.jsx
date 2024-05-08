@@ -148,7 +148,7 @@ function Footer() {
               </svg>
             </div>
             </Col>
-            <Col md={{span:4, order:2}}>
+            <Col md={{span:6, order:2}}>
             <menu className="footer-end-section-privacy">
               <li>Terms &nbsp; &nbsp;</li>
               <li> Privacy Policy &nbsp;</li>
