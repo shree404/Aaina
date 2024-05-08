@@ -71,6 +71,10 @@
       font-weight: 400;
       line-height: 1.25rem; /* 142.857% */
       text-transform: uppercase;
+      &:focus{
+        background-color:var(--tertiary, #EE636F) ;
+        color: white;
+      }
     }
     &__p6 {
       color: rgba(0, 0, 0, 0.85);
@@ -109,6 +113,28 @@ margin-right: 0.75rem;
       align-items: center;
     }
   }
+  &-Row2{
+    &__button{
+        border: none;
+        border-bottom: 2px solid  #F0E9FF;
+        ;
+        background-color: white;
+        width: 10rem;
+        height: 3.5rem;
+        color: rgba(0, 0, 0, 0.85);
+text-align: center;
+font-family: $Taviraj;
+font-size: 0.88rem;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+text-transform: uppercase;
+&:focus{
+    border: none;
+        border-bottom: 2px solid var(--primary-3, #6926FF);
+        ; 
+}
+    }
+  }
 }
 #LehengaImages-description__button2 {
   width: 3rem;
@@ -124,12 +150,16 @@ margin-right: 0.75rem;
   line-height: 160%;
 }
 
+
 @media screen and (max-width:576px) {
     .LehengaImages{
     &-col1{
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 0.25rem;
+    }
+    &__imgbig{
+        width: 100%;
     }
     &__uparrow{
         display: none;
@@ -137,5 +167,23 @@ margin-right: 0.75rem;
     &__downarrow{
         display: none;
     }
+    &-description{
+        &__buttonadd{
+            margin-bottom: 1rem;
+        }
+    }
 }
+}
+
+.LehengaImages-md{
+    display: none;
+}
+
+@media screen and (min-width:768px) and (max-width:1280px) {
+    .LehengaImages{
+        display: none;
+    }
+    .LehengaImages-md{
+        display: inline;
+    }
 }
