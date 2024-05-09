@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../../Assets/LandingPage/category.png";
+import { Link } from "react-router-dom";
 
 
 function Category({ Close }) {
@@ -9,7 +10,9 @@ function Category({ Close }) {
         <div className="categoryContainer">
           <div className="categoryContainer-Women">
             <dl>
+              <Link className="categoryContainer-link" to="/women">
               <dt className="categoryContainer__Topic">Women</dt>
+              </Link>
               <hr className="categoryContainer__Line" />
               <dt className="categoryContainer__list">Kurti</dt>
               <dt className="categoryContainer__list">Clothing</dt>

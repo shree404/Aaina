@@ -1,0 +1,23 @@
+.WomenBreadcrum{
+    width: 100%;
+    background-color: #F5F5F5;
+    align-content: center;
+    font-family: "Taviraj", serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.88rem;
+    &-p{
+        margin-top: 0.85rem;
+        &__t1{
+            color: #252525;
+            line-height:1.3rem ;
+            margin-right: 0.5rem;
+        }
+        &__t2{
+            color: var(--10, #000);
+            line-height: 1.12rem; 
+            margin-left: 0.5rem;
+        }
+    }
+}
