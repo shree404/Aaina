@@ -10,6 +10,11 @@
     &-Women{
         width: 20%;
         height: auto;
+        
+    }
+    &-link{
+        text-decoration: none;
+        color: var(--neutral-900, #18181B);
     }
     &__Topic{
         font-size: 0.99rem;
@@ -55,3 +60,4 @@
         display: none;
     }
 }
+
