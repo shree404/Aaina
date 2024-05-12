@@ -785,7 +785,7 @@ h1 {
 
 .WomenBreadcrum {
   width: 100%;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   align-content: center;
   font-family: "Taviraj", serif;
   text-align: center;
@@ -800,9 +800,151 @@ h1 {
   color: #252525;
   line-height: 1.3rem;
   margin-right: 0.5rem;
+  text-decoration: none;
 }
 .WomenBreadcrum-p__t2 {
   color: var(--10, #000);
   line-height: 1.12rem;
   margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+.WomenFilter {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  margin-top: 2rem;
+}
+.WomenFilters {
+  display: flex;
+  justify-content: end;
+}
+.WomenFilter-b {
+  border: none;
+  background-color: white;
+}
+.WomenFilter-b:focus {
+  border: none;
+  background-color: white;
+}
+.WomenFilter__1 {
+  margin-left: 2rem;
+}
+.WomenFilter-select {
+  height: 3rem;
+  width: 15rem;
+  border: #000000 1.5px solid;
+  background-color: white;
+}
+.WomenFilter-Container__prefix {
+  color: #0C0C0C;
+  font-family: "Taviraj", serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4rem;
+  text-transform: capitalize;
+}
+
+.Option {
+  width: 15rem;
+  margin-left: -0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+.Option__button {
+  border: none;
+  text-align: start;
+  color: var(--neutral-800, #27272a);
+  background-color: white;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 25.2px */
+  text-transform: capitalize;
+  font-family: "Taviraj", serif;
+  font-size: 0.88rem;
+  height: 3rem;
+  width: 15rem;
+}
+.Option__button:focus {
+  border: none;
+  color: var(--tertiary, #ee636f);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 25.2px */
+  text-transform: capitalize;
+  font-family: "Taviraj", serif;
+  font-size: 0.88rem;
+  background-color: #f5f5f5;
+}
+
+.CategoriesWomen {
+  display: flex;
+  flex-direction: column;
+  font-family: "Taviraj", serif;
+}
+.CategoriesWomen__button1 {
+  color: #212529;
+  text-align: start;
+  font-size: 1.12rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: capitalize;
+  border: none;
+  background-color: white;
+  height: 2rem;
+  width: 11rem;
+  border-left: #000 3px solid;
+}
+.CategoriesWomen__button2 {
+  height: 2rem;
+  width: 11rem;
+  color: var(--10, #000);
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 240%;
+  border: none;
+  text-transform: capitalize;
+  text-align: start;
+  background-color: white;
+}
+.CategoriesWomen__button2:hover {
+  color: #EE636F;
+}
+.CategoriesWomen__line1 {
+  display: none;
+}
+.CategoriesWomen__buttonCon {
+  display: flex;
+}
+
+.ColorOptionWomen {
+  margin-top: 2rem;
+}
+.ColorOptionWomen__color {
+  border: none;
+  background-color: white;
+  margin-top: 2rem;
+  margin-right: 0.5rem;
+}
+
+.WomenFilterRed-container {
+  text-align: center;
+  font-style: normal;
+  font-family: "Taviraj", serif;
+  color: var(--neutral-900, #18181B);
+}
+.WomenFilterRed__name {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 137.5%;
+  letter-spacing: 0.02rem;
+  text-transform: capitalize;
+}
+.WomenFilterRed__price {
+  font-size: 1.12rem;
+  font-weight: 500;
+  line-height: 111.111%;
+  letter-spacing: 0.034rem;
 }/*# sourceMappingURL=App.css.map */

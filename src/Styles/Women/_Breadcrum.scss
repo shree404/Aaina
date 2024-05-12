@@ -1,23 +1,64 @@
-.WomenBreadcrum{
-    width: 100%;
-    background-color: #F5F5F5;
-    align-content: center;
-    font-family: "Taviraj", serif;
-    text-align: center;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.88rem;
-    &-p{
-        margin-top: 0.85rem;
-        &__t1{
-            color: #252525;
-            line-height:1.3rem ;
-            margin-right: 0.5rem;
-        }
-        &__t2{
-            color: var(--10, #000);
-            line-height: 1.12rem; 
-            margin-left: 0.5rem;
-        }
+.WomenBreadcrum {
+  width: 100%;
+  background-color: #f5f5f5;
+  align-content: center;
+  font-family: "Taviraj", serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.88rem;
+  &-p {
+    margin-top: 0.85rem;
+    &__t1 {
+      color: #252525;
+      line-height: 1.3rem;
+      margin-right: 0.5rem;
+      text-decoration: none;
     }
+    &__t2 {
+      color: var(--10, #000);
+      line-height: 1.12rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+  }
+}
+
+.WomenFilter {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  margin-top: 2rem;
+  &s{
+    display: flex;
+    justify-content: end;
+  }
+  &-b{
+    border: none;
+    background-color: white;
+    &:focus{
+      border: none;
+      background-color: white;
+    }
+  }
+  &__1 {
+    margin-left: 2rem;
+  }
+  &-select {
+    height: 3rem;
+    width: 15rem;
+    border: #000000 1.5px solid;
+    background-color: white;
+  }
+  &-Container{
+    &__prefix{
+        color: #0C0C0C;
+
+font-family: "Taviraj", serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.4rem; 
+text-transform: capitalize;
+    }
+  }
 }
