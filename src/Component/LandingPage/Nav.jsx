@@ -6,6 +6,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { Link } from "react-router-dom";
+import OrderSummary from "../../Pages/orderSummary";
 
 function Nav() {
   const [toggle, setToggle] = useState();
@@ -17,6 +18,7 @@ function Nav() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   return (
     <>
       <nav>
@@ -48,7 +50,6 @@ function Nav() {
                   className="Navbar-Container-middleSection-Category__icon"
                 />{" "}
               </button>
-
             </div>
           </div>
           <div className="Navbar-Container-middleSection-SearchOption">
@@ -83,7 +84,7 @@ function Nav() {
               </button>
             </div>
           </div>
-          <div className="Navbar-Container-CartSection">
+          <button onClick={handleShow} className="Navbar-Container-CartSection">
             <div className="Navbar-Container-CartSection__p">
               Bag <br /> 2 Items
             </div>
@@ -103,7 +104,24 @@ function Nav() {
                 />
               </svg>
             </div>
-          </div>
+          </button>
+          <Offcanvas
+            show={show}
+            placement="end"
+            onHide={handleClose}
+            id="OrderSummary"
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title>
+                {" "}
+                <span className="OrderSummary__header">Order Summary</span>{" "}
+                <span className="OrderSummary__header1"> (2) items</span>{" "}
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <OrderSummary />
+            </Offcanvas.Body>
+          </Offcanvas>
         </div>
         {toggle && <Category Close={ToggleCategory} />}
       </nav>
@@ -131,13 +149,46 @@ function Nav() {
                       id="MobileNav-Container__Dropdownbutton"
                       title="Women"
                     >
-                      <Link id="MobileNav-Container__Dropdownitem" to ='/women-kurta'>
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Kurti</Dropdown.Item> </Link>
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Clothing</Dropdown.Item>
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Saree</Dropdown.Item>
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Wedding Dresses</Dropdown.Item>
-                      <Link id="MobileNav-Container__Dropdownitem" to ='/women-kurta'>
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Lehenga</Dropdown.Item> </Link>
+                      <Link
+                        id="MobileNav-Container__Dropdownitem"
+                        to="/women-kurta"
+                      >
+                        <Dropdown.Item
+                          id="MobileNav-Container__Dropdownitem"
+                          as="button"
+                        >
+                          Kurti
+                        </Dropdown.Item>{" "}
+                      </Link>
+                      <Dropdown.Item
+                        id="MobileNav-Container__Dropdownitem"
+                        as="button"
+                      >
+                        Clothing
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        id="MobileNav-Container__Dropdownitem"
+                        as="button"
+                      >
+                        Saree
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        id="MobileNav-Container__Dropdownitem"
+                        as="button"
+                      >
+                        Wedding Dresses
+                      </Dropdown.Item>
+                      <Link
+                        id="MobileNav-Container__Dropdownitem"
+                        to="/women-kurta"
+                      >
+                        <Dropdown.Item
+                          id="MobileNav-Container__Dropdownitem"
+                          as="button"
+                        >
+                          Lehenga
+                        </Dropdown.Item>{" "}
+                      </Link>
                     </DropdownButton>
                   </div>
                   <div>
@@ -145,11 +196,36 @@ function Nav() {
                       id="MobileNav-Container__Dropdownbutton"
                       title="Men"
                     >
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Clothing</Dropdown.Item>
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Shoes</Dropdown.Item>
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Accessories</Dropdown.Item>
-                      <Dropdown.Item  id="MobileNav-Container__Dropdownitem"  as="button">Wedding Dresses</Dropdown.Item>
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Groom set</Dropdown.Item>
+                      <Dropdown.Item
+                        id="MobileNav-Container__Dropdownitem"
+                        as="button"
+                      >
+                        Clothing
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        id="MobileNav-Container__Dropdownitem"
+                        as="button"
+                      >
+                        Shoes
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        id="MobileNav-Container__Dropdownitem"
+                        as="button"
+                      >
+                        Accessories
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        id="MobileNav-Container__Dropdownitem"
+                        as="button"
+                      >
+                        Wedding Dresses
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        id="MobileNav-Container__Dropdownitem"
+                        as="button"
+                      >
+                        Groom set
+                      </Dropdown.Item>
                     </DropdownButton>
                   </div>
                   <div>
@@ -157,20 +233,41 @@ function Nav() {
                       id="MobileNav-Container__Dropdownbutton"
                       title="Bridals"
                     >
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Bridal Lehengas</Dropdown.Item>
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Bridal Saris</Dropdown.Item>
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">
+                      <Dropdown.Item
+                        id="MobileNav-Container__Dropdownitem"
+                        as="button"
+                      >
+                        Bridal Lehengas
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        id="MobileNav-Container__Dropdownitem"
+                        as="button"
+                      >
+                        Bridal Saris
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        id="MobileNav-Container__Dropdownitem"
+                        as="button"
+                      >
                         Bridal Accessories
                       </Dropdown.Item>
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">
+                      <Dropdown.Item
+                        id="MobileNav-Container__Dropdownitem"
+                        as="button"
+                      >
                         Bridal Jewellery
                       </Dropdown.Item>
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Bridal Gown</Dropdown.Item>
+                      <Dropdown.Item
+                        id="MobileNav-Container__Dropdownitem"
+                        as="button"
+                      >
+                        Bridal Gown
+                      </Dropdown.Item>
                     </DropdownButton>
                   </div>
                   <div className="Navbar-Container-CartSection">
                     <div>
-                      Bag <br /> 
+                      Bag <br />
                     </div>
                     <div>
                       <svg

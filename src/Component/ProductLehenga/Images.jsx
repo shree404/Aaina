@@ -191,12 +191,11 @@ function ProductImages({ placement }) {
                 <br /> <br />
                 <span>
                   {" "}
-                  <button className="LehengaImages-description__buttonadd">
+                  <button onClick={handleShow} className="LehengaImages-description__buttonadd">
                     {" "}
                     Add to Bag
                   </button>{" "}
                   <button
-                    onClick={handleShow}
                     className="LehengaImages-description__buttonbuy"
                   >
                     {" "}

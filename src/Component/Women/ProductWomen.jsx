@@ -108,9 +108,7 @@ function WomenProductList({ products, selectedColor }) {
     ? imageArray.filter((products) => products.color === selectedColor)
     : imageArray;
 
-  // const Filterproducttype =  selectedType ? 
-  // imageArray.filter((products) => products.type === selectedType)
-  // : [];
+
 
   return (
     <>
@@ -119,7 +117,7 @@ function WomenProductList({ products, selectedColor }) {
         <div className="WomenFilterRed">
           <Row>
             { filteredProducts.map((product, index) => (
-              <Col >
+              <Col>
                 <div key={index}>
                   <article >
                     <Link className="WomenFilterRed-container" to ="/product-lehenga">

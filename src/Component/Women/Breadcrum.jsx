@@ -10,7 +10,6 @@ import SelectCategoryWomen from "./SelectCategory";
 import WomenFilter from "./Filter";
 import WomenProductList from "./ProductWomen";
 import WomenCategoryColor from "./CategoryColor";
-// import LehengaColor from "../Lehenga/CategoryColor";
 
 function Womenbreadcrum() {
   const [category, setCategory] = useState();
@@ -18,7 +17,6 @@ function Womenbreadcrum() {
   const CategorySelect = () => {
     setCategory(!category);
   };
-
 
   const [selectedColor, setSelectedColor] = useState(null);
   const handleFilterChange = (selectedColors) => {
@@ -31,26 +29,26 @@ function Womenbreadcrum() {
 
   return (
     <>
-      <div>
-          <div className="WomenBreadcrum">
-            <div className="WomenBreadcrum__normal">
-              <p className="WomenBreadcrum-p">
-                <span>
-                  <Link to="/" className="WomenBreadcrum-p__t1">
-                    {" "}
-                    Home{" "}
-                  </Link>
-                </span>{" "}
-                <img src={arrow} alt="Arrow" />
-                <span>
-                  {" "}
-                  <Link to="/women" className="WomenBreadcrum-p__t2">
-                    Women{" "}
-                  </Link>
-                </span>
-              </p>
-            </div>
-          </div>
+      <div className="WomenBreadcrum">
+        <div className="WomenBreadcrum__normal">
+          <p className="WomenBreadcrum-p">
+            <span>
+              <Link to="/" className="WomenBreadcrum-p__t1">
+                {" "}
+                Home{" "}
+              </Link>
+            </span>{" "}
+            <img src={arrow} alt="Arrow" />
+            <span>
+              {" "}
+              <Link to="/women" className="WomenBreadcrum-p__t2">
+                Women{" "}
+              </Link>
+            </span>
+          </p>
+        </div>
+      </div>
+      <Container>
         <div className="WomenFilter">
           <p>
             <span className="WomenFilter__1">Filters</span>{" "}
@@ -69,20 +67,16 @@ function Womenbreadcrum() {
             {category && <SelectCategoryWomen />}
           </div>
         </div>
-          <Container>
-            <Row>
-              <Col sm={12} xs={12}>
-                  <WomenFilter />
-                  <WomenCategoryColor  onFilterChange={handleFilterChange}/>
-              </Col>
-              <Col sm={12} xs={12} >
-                <div className="WomenBreadcrum-lastrow__col2">
-                  <WomenProductList selectedColor={selectedColor} />
-                </div>
-              </Col>
-            </Row>
-            </Container>
-      </div>
+        <Row>
+          <Col >
+            <WomenFilter />
+            <WomenCategoryColor onFilterChange={handleFilterChange} />
+          </Col>
+          <Col >
+            <WomenProductList selectedColor={selectedColor} />
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }

@@ -25,7 +25,7 @@
     }
     &__divider{
       border: none;
-      border-left: #fff solid 2px;
+      border-right: #fff solid 2px;
     }
     &__location {
       font-size: 1rem;
@@ -33,6 +33,7 @@
       font-weight: 400;
       line-height: 180%;
       text-transform: capitalize;
+      display: flex;
     }
   }
   &-end-section {
