@@ -10,28 +10,31 @@ import { Link } from "react-router-dom";
 
 
 
-function WomenLehengaList(){
+function WomenLehengaList({products, selectedColor }){
     let imageArray = [
         {
           Image: img1,
           Name: "Lehenga Blouse Set ",
           price: "Rs.6000",
-          color:""
+          color:"green",
         },
         {
           Image: img2,
           Name: "Lehenga Blouse Set ",
           price: "Rs.6000",
+          color:"purple",
         },
         {
           Image: bs1,
           Name: "Lehenga Blouse Set ",
           price: "Rs.6000",
+          color:"red",
         },
         {
             Image: img2,
             Name: "Lehenga Blouse Set ",
             price: "Rs.6000",
+            color:"purple",
           },
       ];
 
@@ -43,25 +46,8 @@ function WomenLehengaList(){
   <Container>
         <div className="WomenFilterRed">
           <Row>
-            {imageArray.map((product, index) => (
+            {filteredProducts.map((product, index) => (
               <Col >
-                <div key={index}>
-                  <article className="WomenFilterRed-container">
-                    <Link className="WomenFilterRed-container" to ='/product-lehenga'>
-                    <img src={product.Image} alt="Image of Maroon Lehenga" />
-                    <p className="WomenFilterRed__name">{product.Name} </p>
-                    <p className="WomenFilterRed__price"> {product.price} </p>
-                    </Link>
-                  </article>
-                </div>
-              </Col>
-            ))}
-          </Row>
-        </div>
-        <div className="WomenFilterRed-md">
-          <Row>
-            {imageArray.map((product, index) => (
-              <Col md={6} xs={12} sm={12}>
                 <div key={index}>
                   <article className="WomenFilterRed-container">
                     <Link className="WomenFilterRed-container" to ='/product-lehenga'>

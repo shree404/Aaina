@@ -105,6 +105,8 @@
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
+  border: none;
+  background-color: white;
 }
 
 .navBar {
@@ -160,6 +162,7 @@
   .Navbar-Container-CartSection {
     font-size: 1.25rem;
     text-align: center;
+    margin-left: 0.65rem;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 1024px) {
@@ -265,6 +268,9 @@
   font-family: "Taviraj", serif;
   height: auto;
   width: 20rem;
+}
+.product-details-container-single-product {
+  text-decoration: none;
 }
 .product-details-container-single-product__name {
   color: var(--neutral-900, #18181B);
@@ -511,7 +517,7 @@ h1 {
 }
 .footer-container__divider {
   border: none;
-  border-left: #fff solid 2px;
+  border-right: #fff solid 2px;
 }
 .footer-container__location {
   font-size: 1rem;
@@ -519,6 +525,7 @@ h1 {
   font-weight: 400;
   line-height: 180%;
   text-transform: capitalize;
+  display: flex;
 }
 .footer-end-section-icons {
   margin-top: 1rem;
@@ -844,7 +851,7 @@ h1 {
   font-style: normal;
   margin-top: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .WomenFilter-b {
   border: none;
@@ -1028,14 +1035,6 @@ h1 {
   display: none;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 576px) {
-  .WomenFilterRed {
-    display: none;
-  }
-  .WomenFilterRed-md {
-    display: inline;
-  }
-}
 .UserDetails__head {
   color: var(--black, #231F20);
   font-family: "Lora", serif;
@@ -1056,7 +1055,7 @@ h1 {
   letter-spacing: 0.5px;
   border: 1px solid var(--border, #DAD4D9);
   background: #FFF;
-  width: 40rem;
+  width: 100%;
   height: 3rem;
   border-radius: 4px 4px 0px 0px;
   resize: none;
@@ -1146,7 +1145,16 @@ h1 {
   font-weight: 400;
   line-height: 114.286%;
   text-transform: capitalize;
+}
+.Order__remove__button {
+  border: none;
+  background-color: white;
   margin-right: 15rem;
+  size: auto;
+}
+.Order__remove__button:focus {
+  border: none;
+  background-color: white;
 }
 .Order__name1 {
   overflow: hidden;

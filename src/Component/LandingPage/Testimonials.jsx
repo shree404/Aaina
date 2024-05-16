@@ -52,7 +52,7 @@ function Testimonials(){
                     <Row className='justify-content-md-sm-xs-center'>
                     {testimonialsOfUser.map((testimonial,index) => (
                         <Col md={6} sm={12} xs={12}>
-                     <div class="client-review-container">
+                     <div className="client-review-container">
                         <div className="client-review-container-description">
                           <div>  <Star/> <p>{testimonial.clientDescription}</p>
                           <div className="client-review-container-description-user-description" >
@@ -73,7 +73,7 @@ function Testimonials(){
                     <Row className='justify-content-md-sm-xs-center'>
                     {testimonialsOfUser.map((testimonial,index) => (
                         <Col md={12} sm={12} xs={12}>
-                     <div class="client-review-container">
+                     <div className="client-review-container">
                         <div className="client-review-container-description">
                           <div>  <Star/> <p>{testimonial.clientDescription}</p>
                           <div className="client-review-container-description-user-description" >
