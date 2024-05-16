@@ -14,8 +14,16 @@ import up from "../../Assets/ProductLehenga/4.svg";
 import down from "../../Assets/ProductLehenga/3.svg";
 import LehengaDescription from "./description";
 import InformationLehenga from "./Information";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import OrderSummary from "../../Pages/orderSummary";
+import UserDetails from "../../Pages/UserDetails";
 
-function ProductImages() {
+function ProductImages({ placement }) {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const [quantity, setQuantity] = useState(1);
 
   const decreaseValue = () => {
@@ -28,19 +36,18 @@ function ProductImages() {
     setQuantity(quantity + 1);
   };
 
-  const [togglefirst , setTogglefirst] = useState(true);
-  const [togglesecond , setTogglesecond]=useState(false);
+  const [togglefirst, setTogglefirst] = useState(true);
+  const [togglesecond, setTogglesecond] = useState(false);
 
-
-   const showComponent = (component) => {
-        if (component === 'LehengaDescription') {
-          setTogglefirst(true);
-            setTogglesecond(false);
-        } else if (component === 'InformationLehenga') {
-          setTogglefirst(false);
-          setTogglesecond(true);
-        }
-    };
+  const showComponent = (component) => {
+    if (component === "LehengaDescription") {
+      setTogglefirst(true);
+      setTogglesecond(false);
+    } else if (component === "InformationLehenga") {
+      setTogglefirst(false);
+      setTogglesecond(true);
+    }
+  };
 
   return (
     <>
@@ -188,28 +195,62 @@ function ProductImages() {
                     {" "}
                     Add to Bag
                   </button>{" "}
-                  <button className="LehengaImages-description__buttonbuy">
+                  <button
+                    onClick={handleShow}
+                    className="LehengaImages-description__buttonbuy"
+                  >
                     {" "}
                     <img src={whatsapp} alt="Icon of Whatsapp" /> Buy Now
                   </button>
+                  <>
+                    <Offcanvas
+                      show={show}
+                      placement='end'
+                      onHide={handleClose}
+                      id="OrderSummary"
+                    >
+                      <Offcanvas.Header closeButton>
+                        <Offcanvas.Title>
+                          {" "}
+                          <span className="OrderSummary__header">
+                            Order Summary
+                          </span>{" "}
+                          <span className="OrderSummary__header1">
+                            {" "}
+                            (2) items
+                          </span>{" "}
+                        </Offcanvas.Title>
+                      </Offcanvas.Header>
+                      <Offcanvas.Body>
+                        <OrderSummary />
+                      </Offcanvas.Body>
+                    </Offcanvas>
+                  </>
                 </span>
               </p>
             </Col>
           </Row>
           <Row>
             <Col>
-              <button className="LehengaImages-Row2__button" onClick={() => showComponent('LehengaDescription')}>
+              <button
+                className="LehengaImages-Row2__button"
+                onClick={() => showComponent("LehengaDescription")}
+              >
                 Description
               </button>
-              <button className="LehengaImages-Row2__button"  onClick={() => showComponent('InformationLehenga')}>
+              <button
+                className="LehengaImages-Row2__button"
+                onClick={() => showComponent("InformationLehenga")}
+              >
                 INFORMATION
               </button>
             </Col>
           </Row>
           <Row>
             <Col md={12}>
-            {togglefirst && <LehengaDescription/> }
-            {togglesecond &&  <InformationLehenga/>}</Col>
+              {togglefirst && <LehengaDescription />}
+              {togglesecond && <InformationLehenga />}
+            </Col>
           </Row>
         </Container>
       </div>
@@ -355,28 +396,55 @@ function ProductImages() {
                     {" "}
                     Add to Bag
                   </button>{" "}
-                  <button className="LehengaImages-description__buttonbuy">
+                  <button
+                    onClick={handleShow}
+                    className="LehengaImages-description__buttonbuy"
+                  >
                     {" "}
                     <img src={whatsapp} alt="Icon of Whatsapp" /> Buy Now
                   </button>
+                  {/* <Offcanvas show={show} onHide={handleClose} id="OrderSummary">
+                    <Offcanvas.Header closeButton>
+                      <Offcanvas.Title>
+                        {" "}
+                        <span className="OrderSummary__header">
+                          Order Summary
+                        </span>{" "}
+                        <span className="OrderSummary__header1">
+                          {" "}
+                          (2) items
+                        </span>{" "}
+                      </Offcanvas.Title>
+                    </Offcanvas.Header>
+                    <Offcanvas.Body>
+                      <OrderSummary />
+                    </Offcanvas.Body>
+                  </Offcanvas> */}
                 </span>
               </p>
             </Col>
           </Row>
           <Row>
             <Col>
-              <button className="LehengaImages-Row2__button"  onClick={() => showComponent('LehengaDescription')} >
+              <button
+                className="LehengaImages-Row2__button"
+                onClick={() => showComponent("LehengaDescription")}
+              >
                 Description
               </button>
-              <button className="LehengaImages-Row2__button" onClick={() => showComponent('InformationLehenga')}>
+              <button
+                className="LehengaImages-Row2__button"
+                onClick={() => showComponent("InformationLehenga")}
+              >
                 INFORMATION
               </button>
             </Col>
           </Row>
           <Row>
             <Col md={12}>
-            {togglefirst && <LehengaDescription/> }
-            {togglesecond &&  <InformationLehenga/>}</Col>
+              {togglefirst && <LehengaDescription />}
+              {togglesecond && <InformationLehenga />}
+            </Col>
           </Row>
         </Container>
       </div>
@@ -385,3 +453,7 @@ function ProductImages() {
 }
 
 export default ProductImages;
+
+function Example() {
+  return <ProductImages placement="end" />;
+}

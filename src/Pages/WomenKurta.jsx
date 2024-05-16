@@ -1,16 +1,16 @@
 import Nav from "../Component/LandingPage/Nav";
 import Footer from "../Component/LandingPage/Footer";
-import Womenbreadcrum from "../Component/Women/Breadcrum";
+import WomenKurtaBreadcrum from "../Component/Kurta/Breadcrum";
 
-function Women(){
+
+function WomenKurta(){
     return(
         <>
         <Nav/>
-        <Womenbreadcrum/>
-        {/* <WomenFilterRed/> */}
+        <WomenKurtaBreadcrum/>
         <Footer/>
         </>
     )
 }
 
-export default Women;
+export default WomenKurta;

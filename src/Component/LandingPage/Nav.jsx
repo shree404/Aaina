@@ -5,6 +5,7 @@ import Category from "./Category";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [toggle, setToggle] = useState();
@@ -130,11 +131,13 @@ function Nav() {
                       id="MobileNav-Container__Dropdownbutton"
                       title="Women"
                     >
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Kurti</Dropdown.Item>
+                      <Link id="MobileNav-Container__Dropdownitem" to ='/women-kurta'>
+                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Kurti</Dropdown.Item> </Link>
                       <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Clothing</Dropdown.Item>
                       <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Saree</Dropdown.Item>
                       <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Wedding Dresses</Dropdown.Item>
-                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Lehenga</Dropdown.Item>
+                      <Link id="MobileNav-Container__Dropdownitem" to ='/women-kurta'>
+                      <Dropdown.Item id="MobileNav-Container__Dropdownitem" as="button">Lehenga</Dropdown.Item> </Link>
                     </DropdownButton>
                   </div>
                   <div>

@@ -8,6 +8,9 @@ import downarrow from "../../Assets/Women/ChevronDownOutline.svg";
 import { useState } from "react";
 import SelectCategoryWomen from "./SelectCategory";
 import WomenFilter from "./Filter";
+import WomenProductList from "./ProductWomen";
+import WomenCategoryColor from "./CategoryColor";
+// import LehengaColor from "../Lehenga/CategoryColor";
 
 function Womenbreadcrum() {
   const [category, setCategory] = useState();
@@ -15,12 +18,22 @@ function Womenbreadcrum() {
   const CategorySelect = () => {
     setCategory(!category);
   };
+
+
+  const [selectedColor, setSelectedColor] = useState(null);
+  const handleFilterChange = (selectedColors) => {
+    if (selectedColors.length > 0) {
+      setSelectedColor(selectedColors[0]);
+    } else {
+      setSelectedColor(null);
+    }
+  };
+
   return (
     <>
-      <div className="WomenBreadcrum">
-        <Container>
-          <Row>
-            <Col md={2} sm={8} xs={8}>
+      <div>
+          <div className="WomenBreadcrum">
+            <div className="WomenBreadcrum__normal">
               <p className="WomenBreadcrum-p">
                 <span>
                   <Link to="/" className="WomenBreadcrum-p__t1">
@@ -36,44 +49,39 @@ function Womenbreadcrum() {
                   </Link>
                 </span>
               </p>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div className="WomenFilter">
-        <Container>
-          <Row>
-            <Col >
-              <p>
-                <span className="WomenFilter__1">Filters</span>{" "}
-                <img src={filter} alt="" />
-              </p>
-            </Col>
-            <Col >
-              <div className="WomenFilters">
-                <button className="WomenFilter-b">
-                <button className="WomenFilter-select" onClick={CategorySelect}>
-                  {" "}
-                  <span className="WomenFilter-select-Container__prefix">
-                    {" "}
-                    Sort By : Best Match{" "}
-                  </span>{" "}
-                  &nbsp; &nbsp;
-                  <img src={downarrow} alt="" />{" "} 
-                  </button>
-                  {category && <SelectCategoryWomen />}
-                </button>
-              </div>
-            </Col>
-          </Row>
-          <div>
-            <Row>
-                <Col>
-                <WomenFilter/>
-                </Col>
-            </Row>
+            </div>
           </div>
-        </Container>
+        <div className="WomenFilter">
+          <p>
+            <span className="WomenFilter__1">Filters</span>{" "}
+            <img src={filter} alt="" />
+          </p>
+          <div className="WomenFilters">
+            <button className="WomenFilter-select" onClick={CategorySelect}>
+              {" "}
+              <span className="WomenFilter-select-Container__prefix">
+                {" "}
+                Sort By : Best Match{" "}
+              </span>{" "}
+              &nbsp; &nbsp;
+              <img src={downarrow} alt="" />{" "}
+            </button>
+            {category && <SelectCategoryWomen />}
+          </div>
+        </div>
+          <Container>
+            <Row>
+              <Col sm={12} xs={12}>
+                  <WomenFilter />
+                  <WomenCategoryColor  onFilterChange={handleFilterChange}/>
+              </Col>
+              <Col sm={12} xs={12} >
+                <div className="WomenBreadcrum-lastrow__col2">
+                  <WomenProductList selectedColor={selectedColor} />
+                </div>
+              </Col>
+            </Row>
+            </Container>
       </div>
     </>
   );

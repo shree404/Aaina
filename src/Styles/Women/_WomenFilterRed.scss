@@ -1,21 +1,40 @@
 .WomenFilterRed{
+    text-align: center;
+    margin-top: 2rem;
     &-container{
-        text-align: center;
         font-style: normal;
         font-family: "Taviraj", serif;
         color: var(--neutral-900, #18181B);
+        margin-left: 0.5rem;
+        text-decoration: none;
     }
     &__name{
+        margin-top: 1rem;
 font-size: 1rem;
 font-weight: 500;
 line-height: 137.5%;
 letter-spacing: 0.02rem;
 text-transform: capitalize;
+
     }
     &__price{
 font-size: 1.12rem;
 font-weight: 500;
 line-height:  111.111% ;
 letter-spacing: 0.034rem;
+margin-bottom: 1rem;
+    }
+}
+
+.WomenFilterRed-md{
+    display: none;
+}
+
+@media screen and (max-width:1024px) and (min-width:576px) {
+    .WomenFilterRed{
+        display: none;
+    }
+    .WomenFilterRed-md{
+        display: inline;
     }
 }

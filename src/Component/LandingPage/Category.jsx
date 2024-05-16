@@ -14,11 +14,15 @@ function Category({ Close }) {
               <dt className="categoryContainer__Topic">Women</dt>
               </Link>
               <hr className="categoryContainer__Line" />
+              <Link className="categoryContainer__list" to="/women-kurta" >
               <dt className="categoryContainer__list">Kurti</dt>
+              </Link>
               <dt className="categoryContainer__list">Clothing</dt>
               <dt className="categoryContainer__list">Saree</dt>
               <dt className="categoryContainer__list">Wedding Dresses</dt>
+              <Link className="categoryContainer__list" to="/women-lehenga" >
               <dt className="categoryContainer__list">Lehenga</dt>
+              </Link>
             </dl>
           </div>
           <div className="categoryContainer-Men">
@@ -44,8 +48,10 @@ function Category({ Close }) {
             </dl>
           </div>
           <div className="categoryContainer-Lehenga">
+          <Link  className="categoryContainer-Lehenga" to='/product-lehenga'>
             <img src={image} alt="Image of Lehenga" />
             <p className="categoryContainer-Lehenga__p">New designer Lehenga</p>
+            </Link>
           </div>
           <div className="categoryContainer-cancel">
             <button
