@@ -144,6 +144,7 @@
 }
 #MobileNav-Container__Dropdownitem {
   font-size: 1.25rem;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 576px) {
@@ -213,6 +214,8 @@
   font-size: 0.99rem;
   font-weight: 400;
   margin-top: 1rem;
+  text-decoration: none;
+  color: var(--neutral-900, #18181B);
 }
 .categoryContainer-Men {
   width: 20%;
@@ -227,6 +230,8 @@
   height: auto;
   text-align: center;
   background-color: #F4F4F5;
+  text-decoration: none;
+  color: #18181B;
 }
 .categoryContainer-Lehenga__p {
   text-align: center;
@@ -700,6 +705,26 @@ h1 {
     display: inline;
   }
 }
+.OrderSummary__header {
+  color: var(--black, #231F20);
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+  text-transform: capitalize;
+}
+
+.OrderSummary__header1 {
+  color: var(--neutral-600, #52525B);
+  text-align: center;
+  font-family: Lora;
+  font-size: 0.88rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 .Description {
   color: var(--neutral-700, #3F3F46);
   font-family: "Taviraj", serif;
@@ -786,12 +811,17 @@ h1 {
 .WomenBreadcrum {
   width: 100%;
   background-color: #f5f5f5;
-  align-content: center;
+  align-content: start;
   font-family: "Taviraj", serif;
   text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 0.88rem;
+}
+.WomenBreadcrum__normal {
+  display: flex;
+  justify-content: start;
+  margin-left: 8rem;
 }
 .WomenBreadcrum-p {
   margin-top: 0.85rem;
@@ -813,10 +843,8 @@ h1 {
   font-family: "Taviraj", serif;
   font-style: normal;
   margin-top: 2rem;
-}
-.WomenFilters {
   display: flex;
-  justify-content: end;
+  justify-content: space-around;
 }
 .WomenFilter-b {
   border: none;
@@ -825,9 +853,6 @@ h1 {
 .WomenFilter-b:focus {
   border: none;
   background-color: white;
-}
-.WomenFilter__1 {
-  margin-left: 2rem;
 }
 .WomenFilter-select {
   height: 3rem;
@@ -847,7 +872,6 @@ h1 {
 
 .Option {
   width: 15rem;
-  margin-left: -0.75rem;
   display: flex;
   flex-direction: column;
 }
@@ -879,6 +903,7 @@ h1 {
 
 .CategoriesWomen {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   font-family: "Taviraj", serif;
 }
@@ -895,6 +920,8 @@ h1 {
   height: 2rem;
   width: 11rem;
   border-left: #000 3px solid;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 .CategoriesWomen__button2 {
   height: 2rem;
@@ -910,13 +937,50 @@ h1 {
   background-color: white;
 }
 .CategoriesWomen__button2:hover {
-  color: #EE636F;
+  color: #ee636f;
 }
 .CategoriesWomen__line1 {
   display: none;
 }
 .CategoriesWomen__buttonCon {
   display: flex;
+  flex-wrap: wrap;
+}
+.CategoriesWomen__buttonmin {
+  color: var(--neutral-900, #18181b);
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133.333%;
+  text-transform: capitalize;
+  border: #e6e6e6 solid 1.5px;
+  border-radius: 4px;
+  width: 5rem;
+  height: 2.5rem;
+  background-color: white;
+}
+.CategoriesWomen__buttonmin:focus {
+  border: none;
+  background-color: #ee636f;
+  color: var(--0, #fdf6fb);
+}
+.CategoriesWomen__pricefilter {
+  display: flex;
+  gap: 1rem;
+}
+.CategoriesWomen__buttonapply {
+  width: 6rem;
+  height: 2.5rem;
+  color: var(--0, #fdf6fb);
+  text-align: center;
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133.333%;
+  text-transform: capitalize;
+  background-color: #ee636f;
+  border: none;
+  border-radius: 4px;
 }
 
 .ColorOptionWomen {
@@ -925,17 +989,27 @@ h1 {
 .ColorOptionWomen__color {
   border: none;
   background-color: white;
-  margin-top: 2rem;
-  margin-right: 0.5rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.ColorOptionWomen__colors {
+  display: flex;
+  flex-direction: row;
 }
 
-.WomenFilterRed-container {
+.WomenFilterRed {
   text-align: center;
+  margin-top: 2rem;
+}
+.WomenFilterRed-container {
   font-style: normal;
   font-family: "Taviraj", serif;
   color: var(--neutral-900, #18181B);
+  margin-left: 0.5rem;
+  text-decoration: none;
 }
 .WomenFilterRed__name {
+  margin-top: 1rem;
   font-size: 1rem;
   font-weight: 500;
   line-height: 137.5%;
@@ -947,4 +1021,192 @@ h1 {
   font-weight: 500;
   line-height: 111.111%;
   letter-spacing: 0.034rem;
+  margin-bottom: 1rem;
+}
+
+.WomenFilterRed-md {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 576px) {
+  .WomenFilterRed {
+    display: none;
+  }
+  .WomenFilterRed-md {
+    display: inline;
+  }
+}
+.UserDetails__head {
+  color: var(--black, #231F20);
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+  text-transform: capitalize;
+}
+
+#userdetails {
+  color: var(--text-2, #49454F);
+  font-family: "Tenor Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  border: 1px solid var(--border, #DAD4D9);
+  background: #FFF;
+  width: 40rem;
+  height: 3rem;
+  border-radius: 4px 4px 0px 0px;
+  resize: none;
+}
+#userdetails:focus {
+  background-color: none;
+  box-shadow: none;
+}
+
+.userdetails__goback {
+  border: none;
+  border-radius: 6px;
+  height: 3rem;
+  width: 15rem;
+  background-color: var(--text-200, #F2F4F8);
+  color: var(--neutral-700, #3F3F46);
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 1.12rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-top: 5.5rem;
+  margin-left: 1rem;
+}
+.userdetails__whatsapporder {
+  border: none;
+  height: 3rem;
+  width: 20rem;
+  border-radius: 6px;
+  background-color: var(--primary-700, #018937);
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 1.12rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.Order__name {
+  overflow: hidden;
+  color: var(--neutral-800, #27272a);
+  text-overflow: ellipsis;
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.5%;
+  text-transform: capitalize;
+  margin-right: 7rem;
+}
+.Order__price {
+  overflow: hidden;
+  color: var(--neutral-800, #27272a);
+  text-overflow: ellipsis;
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.5%;
+  text-transform: capitalize;
+}
+.Order__sizename {
+  color: var(--neutral-600, #52525b);
+  font-family: "Lora", serif;
+  font-size: 0.88rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+  text-transform: capitalize;
+}
+.Order__size {
+  color: var(--neutral-600, #52525b);
+  font-family: "Tenor Sans";
+  font-size: 0.88rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 114.286%;
+  text-transform: capitalize;
+}
+.Order__remove {
+  color: var(--neutral-400, #a1a1aa);
+  font-family: "Tenor Sans";
+  font-size: 0.88rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 114.286%;
+  text-transform: capitalize;
+  margin-right: 15rem;
+}
+.Order__name1 {
+  overflow: hidden;
+  color: var(--neutral-800, #27272a);
+  text-overflow: ellipsis;
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.5%;
+  text-transform: capitalize;
+  margin-right: 10rem;
+}
+.Order__priceing {
+  color: var(--neutral-600, #52525b);
+  font-family: "Tenor Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.Order__total {
+  color: var(--black, #231f20);
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+.Order__totalprice {
+  color: var(--black, #231f20);
+  text-align: right;
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+.Order__button {
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-700, #018937);
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 1.12rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  height: 3rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+#OrderSummary {
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  #OrderSummary {
+    width: 100%;
+  }
 }/*# sourceMappingURL=App.css.map */

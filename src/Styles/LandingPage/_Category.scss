@@ -27,6 +27,8 @@
         font-size: 0.99rem;
         font-weight: 400;
         margin-top: 1rem;
+        text-decoration: none;
+        color: var(--neutral-900, #18181B);
     }
     &-Men{
         width: 20%;
@@ -41,6 +43,8 @@
         height: auto;
         text-align: center;
         background-color: #F4F4F5;
+        text-decoration: none;
+        color: #18181B;
         &__p{
             text-align: center;
             font-family: "Tenor Sans";

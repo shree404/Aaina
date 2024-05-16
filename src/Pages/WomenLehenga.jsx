@@ -1,16 +1,15 @@
+import WomenLehengaBreadcrum from "../Component/Lehenga/Breadcrom";
 import Nav from "../Component/LandingPage/Nav";
 import Footer from "../Component/LandingPage/Footer";
-import Womenbreadcrum from "../Component/Women/Breadcrum";
 
-function Women(){
+function WomenLehenga(){
     return(
         <>
         <Nav/>
-        <Womenbreadcrum/>
-        {/* <WomenFilterRed/> */}
+        <WomenLehengaBreadcrum/>
         <Footer/>
         </>
     )
 }
 
-export default Women;
+export default WomenLehenga;
