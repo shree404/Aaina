@@ -1,0 +1,28 @@
+
+.Terms{
+    $font :  "Taviraj", serif;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    &__heading{
+        color:var(--neutral-900, #18181B);
+        font-size: 1.75rem;
+        font-family: $font;
+        margin-bottom: 3rem;
+    }
+    &__paragraph{
+        color: var(--neutral-900, #18181B);
+        font-size: 1rem;
+        font-family: $font;
+        line-height: 170%;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .Terms{
+        margin-top: 2rem;
+    }
+    
+}

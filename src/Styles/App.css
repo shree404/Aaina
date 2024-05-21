@@ -1374,4 +1374,29 @@ h1 {
   .ReturnPolicy {
     margin-top: 2rem;
   }
+}
+.Terms {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.Terms__heading {
+  color: var(--neutral-900, #18181B);
+  font-size: 1.75rem;
+  font-family: "Taviraj", serif;
+  margin-bottom: 3rem;
+}
+.Terms__paragraph {
+  color: var(--neutral-900, #18181B);
+  font-size: 1rem;
+  font-family: "Taviraj", serif;
+  line-height: 170%;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1023px) {
+  .Terms {
+    margin-top: 2rem;
+  }
 }/*# sourceMappingURL=App.css.map */
