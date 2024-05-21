@@ -25,7 +25,9 @@ function Nav() {
       <nav className="Navbar">
         <div className="navBar">
           <div className="Navbar-Container__logo">
+            <Link to ="/" className="Navbar-Container__logo">
             <img src={nav} alt="Logo of Aina" />
+            </Link>
           </div>
 
           <div className="Navbar-Container-middleSection">
