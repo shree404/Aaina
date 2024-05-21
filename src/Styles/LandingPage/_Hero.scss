@@ -1,3 +1,10 @@
 .Hero-image{
     width: 100%;
+    margin-top: 10rem;
+}
+
+@media screen and (max-width:1023px) {
+    .Hero-image{
+        margin-top: 2rem;
+    }
 }

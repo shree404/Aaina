@@ -117,15 +117,13 @@ function WomenProductList({ products, selectedColor }) {
         <div className="WomenFilterRed">
           <Row>
             { filteredProducts.map((product, index) => (
-              <Col>
+              <Col md={4}>
                 <div key={index}>
-                  <article >
                     <Link className="WomenFilterRed-container" to ="/product-lehenga">
                     <img src={product.Image} alt="Image of Maroon Lehenga" />
                     <p className="WomenFilterRed__name">{product.Name} </p>
                     <p className="WomenFilterRed__price"> {product.price} </p>
                     </Link>
-                  </article>
                 </div>
               </Col>
             ))}

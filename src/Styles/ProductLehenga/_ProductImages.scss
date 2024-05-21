@@ -2,6 +2,7 @@
   $Taviraj: "Taviraj", serif;
   $Lora: "Lora", serif;
   font-style: normal;
+  margin-top: 10rem;
   &-col1 {
     display: flex;
     flex-wrap: wrap;
@@ -204,4 +205,10 @@ font-size: 0.88rem;
 font-style: normal;
 font-weight: 400;
 line-height: 150% ;
+}
+
+@media screen and (max-width:1023px) {
+  .LehengaImages{
+      margin-top: 2rem;
+  }
 }

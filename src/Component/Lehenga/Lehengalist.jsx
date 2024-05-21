@@ -47,7 +47,7 @@ function WomenLehengaList({products, selectedColor }){
         <div className="WomenFilterRed">
           <Row>
             {filteredProducts.map((product, index) => (
-              <Col >
+              <Col md={4} >
                 <div key={index}>
                   <article className="WomenFilterRed-container">
                     <Link className="WomenFilterRed-container" to ='/product-lehenga'>
