@@ -1,0 +1,27 @@
+.FooterMob{
+    border-top: 1px solid #5F5F5F;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    &-Button{
+        border: none;
+        margin-top: 2rem;
+        background-color: none;
+        color: #5F5F5F;
+        font-size: 0.82rem;
+        background-color: white;
+        margin-bottom: 2rem;
+
+        #FooterMob-Button__icon{
+            fill: #5F5F5F;
+          }
+        &:hover{
+            color: #EE626F;
+            #FooterMob-Button__icon{
+                fill: #EE626F; 
+            }
+        }
+    }
+}

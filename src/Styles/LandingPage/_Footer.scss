@@ -48,3 +48,17 @@
     }
   }
 }
+
+
+.FooterMob{
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+ .FooterMob{
+  display: inline;
+ } 
+ .footer{
+  display: none;
+}
+}
