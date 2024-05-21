@@ -73,10 +73,10 @@ function WomenLehengaBreadcrum() {
           </div>
         </div>
           <Row>
-            <Col>
+            <Col md={4}>
               <WomenCategoryColor onFilterChange={handleFilterChange} />
             </Col>
-            <Col>
+            <Col md={8}>
               <WomenLehengaList selectedColor={selectedColor} />
             </Col>
           </Row>

@@ -68,11 +68,11 @@ function Womenbreadcrum() {
           </div>
         </div>
         <Row>
-          <Col >
+          <Col md={4} >
             <WomenFilter />
             <WomenCategoryColor onFilterChange={handleFilterChange} />
           </Col>
-          <Col >
+          <Col md={8} >
             <WomenProductList selectedColor={selectedColor} />
           </Col>
         </Row>

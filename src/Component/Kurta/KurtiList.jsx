@@ -39,27 +39,10 @@ function KurtiList({ products, selectedColor }){
         <div className="WomenFilterRed">
           <Row>
             {filteredProducts.map((product, index) => (
-              <Col >
+              <Col md={4} >
                 <div key={index}>
                   <article className="WomenFilterRed-container">
                     <Link className="WomenFilterRed-container" to ='/product-lehenga'>
-                    <img src={product.Image} alt="Image of Maroon Lehenga" />
-                    <p className="WomenFilterRed__name">{product.Name} </p>
-                    <p className="WomenFilterRed__price"> {product.price} </p>
-                    </Link>
-                  </article>
-                </div>
-              </Col>
-            ))}
-          </Row>
-        </div>
-        <div className="WomenFilterRed-md">
-          <Row>
-            {imageArray.map((product, index) => (
-              <Col md={6} xs={12} sm={12}>
-                <div key={index}>
-                  <article className="WomenFilterRed-container">
-                    <Link  className="WomenFilterRed-container" to ="/product-lehenga">
                     <img src={product.Image} alt="Image of Maroon Lehenga" />
                     <p className="WomenFilterRed__name">{product.Name} </p>
                     <p className="WomenFilterRed__price"> {product.price} </p>

@@ -74,10 +74,10 @@ function WomenKurtaBreadcrum() {
           </div>
         </div>
         <Row>
-          <Col md={{order:1}} sm={{order:1, span:12}} xs={{order:1,span:12}}>
+          <Col md={4} >
             <WomenCategoryColor onFilterChange={handleFilterChange} />
           </Col>
-          <Col  md={{order:2}} sm={{order:2, span:12}} xs={{order:2,span:12}}>
+          <Col  md={8}>
             <KurtiList selectedColor={selectedColor} />
           </Col>
         </Row>
