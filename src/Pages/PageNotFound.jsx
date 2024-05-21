@@ -1,4 +1,4 @@
-import img from '../Assets/notfound.png';
+import img from '../Assets/NotFound/notfound.png';
 import { Link } from "react-router-dom";
 import Nav from '../Component/LandingPage/Nav';
 import Footer from '../Component/LandingPage/Footer';

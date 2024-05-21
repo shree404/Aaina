@@ -10,6 +10,7 @@ import Women from "./Pages/Women";
 import WomenLehenga from "./Pages/WomenLehenga";
 import WomenKurta from "./Pages/WomenKurta";
 import PageNotFound from "./Pages/PageNotFound";
+import AboutUsPage from "./Pages/AboutUsPage";
 
 
 const router = createBrowserRouter(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route path="/women" element={<Women/>} />,
       <Route path="/women-lehenga" element={<WomenLehenga/>} />,
       <Route path="/women-kurta" element={<WomenKurta/>} />,
+      <Route path="/aboutus" element={<AboutUsPage/>} />,
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )

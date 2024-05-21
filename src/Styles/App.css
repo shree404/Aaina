@@ -1262,7 +1262,7 @@ h1 {
   justify-content: center;
   margin-top: 10rem;
   text-align: center;
-  color: #1d2a35;
+  color: var(--secondary-500, #2A2940);
   font-family: "Taviraj", serif;
   margin-bottom: 5rem;
 }
@@ -1286,6 +1286,33 @@ h1 {
 
 @media screen and (max-width: 1023px) {
   .NotFound {
+    margin-top: 2rem;
+  }
+}
+.AboutUs {
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  font-family: "Taviraj", serif;
+}
+.AboutUs__head {
+  color: var(--secondary-500, #2A2940);
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+}
+.AboutUs__des {
+  color: var(--secondary-500, #2A2940);
+  font-size: 1rem;
+  line-height: 192%;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+.AboutUs__img {
+  height: 436px;
+  width: 436px;
+}
+
+@media screen and (max-width: 1023px) {
+  .AboutUs {
     margin-top: 2rem;
   }
 }/*# sourceMappingURL=App.css.map */

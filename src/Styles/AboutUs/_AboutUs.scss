@@ -1,0 +1,27 @@
+.AboutUs{
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    font-family:  "Taviraj", serif;
+    &__head{
+        color: var(--secondary-500, #2A2940);
+        margin-bottom: 2rem;
+        font-size: 1.75rem;
+    }
+    &__des{
+color: var(--secondary-500, #2A2940);
+font-size: 1rem;
+line-height: 192%;
+letter-spacing: 0.5px;
+font-weight: 300;
+    }
+    &__img{
+        height: 436px;
+        width: 436px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .AboutUs{
+        margin-top: 2rem;
+    }
+}

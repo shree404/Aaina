@@ -1,5 +1,5 @@
 import { useState } from "react";
-import arrow from "../Assets/arrow_back.svg";
+import arrow from "../Assets/UserDetails/arrow_back.svg";
 import whatsapp from "../Assets/ProductLehenga/whatsapp.svg";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
