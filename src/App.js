@@ -13,6 +13,7 @@ import PageNotFound from "./Pages/PageNotFound";
 import AboutUsPage from "./Pages/AboutUsPage";
 import ReturnPolicyPage from "./Pages/ReturnPolicyPage";
 import PrivacyPolicyPage from "./Pages/PrivacyPolicyPage";
+import DeliveryTermsPage from "./Pages/DeliveryTermsPage";
 
 
 const router = createBrowserRouter(
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
       <Route path="/aboutus" element={<AboutUsPage/>} />,
       <Route path="/return-policy" element={<ReturnPolicyPage/>} />,
       <Route path="/privacy" element={<PrivacyPolicyPage/>} />,
+      <Route path="/delivery-terms" element={<DeliveryTermsPage/>} />,
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )
