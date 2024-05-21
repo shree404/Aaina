@@ -1339,4 +1339,39 @@ h1 {
   .AboutUs {
     margin-top: 2rem;
   }
+}
+.ReturnPolicy {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  font-family: "Taviraj", serif;
+}
+.ReturnPolicy__head {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--neutral-900, #18181B);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  line-height: 1.2rem;
+}
+.ReturnPolicy__paragraph {
+  font-size: 1rem;
+  color: var(--neutral-900, #18181B);
+  line-height: 170%;
+  font-weight: 400;
+}
+
+.DeliveryTerms__subheading {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-family: "Taviraj", serif;
+  line-height: 170%;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1023px) {
+  .ReturnPolicy {
+    margin-top: 2rem;
+  }
 }/*# sourceMappingURL=App.css.map */
