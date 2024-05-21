@@ -1,0 +1,55 @@
+.FAQs {
+  color: var(--neutral-800, #27272a);
+  font-family: "Taviraj", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  &__head {
+    font-size: 2.25rem;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-left: 1.3rem;
+    margin-top: 3rem;
+  }
+  &__subhead {
+    font-size: 1.5rem;
+    line-height: 32px; /* 133.333% */
+    text-transform: capitalize;
+    margin-left: 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.accordion {
+    &-item{
+        border: none;
+       margin-bottom: 1rem;
+    }
+  &-button {
+    background-color: #f5f5f5;
+    &:focus {
+      outline: none !important;
+      box-shadow: none;
+      background-color: white;
+      color:  var(--neutral-700, #3f3f46);
+    }
+  }
+  &-header {
+    color: var(--neutral-700, #3f3f46);
+    font-family: "Taviraj", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    background-color: #f5f5f5;
+  }
+  &-body {
+    color: var(--neutral-700, #3f3f46);
+    font-family: "Taviraj", sans-serif;
+    font-size: 0.88rem;
+    font-style: normal;
+    font-weight: 400;
+    background-color: white;
+    line-height: 20px;
+  }
+}

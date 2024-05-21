@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import FooterMob from "./FooterMob";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -24,7 +25,8 @@ function Footer() {
               <Col md={3} sm={6} xs={12}>
                 <dl>
                   <dt className="footer-container-list__DT">Category</dt>
-                  <dd className="footer-container-list__DD">Women</dd>
+                  <dd className="footer-container-list__DD">
+                   <Link  className="footer-link" to="/women"> Women  </Link></dd>
                   <dd className="footer-container-list__DD">Men</dd>
                   <dd className="footer-container-list__DD">Bridals</dd>
                 </dl>
@@ -157,8 +159,9 @@ function Footer() {
             </Col>
             <Col md={{ span: 6, order: 2 }}>
               <menu className="footer-end-section-privacy">
-                <li>Terms &nbsp; &nbsp;</li>
-                <li> Privacy Policy &nbsp;</li>
+                <li> <Link to ="/terms-conditions" className="footer-link">
+                  Terms </Link> &nbsp; &nbsp;</li>
+                <li> <Link to ="/privacy" className="footer-link"> Privacy Policy </Link> &nbsp;</li>
                 <li> &nbsp;© 2024 &nbsp; Aina</li>
               </menu>
             </Col>
