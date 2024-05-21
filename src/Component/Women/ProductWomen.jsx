@@ -112,7 +112,6 @@ function WomenProductList({ products, selectedColor }) {
 
   return (
     <>
-    
       <Container>
         <div className="WomenFilterRed">
           <Row>
