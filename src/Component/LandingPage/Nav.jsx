@@ -3,8 +3,6 @@ import nav from "../../Assets/LandingPage/logo.png";
 import menu from "../../Assets/LandingPage/menu.png";
 import Category from "./Category";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
 import { Link } from "react-router-dom";
 import OrderSummary from "../../Pages/orderSummary";
 import NavMobile from "./NavMob.jsx";

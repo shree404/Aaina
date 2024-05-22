@@ -583,6 +583,7 @@ h1 {
   font-size: 0.82rem;
   background-color: white;
   margin-bottom: 2rem;
+  text-decoration: none;
 }
 .FooterMob-Button #FooterMob-Button__icon {
   fill: #5F5F5F;
@@ -592,6 +593,27 @@ h1 {
 }
 .FooterMob-Button:hover #FooterMob-Button__icon {
   fill: #EE626F;
+}
+
+.More-policies {
+  color: #ee636f;
+  font-size: 1.5rem;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.More-link {
+  text-decoration: none;
+}
+
+.list-group {
+  margin-bottom: 2rem;
+}
+.list-group-item {
+  font-family: "Taviraj", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .LehengaImages {
