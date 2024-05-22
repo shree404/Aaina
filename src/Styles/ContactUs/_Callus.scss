@@ -1,0 +1,23 @@
+.Callus {
+  color: #181717;
+  font-family: "Taviraj", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 5rem;
+  &-p1 {
+    font-size: 1.5rem;
+    line-height: 32px;
+  }
+  &-p2 {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  &-button {
+    border: none;
+    background-color: white;
+    color: #282828;
+    font-size: 1rem;
+    line-height: 160%; /* 25.6px */
+    text-transform: capitalize;
+  }
+}

@@ -1471,4 +1471,57 @@ h1 {
   font-weight: 400;
   background-color: white;
   line-height: 20px;
+}
+
+.Callus {
+  color: #181717;
+  font-family: "Taviraj", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 5rem;
+}
+.Callus-p1 {
+  font-size: 1.5rem;
+  line-height: 32px;
+}
+.Callus-p2 {
+  font-size: 1rem;
+  line-height: 24px;
+}
+.Callus-button {
+  border: none;
+  background-color: white;
+  color: #282828;
+  font-size: 1rem;
+  line-height: 160%; /* 25.6px */
+  text-transform: capitalize;
+}
+
+.Connectus {
+  font-family: "Taviraj", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.Connectus-p1 {
+  color: #181717;
+  font-size: 1.5rem;
+  line-height: 32px;
+}
+.Connectus-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.Connectus__button {
+  border: none;
+  color: var(--neutral-800, #27272a);
+  font-size: 1rem;
+  line-height: 180%; /* 28.8px */
+  text-transform: capitalize;
+  height: 2rem;
+  width: 10rem;
+  text-align: start;
+  background-color: white;
 }/*# sourceMappingURL=App.css.map */

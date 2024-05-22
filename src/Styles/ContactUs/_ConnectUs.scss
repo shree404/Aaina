@@ -1,0 +1,28 @@
+.Connectus {
+  font-family: "Taviraj", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  &-p1 {
+    color: #181717;
+    font-size: 1.5rem;
+    line-height: 32px;
+  }
+  &-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  &__button {
+    border: none;
+    color: var(--neutral-800, #27272a);
+    font-size: 1rem;
+    line-height: 180%; /* 28.8px */
+    text-transform: capitalize;
+    height: 2rem;
+    width: 10rem;
+    text-align: start;
+    background-color: white;
+  }
+}
