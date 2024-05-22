@@ -17,6 +17,7 @@ import DeliveryTermsPage from "./Pages/DeliveryTermsPage";
 import TermsAndCondition from "./Pages/TermsAndConditionPage";
 import FAQPage from "./Pages/FAQ";
 import ContactUsPage from "./Pages/ContactUs";
+import NoItem from "./Pages/NoItem";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
       <Route path="/terms-conditions" element={<TermsAndCondition/>} />,
       <Route path="/faqs" element={<FAQPage/>} />,
       <Route path="/contactus" element={<ContactUsPage/>} />,
+      <Route path="/empty-cart" element={<NoItem/>} />,
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )
