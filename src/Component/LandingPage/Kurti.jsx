@@ -7,6 +7,7 @@ import kurtha4 from "../../Assets/LandingPage/kurta4.png";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Link } from "react-router-dom";
 
 function Kurti() {
   let kurtiarray = [
@@ -37,7 +38,7 @@ function Kurti() {
         <Container>
           <div>
             <Row className="justify-content-md-sm-xs-center">
-              <Col md={12} sm={12} xs={12} >
+              <Col md={12} sm={12} xs={12}>
                 <h1>kurti</h1>
               </Col>
             </Row>
@@ -85,17 +86,22 @@ function Kurti() {
                     className="product-details-container-single-product"
                   >
                     <article>
-                      <img
-                        src={product.kurtiImage}
-                        alt="Image of Maroon Lehenga"
-                      />
-                      <p className="product-details-container-single-product__name">
-                        {product.kurtiName}{" "}
-                      </p>
-                      <p className="product-details-container-single-product__price">
-                        {" "}
-                        {product.kurtiprice}{" "}
-                      </p>
+                      <Link
+                        to="/product-lehenga"
+                        className="product-details-container-single-product"
+                      >
+                        <img
+                          src={product.kurtiImage}
+                          alt="Image of Maroon Lehenga"
+                        />
+                        <p className="product-details-container-single-product__name">
+                          {product.kurtiName}{" "}
+                        </p>
+                        <p className="product-details-container-single-product__price">
+                          {" "}
+                          {product.kurtiprice}{" "}
+                        </p>
+                      </Link>
                     </article>
                   </div>
                 </Col>
@@ -111,17 +117,22 @@ function Kurti() {
                     className="product-details-container-single-product"
                   >
                     <article>
-                      <img
-                        src={product.kurtiImage}
-                        alt="Image of Maroon Lehenga"
-                      />
-                      <p className="product-details-container-single-product__name">
-                        {product.kurtiName}{" "}
-                      </p>
-                      <p className="product-details-container-single-product__price">
-                        {" "}
-                        {product.kurtiprice}{" "}
-                      </p>
+                      <Link
+                        to="/product-lehenga"
+                        className="product-details-container-single-product"
+                      >
+                        <img
+                          src={product.kurtiImage}
+                          alt="Image of Maroon Lehenga"
+                        />
+                        <p className="product-details-container-single-product__name">
+                          {product.kurtiName}{" "}
+                        </p>
+                        <p className="product-details-container-single-product__price">
+                          {" "}
+                          {product.kurtiprice}{" "}
+                        </p>
+                      </Link>
                     </article>
                   </div>
                 </Col>

@@ -391,34 +391,16 @@ function ProductImages({ placement }) {
                 <br /> <br />
                 <span>
                   {" "}
-                  <button className="LehengaImages-description__buttonadd">
+                  <button onClick={handleShow} className="LehengaImages-description__buttonadd">
                     {" "}
                     Add to Bag
                   </button>{" "}
-                  <button
-                    onClick={handleShow}
+                  <button 
                     className="LehengaImages-description__buttonbuy"
                   >
                     {" "}
                     <img src={whatsapp} alt="Icon of Whatsapp" /> Buy Now
                   </button>
-                  {/* <Offcanvas show={show} onHide={handleClose} id="OrderSummary">
-                    <Offcanvas.Header closeButton>
-                      <Offcanvas.Title>
-                        {" "}
-                        <span className="OrderSummary__header">
-                          Order Summary
-                        </span>{" "}
-                        <span className="OrderSummary__header1">
-                          {" "}
-                          (2) items
-                        </span>{" "}
-                      </Offcanvas.Title>
-                    </Offcanvas.Header>
-                    <Offcanvas.Body>
-                      <OrderSummary />
-                    </Offcanvas.Body>
-                  </Offcanvas> */}
                 </span>
               </p>
             </Col>
