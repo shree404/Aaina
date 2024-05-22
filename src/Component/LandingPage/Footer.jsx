@@ -17,8 +17,8 @@ function Footer() {
                     {" "}
                     How Can We Help?
                   </dt>
-                  <dd className="footer-container-list__DD">Contact</dd>
-                  <dd className="footer-container-list__DD">FAQ</dd>
+                  <dd className="footer-container-list__DD"> <Link className="footer-link" to="/contactus">Contact </Link></dd>
+                  <dd className="footer-container-list__DD"> <Link className="footer-link" to="/faqs">FAQ </Link></dd>
                   <dd className="footer-container-list__DD">Our Brand</dd>
                 </dl>
               </Col>

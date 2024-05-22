@@ -1,0 +1,21 @@
+.More-policies {
+  color: #ee636f;
+  font-size: 1.5rem;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.More-link{
+    text-decoration: none;
+}
+
+.list-group {
+  margin-bottom: 2rem;
+  &-item {
+    font-family: "Taviraj", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    // border: none;
+  }
+}
