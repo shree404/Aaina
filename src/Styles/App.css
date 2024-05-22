@@ -1617,4 +1617,114 @@ h1 {
 }
 #noItem__svg {
   width: 100%;
+}
+
+.AccountDelete {
+  height: 400px;
+  width: 100%;
+  margin-top: 0rem;
+  background-color: #ffe9e9;
+}
+.AccountDelete-button {
+  background-color: #ffe9e9;
+  border: none;
+  margin-left: 85%;
+}
+.AccountDelete-p {
+  font-family: "Taviraj", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: #282828;
+}
+.AccountDelete-delete__button {
+  background-color: #EE636F;
+  font-family: "Taviraj", sans-serif;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+}
+
+.MyAccount {
+  margin-top: 10rem;
+  font-family: "Taviraj", sans-serif;
+}
+.MyAccount-menu {
+  display: flex;
+  flex-direction: column;
+}
+.MyAccount__head {
+  color: #1d2a35;
+  font-size: 1.75rem;
+  line-height: 1.2rem;
+  margin-bottom: 1rem;
+}
+.MyAccount__editbutton {
+  border: none;
+  font-size: 1rem;
+  color: #707070;
+  background-color: white;
+  margin-bottom: 1rem;
+  margin-left: 90%;
+}
+.MyAccount__deletebutton {
+  color: #f03738;
+  border: 1px solid #f03738;
+  background-color: #fcd7d7;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  margin-top: 0.75rem;
+}
+.MyAccount__deletebutton:active {
+  color: white;
+  background-color: #f03738;
+}
+.MyAccount__deletebutton:hover {
+  color: white;
+  background-color: #f03738;
+}
+
+.account {
+  font-size: 1rem;
+  color: #1d2a35;
+  font-family: "Taviraj", sans-serif;
+  border: none;
+  background-color: white;
+  text-align: start;
+  width: 15rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+}
+.account #MyAccount__icon {
+  fill: #1d2a35;
+}
+.account:hover {
+  background-color: #f0f0f0;
+}
+.account:active {
+  background-color: #EE636F;
+  color: white;
+}
+.account:active #MyAccount__icon {
+  fill: white;
+}
+
+#DeleteAccount {
+  background-color: #ffe9e9;
+  border: none;
+  height: 5rem;
+  align-items: center;
+  border-radius: 0.4rem;
+}
+
+@media screen and (max-width: 576px) {
+  .MyAccount {
+    margin-top: 2rem;
+  }
+  .MyAccount__head {
+    margin-top: 2rem;
+  }
 }/*# sourceMappingURL=App.css.map */
