@@ -1,8 +1,11 @@
 import arrow from "../../Assets/Women/Vector.svg";
 import { Link } from "react-router-dom";
-import { Container,Row, Col } from "react-bootstrap";
 import CallUs from "./callus";
 import ConnectWithUs from "./Connectus";
+import ContactUs from "./ContactUs";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function ContactUsBreadcrum(){
     return(
@@ -27,8 +30,14 @@ function ContactUsBreadcrum(){
         </div>
       </div>
       <Container>
+        <Row className="justify-content-md-center" >
+        <Col md={3} sm={12} xs={12}>
         <CallUs/>
         <ConnectWithUs/>
+        </Col> <Col md={6} sm={12} xs={12}>
+        <ContactUs/>
+        </Col>
+        </Row>
       </Container>
         </>
     )

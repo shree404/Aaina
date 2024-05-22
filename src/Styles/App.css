@@ -1524,4 +1524,41 @@ h1 {
   width: 10rem;
   text-align: start;
   background-color: white;
+}
+
+.ContactUS {
+  font-family: "Taviraj", sans-serif;
+  font-style: normal;
+  margin-bottom: 10rem;
+  margin-top: 2rem;
+}
+.ContactUS-head {
+  color: var(--neutral-800, #27272a);
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.ContactUS-p {
+  color: var(--neutral-800, #27272a);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+.ContactUS-p__word {
+  color: var(--neutral-800, var(--tertiary, #ee636f));
+}
+.ContactUS-button {
+  margin-top: 5rem;
+  color: var(--gray, #F5F5F5);
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 20px;
+  border-radius: 0.5rem;
+  border: 2px solid var(--tertiary, #EE636F);
+  background-color: var(--tertiary, #EE636F);
+  height: 3rem;
+  width: 100%;
 }/*# sourceMappingURL=App.css.map */
