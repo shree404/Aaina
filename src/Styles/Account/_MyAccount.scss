@@ -1,0 +1,82 @@
+
+.MyAccount{
+    margin-top: 10rem;
+    font-family: "Taviraj", sans-serif;
+    &-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    &__head{
+        color: #1d2a35;
+        font-size: 1.75rem;
+        line-height: 1.2rem;
+        margin-bottom: 1rem;
+
+    }
+    &__editbutton{
+        border: none;
+        font-size: 1rem;
+        color: #707070;
+        background-color: white;
+       margin-bottom: 1rem;
+       margin-left: 90%;
+    }
+    &__deletebutton{
+        color: #f03738;
+        border: 1px solid #f03738;
+        background-color: #fcd7d7;
+        height: 2.5rem;
+        border-radius: 0.25rem;
+        margin-top: 0.75rem;
+        &:active{
+            color: white;
+            background-color: #f03738;
+        }
+        &:hover{
+            color: white;
+            background-color: #f03738; 
+        }
+    }
+}
+
+.account{
+    font-size: 1rem;
+    color: #1d2a35;
+    font-family: "Taviraj", sans-serif;
+    border: none;
+    background-color: white;
+    text-align: start;
+    width: 15rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    #MyAccount__icon{
+        fill:#1d2a35;
+    }
+    &:hover{
+        background-color: #f0f0f0;
+    }
+    &:active{
+    background-color: #EE636F;
+    color: white;
+    #MyAccount__icon{
+        fill: white;
+    }
+    }
+}
+
+#DeleteAccount{
+    background-color: #ffe9e9;
+    border: none;
+    height: 5rem;
+    align-items: center;
+    border-radius: 0.4rem;
+}
+
+@media screen and (max-width:576px) {
+    .MyAccount{
+        margin-top: 2rem;
+        &__head{
+            margin-top: 2rem;
+        }
+    }
+}
