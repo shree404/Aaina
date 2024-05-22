@@ -80,3 +80,16 @@
         }
     }
 }
+
+
+#custom-offcanvas {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; /* Adjust as needed */
+    max-height: 90vh; /* Adjust as needed */
+    overflow-y: auto;
+    width: 40%;
+    height: 80%;
+  }
