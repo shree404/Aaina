@@ -267,7 +267,7 @@
   margin-top: 10rem;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 576px) {
   .Hero-image {
     margin-top: 2rem;
   }
@@ -943,7 +943,7 @@ h1 {
   text-transform: capitalize;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 576px) {
   .WomenBreadcrum {
     margin-top: 2rem;
   }
@@ -1315,7 +1315,7 @@ h1 {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 576px) {
   .NotFound {
     margin-top: 2rem;
   }
@@ -1342,7 +1342,7 @@ h1 {
   width: 436px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 576px) {
   .AboutUs {
     margin-top: 2rem;
   }
@@ -1377,7 +1377,7 @@ h1 {
   font-weight: 300;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 576px) {
   .ReturnPolicy {
     margin-top: 2rem;
   }
@@ -1402,7 +1402,7 @@ h1 {
   font-weight: 400;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 576px) {
   .Terms {
     margin-top: 2rem;
   }
@@ -1551,14 +1551,14 @@ h1 {
 }
 .ContactUS-button {
   margin-top: 5rem;
-  color: var(--gray, #F5F5F5);
+  color: var(--gray, #f5f5f5);
   text-align: center;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 20px;
   border-radius: 0.5rem;
-  border: 2px solid var(--tertiary, #EE636F);
-  background-color: var(--tertiary, #EE636F);
+  border: 2px solid var(--tertiary, #ee636f);
+  background-color: var(--tertiary, #ee636f);
   height: 3rem;
   width: 100%;
 }/*# sourceMappingURL=App.css.map */
