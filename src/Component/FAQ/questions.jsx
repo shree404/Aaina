@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 function FAQQuestions() {
   return (
     <>
-      <Container>
+      <Container className="mb-5">
         <h2 className="FAQs__head">FAQS</h2>
         <h2 className="FAQs__subhead">Order Status & Tracking</h2>
         <Accordion>

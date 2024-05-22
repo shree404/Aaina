@@ -16,6 +16,7 @@ import PrivacyPolicyPage from "./Pages/PrivacyPolicyPage";
 import DeliveryTermsPage from "./Pages/DeliveryTermsPage";
 import TermsAndCondition from "./Pages/TermsAndConditionPage";
 import FAQPage from "./Pages/FAQ";
+import ContactUsPage from "./Pages/ContactUs";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,6 +33,7 @@ const router = createBrowserRouter(
       <Route path="/delivery-terms" element={<DeliveryTermsPage/>} />,
       <Route path="/terms-conditions" element={<TermsAndCondition/>} />,
       <Route path="/faqs" element={<FAQPage/>} />,
+      <Route path="/contactus" element={<ContactUsPage/>} />,
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )
