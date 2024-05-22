@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import OrderSummary from "../../Pages/orderSummary";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { useState } from "react";
-import MoreSection from "./MoreSection";
+import MoreSection from "./MoreSection.jsx";
 import Category from "./Category";
 
 function FooterMob() {
@@ -103,7 +103,7 @@ function FooterMob() {
                   <Offcanvas.Title></Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                  <Category />
+                  <Category  Close={handleCategoryClose} />
                 </Offcanvas.Body>
               </Offcanvas>
             </Col>

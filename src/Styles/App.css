@@ -1583,4 +1583,38 @@ h1 {
   background-color: var(--tertiary, #ee636f);
   height: 3rem;
   width: 100%;
+}
+
+.noItem {
+  margin-top: 10rem;
+  font-family: "Taviraj", sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+.noItem-p {
+  color: #181717;
+  font-size: 1rem;
+  line-height: 32px;
+  margin-top: 0.5rem;
+}
+.noItem-button {
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 2px solid var(--tertiary, #ee636f);
+  background-color: var(--tertiary, #ee636f);
+  height: 2.5rem;
+  width: 40%;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 575px) {
+  .noItem {
+    margin-top: 2rem;
+  }
+}
+#noItem__svg {
+  width: 100%;
 }/*# sourceMappingURL=App.css.map */

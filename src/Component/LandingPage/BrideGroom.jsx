@@ -60,9 +60,11 @@ function BrideGroom() {
                 <p className="container-BrideandGroomSection-buynow-middleSection__description2">
                   Explore Our Bridal & Groom <br /> Collection
                 </p>
+                <Link  to="/women">
                 <button className="container-BrideandGroomSection-buynow-middleSection__button">
                   BUY NOW
                 </button>
+                </Link>
               </Col>
               <Col md={4} sm={12} xs={12}>
                 <div className="container-kurtiSection-buynow--kurti2">
