@@ -437,7 +437,7 @@ h1 {
   display: flex;
   justify-content: center;
   height: auto;
-  color: var(--secondary-500, #2A2940);
+  color: var(--secondary-500, #2a2940);
   margin-top: 2rem;
 }
 .client-review-container-description {
@@ -492,6 +492,9 @@ h1 {
   }
 }
 @media screen and (max-width: 576px) {
+  .Testimonial-container {
+    margin-bottom: 10rem;
+  }
   .client-review-container-description {
     font-size: 1rem;
   }
@@ -1128,7 +1131,7 @@ h1 {
 }
 
 .UserDetails__head {
-  color: var(--black, #231F20);
+  color: var(--black, #231f20);
   font-family: "Lora", serif;
   font-size: 1.5rem;
   font-style: normal;
@@ -1138,15 +1141,15 @@ h1 {
 }
 
 #userdetails {
-  color: var(--text-2, #49454F);
+  color: var(--text-2, #49454f);
   font-family: "Tenor Sans";
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.5px;
-  border: 1px solid var(--border, #DAD4D9);
-  background: #FFF;
+  border: 1px solid var(--border, #dad4d9);
+  background: #fff;
   width: 100%;
   height: 3rem;
   border-radius: 4px 4px 0px 0px;
@@ -1162,8 +1165,8 @@ h1 {
   border-radius: 6px;
   height: 3rem;
   width: 15rem;
-  background-color: var(--text-200, #F2F4F8);
-  color: var(--neutral-700, #3F3F46);
+  background-color: var(--text-200, #f2f4f8);
+  color: var(--neutral-700, #3f3f46);
   text-align: center;
   font-family: "Lora", serif;
   font-size: 1.12rem;
@@ -1179,7 +1182,7 @@ h1 {
   width: 20rem;
   border-radius: 6px;
   background-color: var(--primary-700, #018937);
-  color: var(--white, #FFF);
+  color: var(--white, #fff);
   text-align: center;
   font-family: "Lora", serif;
   font-size: 1.12rem;
@@ -1289,7 +1292,7 @@ h1 {
   border: none;
   border-radius: 6px;
   background-color: var(--primary-700, #018937);
-  color: var(--white, #FFF);
+  color: var(--white, #fff);
   text-align: center;
   font-family: "Lora", serif;
   font-size: 1.12rem;
@@ -1340,6 +1343,7 @@ h1 {
 @media screen and (max-width: 576px) {
   .NotFound {
     margin-top: 2rem;
+    margin-bottom: 10rem;
   }
 }
 .AboutUs {
@@ -1361,12 +1365,13 @@ h1 {
 }
 .AboutUs__img {
   height: 436px;
-  width: 436px;
+  width: 100%;
 }
 
 @media screen and (max-width: 576px) {
   .AboutUs {
     margin-top: 2rem;
+    margin-bottom: 10rem;
   }
 }
 .ReturnPolicy {
@@ -1402,6 +1407,7 @@ h1 {
 @media screen and (max-width: 576px) {
   .ReturnPolicy {
     margin-top: 2rem;
+    margin-bottom: 10rem;
   }
 }
 .Terms {
@@ -1427,6 +1433,7 @@ h1 {
 @media screen and (max-width: 576px) {
   .Terms {
     margin-top: 2rem;
+    margin-bottom: 10rem;
   }
 }
 .FAQ {
@@ -1441,6 +1448,11 @@ h1 {
   margin-top: 10rem;
 }
 
+@media screen and (max-width: 576px) {
+  .FAQ {
+    margin-top: 2rem;
+  }
+}
 .FAQs {
   color: var(--neutral-800, #27272a);
   font-family: "Taviraj", sans-serif;
@@ -1723,6 +1735,7 @@ h1 {
 @media screen and (max-width: 576px) {
   .MyAccount {
     margin-top: 2rem;
+    margin-bottom: 10rem;
   }
   .MyAccount__head {
     margin-top: 2rem;
@@ -1740,6 +1753,11 @@ h1 {
   height: 80%;
 }
 
+@media screen and (max-width: 860px) {
+  #custom-offcanvas {
+    width: 90%;
+  }
+}
 #edituserdetails {
   color: var(--text-2, #49454F);
   font-family: "Tenor Sans";
@@ -1779,7 +1797,7 @@ h1 {
   width: 6rem;
   border-radius: 0.25rem;
   margin-right: 1rem;
-  margin-left: 50%;
+  margin-left: 30%;
 }
 .EditAccount-update:hover {
   background-color: #a62c36;
@@ -1799,4 +1817,29 @@ h1 {
 .EditAccount-discard:hover {
   background-color: #EE636F;
   color: #fcd7d7;
+}
+
+@media screen and (max-width: 860px) {
+  .EditAccount-update {
+    margin-left: 0%;
+  }
+}
+.ShippingForm {
+  margin-top: 10rem;
+}
+
+#checkbox {
+  border: 1px solid var(--border, #DAD4D9);
+}
+#checkbox:focus {
+  background-color: none;
+  box-shadow: none;
+}
+
+#inputdetails {
+  border: 1px solid var(--border, #DAD4D9);
+}
+#inputdetails:focus {
+  background-color: none;
+  box-shadow: none;
 }/*# sourceMappingURL=App.css.map */

@@ -42,7 +42,7 @@ function AccountDelete({Close}) {
             name="email"
           />
         </FloatingLabel>
-     <button className="AccountDelete-delete__button">Delete My Account</button>
+     <button className="AccountDelete-delete__button">Delete My Account</button> <br /> <br />
       </Container>
     </div>
   );

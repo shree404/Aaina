@@ -75,6 +75,7 @@
 @media screen and (max-width:576px) {
     .MyAccount{
         margin-top: 2rem;
+        margin-bottom: 10rem;
         &__head{
             margin-top: 2rem;
         }
@@ -92,4 +93,9 @@
     overflow-y: auto;
     width: 40%;
     height: 80%;
+  }
+  @media screen and (max-width:860px) {
+    #custom-offcanvas{
+        width: 90%;
+    }
   }

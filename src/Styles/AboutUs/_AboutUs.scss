@@ -16,12 +16,13 @@ font-weight: 300;
     }
     &__img{
         height: 436px;
-        width: 436px;
+        width: 100%;
     }
 }
 
 @media screen and (max-width:576px) {
     .AboutUs{
         margin-top: 2rem;
+        margin-bottom: 10rem;
     }
 }

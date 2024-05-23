@@ -48,12 +48,12 @@
     font-weight: 400;
     line-height: 114.286%;
     text-transform: capitalize;
-    &__button{
+    &__button {
       border: none;
       background-color: white;
       margin-right: 15rem;
       size: auto;
-      &:focus{
+      &:focus {
         border: none;
         background-color: white;
       }
@@ -96,20 +96,20 @@
     font-weight: 500;
     line-height: 100%;
   }
-  &__button{
+  &__button {
     border: none;
     border-radius: 6px;
-background-color: var(--primary-700, #018937);
-color: var(--white, #FFF);
-text-align: center;
-font-family:"Lora", serif;
-font-size: 1.12rem;
-font-style: normal;
-font-weight: 600;
-line-height:  120% ;
-height: 3rem;
-width: 100%;
-margin-top: 3rem;
+    background-color: var(--primary-700, #018937);
+    color: var(--white, #fff);
+    text-align: center;
+    font-family: "Lora", serif;
+    font-size: 1.12rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    height: 3rem;
+    width: 100%;
+    margin-top: 3rem;
   }
 }
 
@@ -117,9 +117,8 @@ margin-top: 3rem;
   width: 50%;
 }
 
-@media screen and (max-width:1024px) {
-    #OrderSummary{
-        width: 100%;
-    }
-    
+@media screen and (max-width: 1024px) {
+  #OrderSummary {
+    width: 100%;
+  }
 }

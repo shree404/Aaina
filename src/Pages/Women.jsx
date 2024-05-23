@@ -7,7 +7,6 @@ function Women(){
         <>
         <Nav/>
         <Womenbreadcrum/>
-        {/* <WomenFilterRed/> */}
         <Footer/>
         </>
     )
