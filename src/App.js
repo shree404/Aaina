@@ -19,6 +19,7 @@ import FAQPage from "./Pages/FAQ";
 import ContactUsPage from "./Pages/ContactUs";
 import NoItem from "./Pages/NoItem";
 import AccountPage from "./Pages/AccountPage";
+import ShippingPage from "./Pages/Shippingpage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,6 +39,7 @@ const router = createBrowserRouter(
       <Route path="/contactus" element={<ContactUsPage/>} />,
       <Route path="/cart" element={<NoItem/>} />,
       <Route path="/account" element={<AccountPage/>} />,
+      <Route path="/shipping" element={<ShippingPage/>} />,
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )

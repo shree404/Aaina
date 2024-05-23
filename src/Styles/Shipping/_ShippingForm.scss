@@ -1,0 +1,20 @@
+.ShippingForm{
+    margin-top: 10rem;
+}
+
+#checkbox{
+    border: 1px solid var(--border, #DAD4D9);
+    &:focus{
+        background-color: none;
+      box-shadow: none;
+    }
+}
+
+
+#inputdetails{
+    border: 1px solid var(--border, #DAD4D9);
+    &:focus{
+        background-color: none;
+      box-shadow: none;
+    }
+}

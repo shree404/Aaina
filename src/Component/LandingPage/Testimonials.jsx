@@ -39,7 +39,7 @@ function Testimonials(){
     ]
     return(
         <>
-       <div >
+       <div className="Testimonial-container" >
             <Container>
                 <div>
                     <Row className='justify-content-md-sm-xs-center'>
@@ -70,7 +70,7 @@ function Testimonials(){
                     </Row>
                     </div>
                     <div className="Testimonials-Md">
-                    <Row className='justify-content-md-sm-xs-center'>
+                    <Row className='justify-content-md-sm-xs-center mb-5'>
                     {testimonialsOfUser.map((testimonial,index) => (
                         <Col md={12} sm={12} xs={12}>
                      <div className="client-review-container">
