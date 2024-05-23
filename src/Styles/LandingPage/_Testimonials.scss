@@ -4,17 +4,20 @@
   height: auto;
   color: var(--secondary-500, #2a2940);
   margin-top: 2rem;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  &__img{
+    height: 60%;
+  }
   &-description {
     height: auto;
     display: flex;
     justify-content: start;
     &-description p {
-      margin-top: 1rem;
       text-align: right;
       font-family: "Tenor Sans";
       font-size: 1.12rem;
-      font-style: normal;
-      font-weight: 400;
       line-height: 1.5rem;
     }
     &-user-description {
@@ -26,9 +29,7 @@
         height: auto;
         width: auto;
         border-right: 1px solid #000;
-        font-style: normal;
         font-weight: 500;
-        line-height: normal;
         font-family: "Lora", serif;
         font-size: 1.12rem;
       }
@@ -36,9 +37,6 @@
         color: #505050;
         font-family: "Tenor Sans";
         font-size: 0.95rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
       }
     }
   }
