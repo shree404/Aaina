@@ -11,7 +11,7 @@ function ProductLehenga(){
         <>
         <Nav/>
         <ProductImages/>
-        <RelatedProduct/>
+        <RelatedProduct/> 
         <Footer/>
         </>
     )

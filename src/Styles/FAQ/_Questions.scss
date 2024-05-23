@@ -21,6 +21,7 @@
 }
 
 .accordion {
+  margin-bottom: 7rem;
     &-item{
         border: none;
        margin-bottom: 1rem;
@@ -51,5 +52,11 @@
     font-weight: 400;
     background-color: white;
     line-height: 20px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .accordion{
+    margin-bottom: 7rem;
   }
 }

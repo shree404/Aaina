@@ -60,7 +60,7 @@ function WomenLehengaList({products, selectedColor }){
               </Col>
             ))}
           </Row>
-        </div>
+          </div>
       </Container>
         </>
     )
