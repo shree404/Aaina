@@ -609,6 +609,10 @@ h1 {
 .More-link {
   text-decoration: none;
 }
+.More-link-cat {
+  text-decoration: none;
+  color: #ee636f;
+}
 
 .list-group {
   margin-bottom: 2rem;

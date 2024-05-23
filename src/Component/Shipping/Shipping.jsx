@@ -1,8 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Shippingform from './ShippingForm';
-import BillingDetails from './BillingDetails';
+import Shippingform from './ShippingForm.jsx';
+import BillingDetails from './BillingDetails.jsx';
 
 function Shipping(){
     return(
