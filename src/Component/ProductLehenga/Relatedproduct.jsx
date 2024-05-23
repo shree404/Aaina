@@ -35,14 +35,14 @@ function RelatedProduct() {
       <div className="NewProduct">
         <Container>
           <div>
-            <Row className="justify-content-md-sm-xs-center">
+            <Row className="justify-content-md-sm-xs-center ">
               <Col md={12} sm={12} xs={12}>
                 <h1>Related Product</h1>
               </Col>
             </Row>
           </div>
           <div className="NewProduct-md">
-            <Row className="justify-content-md-sm-xs-center">
+            <Row className="justify-content-md-sm-xs-center mb-5">
               {bestSellerArray.map((product, index) => (
                 <Col md={3} sm={6} xs={12}>
                   <div
@@ -73,7 +73,7 @@ function RelatedProduct() {
             </Row>
           </div>
           <div className="NewProduct-S-md">
-            <Row>
+            <Row className="mb-5">
               {bestSellerArray.map((product, index) => (
                 <Col>
                   <div
@@ -103,6 +103,7 @@ function RelatedProduct() {
               ))}
             </Row>
           </div>
+          <br /> <br />
         </Container>
       </div>
     </>

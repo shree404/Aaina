@@ -1130,6 +1130,11 @@ h1 {
   display: none;
 }
 
+@media screen and (max-width: 576px) {
+  .WomenFilterRed {
+    margin-bottom: 10rem;
+  }
+}
 .UserDetails__head {
   color: var(--black, #231f20);
   font-family: "Lora", serif;
@@ -1475,6 +1480,9 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.accordion {
+  margin-bottom: 7rem;
+}
 .accordion-item {
   border: none;
   margin-bottom: 1rem;
@@ -1507,6 +1515,11 @@ h1 {
   line-height: 20px;
 }
 
+@media screen and (max-width: 576px) {
+  .accordion {
+    margin-bottom: 7rem;
+  }
+}
 .Callus {
   color: #181717;
   font-family: "Taviraj", sans-serif;
@@ -1622,9 +1635,13 @@ h1 {
   margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
   .noItem {
     margin-top: 2rem;
+    margin-bottom: 10rem;
+  }
+  .noItem-button {
+    width: 100%;
   }
 }
 #noItem__svg {
@@ -1825,7 +1842,20 @@ h1 {
   }
 }
 .ShippingForm {
+  font-family: "Lora", serif;
   margin-top: 10rem;
+}
+.ShippingForm--head {
+  color: var(--neutral-700, #3f3f46);
+  font-size: 1.5rem;
+}
+.ShippingForm__checkout {
+  color: white;
+  border: none;
+  background-color: #ee636f;
+  height: 2.5rem;
+  width: 15rem;
+  border-radius: 0.25rem;
 }
 
 #checkbox {
@@ -1842,4 +1872,26 @@ h1 {
 #inputdetails:focus {
   background-color: none;
   box-shadow: none;
+}
+
+.BillingDetails {
+  margin-top: 10rem;
+  background-color: #F5F5F5;
+  height: 11rem;
+  width: 100%;
+  text-align: center;
+}
+
+#billing-price {
+  margin-right: 30%;
+}
+
+@media screen and (max-width: 576px) {
+  .ShippingForm {
+    margin-top: 2rem;
+  }
+  .BillingDetails {
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+  }
 }/*# sourceMappingURL=App.css.map */

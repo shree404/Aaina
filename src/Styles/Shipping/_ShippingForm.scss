@@ -1,5 +1,18 @@
 .ShippingForm{
+  font-family: "Lora", serif;
     margin-top: 10rem;
+    &--head{
+      color: var(--neutral-700, #3f3f46);
+      font-size: 1.5rem;
+    }
+    &__checkout{
+      color: white;
+      border: none;
+      background-color: #ee636f;
+      height: 2.5rem;
+      width: 15rem;
+      border-radius: 0.25rem;
+    }
 }
 
 #checkbox{
@@ -17,4 +30,27 @@
         background-color: none;
       box-shadow: none;
     }
+}
+
+.BillingDetails{
+  margin-top: 10rem;
+  background-color: #F5F5F5;
+  height: 11rem;
+  width: 100%;
+  text-align: center;
+}
+
+#billing-price{
+  margin-right: 30%;
+}
+
+@media screen and (max-width:576px) {
+  .ShippingForm{
+    margin-top: 2rem;
+  }
+  .BillingDetails{
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+  }
+  
 }
