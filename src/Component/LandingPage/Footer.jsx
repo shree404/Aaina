@@ -17,8 +17,18 @@ function Footer() {
                     {" "}
                     How Can We Help?
                   </dt>
-                  <dd className="footer-container-list__DD"> <Link className="footer-link" to="/contactus">Contact </Link></dd>
-                  <dd className="footer-container-list__DD"> <Link className="footer-link" to="/faqs">FAQ </Link></dd>
+                  <dd className="footer-container-list__DD">
+                    {" "}
+                    <Link className="footer-link" to="/contactus">
+                      Contact{" "}
+                    </Link>
+                  </dd>
+                  <dd className="footer-container-list__DD">
+                    {" "}
+                    <Link className="footer-link" to="/faqs">
+                      FAQ{" "}
+                    </Link>
+                  </dd>
                   <dd className="footer-container-list__DD">Our Brand</dd>
                 </dl>
               </Col>
@@ -26,7 +36,11 @@ function Footer() {
                 <dl>
                   <dt className="footer-container-list__DT">Category</dt>
                   <dd className="footer-container-list__DD">
-                   <Link  className="footer-link" to="/women"> Women  </Link></dd>
+                    <Link className="footer-link" to="/women">
+                      {" "}
+                      Women{" "}
+                    </Link>
+                  </dd>
                   <dd className="footer-container-list__DD">Men</dd>
                   <dd className="footer-container-list__DD">Bridals</dd>
                 </dl>
@@ -47,45 +61,45 @@ function Footer() {
               </Col>
             </Row>
           </div>
-            <div className="footer-container__location">
-              <div className="footer-container__divider">
-                <svg
-                  className="footer-details-container__det-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                >
-                  <path
-                    d="M12 2.5C8.13 2.5 5 5.63 5 9.5C5 14.75 12 22.5 12 22.5C12 22.5 19 14.75 19 9.5C19 5.63 15.87 2.5 12 2.5ZM7 9.5C7 6.74 9.24 4.5 12 4.5C14.76 4.5 17 6.74 17 9.5C17 12.38 14.12 16.69 12 19.38C9.92 16.71 7 12.35 7 9.5Z"
-                    fill="#BEBEBE"
-                  />
-                  <path
-                    d="M12 12C13.3807 12 14.5 10.8807 14.5 9.5C14.5 8.11929 13.3807 7 12 7C10.6193 7 9.5 8.11929 9.5 9.5C9.5 10.8807 10.6193 12 12 12Z"
-                    fill="#BEBEBE"
-                  />
-                </svg>{" "}
-                Bardaghat Nepal &nbsp;
-              </div>
-              &nbsp;
-              <div>
-                <svg
-                  className="footer-details-container__det-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                >
-                  <path
-                    d="M6.54 5.5C6.6 6.39 6.75 7.26 6.99 8.09L5.79 9.29C5.38 8.09 5.12 6.82 5.03 5.5H6.54ZM16.4 17.52C17.25 17.76 18.12 17.91 19 17.97V19.46C17.68 19.37 16.41 19.11 15.2 18.71L16.4 17.52ZM7.5 3.5H4C3.45 3.5 3 3.95 3 4.5C3 13.89 10.61 21.5 20 21.5C20.55 21.5 21 21.05 21 20.5V17.01C21 16.46 20.55 16.01 20 16.01C18.76 16.01 17.55 15.81 16.43 15.44C16.33 15.4 16.22 15.39 16.12 15.39C15.86 15.39 15.61 15.49 15.41 15.68L13.21 17.88C10.38 16.43 8.06 14.12 6.62 11.29L8.82 9.09C9.1 8.81 9.18 8.42 9.07 8.07C8.7 6.95 8.5 5.75 8.5 4.5C8.5 3.95 8.05 3.5 7.5 3.5Z"
-                    fill="#BEBEBE"
-                  />
-                </svg>{" "}
-                986-7481767
-              </div>
+          <div className="footer-container__location">
+            <div className="footer-container__divider">
+              <svg
+                className="footer-details-container__det-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path
+                  d="M12 2.5C8.13 2.5 5 5.63 5 9.5C5 14.75 12 22.5 12 22.5C12 22.5 19 14.75 19 9.5C19 5.63 15.87 2.5 12 2.5ZM7 9.5C7 6.74 9.24 4.5 12 4.5C14.76 4.5 17 6.74 17 9.5C17 12.38 14.12 16.69 12 19.38C9.92 16.71 7 12.35 7 9.5Z"
+                  fill="#BEBEBE"
+                />
+                <path
+                  d="M12 12C13.3807 12 14.5 10.8807 14.5 9.5C14.5 8.11929 13.3807 7 12 7C10.6193 7 9.5 8.11929 9.5 9.5C9.5 10.8807 10.6193 12 12 12Z"
+                  fill="#BEBEBE"
+                />
+              </svg>{" "}
+              Bardaghat Nepal &nbsp;
             </div>
+            &nbsp;
+            <div>
+              <svg
+                className="footer-details-container__det-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path
+                  d="M6.54 5.5C6.6 6.39 6.75 7.26 6.99 8.09L5.79 9.29C5.38 8.09 5.12 6.82 5.03 5.5H6.54ZM16.4 17.52C17.25 17.76 18.12 17.91 19 17.97V19.46C17.68 19.37 16.41 19.11 15.2 18.71L16.4 17.52ZM7.5 3.5H4C3.45 3.5 3 3.95 3 4.5C3 13.89 10.61 21.5 20 21.5C20.55 21.5 21 21.05 21 20.5V17.01C21 16.46 20.55 16.01 20 16.01C18.76 16.01 17.55 15.81 16.43 15.44C16.33 15.4 16.22 15.39 16.12 15.39C15.86 15.39 15.61 15.49 15.41 15.68L13.21 17.88C10.38 16.43 8.06 14.12 6.62 11.29L8.82 9.09C9.1 8.81 9.18 8.42 9.07 8.07C8.7 6.95 8.5 5.75 8.5 4.5C8.5 3.95 8.05 3.5 7.5 3.5Z"
+                  fill="#BEBEBE"
+                />
+              </svg>{" "}
+              986-7481767
+            </div>
+          </div>
           <Row>
             <Col>
               <div className="footer-end-section-icons">
@@ -159,16 +173,28 @@ function Footer() {
             </Col>
             <Col md={{ span: 6, order: 2 }}>
               <menu className="footer-end-section-privacy">
-                <li> <Link to ="/terms-conditions" className="footer-link">
-                  Terms </Link> &nbsp; &nbsp;</li>
-                <li> <Link to ="/privacy" className="footer-link"> Privacy Policy </Link> &nbsp;</li>
+                <li>
+                  {" "}
+                  <Link to="/terms-conditions" className="footer-link">
+                    Terms{" "}
+                  </Link>{" "}
+                  &nbsp; &nbsp;
+                </li>
+                <li>
+                  {" "}
+                  <Link to="/privacy" className="footer-link">
+                    {" "}
+                    Privacy Policy{" "}
+                  </Link>{" "}
+                  &nbsp;
+                </li>
                 <li> &nbsp;© 2024 &nbsp; Aina</li>
               </menu>
             </Col>
           </Row>
         </Container>
       </div>
-      <FooterMob/>
+      <FooterMob />
     </>
   );
 }
