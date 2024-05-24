@@ -16,9 +16,14 @@ import LehengaDescription from "./description";
 import InformationLehenga from "./Information";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import OrderSummary from "../../Pages/orderSummary";
-import UserDetails from "../../Pages/UserDetails";
+import React, { useEffect, useRef } from "react";
+
 
 function ProductImages({ placement }) {
+
+
+  
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -191,20 +196,21 @@ function ProductImages({ placement }) {
                 <br /> <br />
                 <span>
                   {" "}
-                  <button onClick={handleShow} className="LehengaImages-description__buttonadd">
+                  <button
+                    onClick={handleShow}
+                    className="LehengaImages-description__buttonadd"
+                  >
                     {" "}
                     Add to Bag
                   </button>{" "}
-                  <button
-                    className="LehengaImages-description__buttonbuy"
-                  >
+                  <button className="LehengaImages-description__buttonbuy">
                     {" "}
                     <img src={whatsapp} alt="Icon of Whatsapp" /> Buy Now
                   </button>
                   <>
                     <Offcanvas
                       show={show}
-                      placement='end'
+                      placement="end"
                       onHide={handleClose}
                       id="OrderSummary"
                     >
@@ -232,13 +238,14 @@ function ProductImages({ placement }) {
           <Row>
             <Col>
               <button
-                className="LehengaImages-Row2__button"
+              autoFocus
+                className="LehengaImages-Row2__button1"
                 onClick={() => showComponent("LehengaDescription")}
               >
                 Description
               </button>
               <button
-                className="LehengaImages-Row2__button"
+                className="LehengaImages-Row2__button2"
                 onClick={() => showComponent("InformationLehenga")}
               >
                 INFORMATION
@@ -391,13 +398,14 @@ function ProductImages({ placement }) {
                 <br /> <br />
                 <span>
                   {" "}
-                  <button onClick={handleShow} className="LehengaImages-description__buttonadd">
+                  <button
+                    onClick={handleShow}
+                    className="LehengaImages-description__buttonadd"
+                  >
                     {" "}
                     Add to Bag
                   </button>{" "}
-                  <button 
-                    className="LehengaImages-description__buttonbuy"
-                  >
+                  <button className="LehengaImages-description__buttonbuy">
                     {" "}
                     <img src={whatsapp} alt="Icon of Whatsapp" /> Buy Now
                   </button>
@@ -408,13 +416,14 @@ function ProductImages({ placement }) {
           <Row>
             <Col>
               <button
-                className="LehengaImages-Row2__button"
+              autoFocus
+                className="LehengaImages-Row2__button1"
                 onClick={() => showComponent("LehengaDescription")}
               >
                 Description
               </button>
               <button
-                className="LehengaImages-Row2__button"
+                className="LehengaImages-Row2__button2"
                 onClick={() => showComponent("InformationLehenga")}
               >
                 INFORMATION

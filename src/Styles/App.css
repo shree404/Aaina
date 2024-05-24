@@ -722,7 +722,7 @@ h1 {
   border-radius: 4px;
   align-items: center;
 }
-.LehengaImages-Row2__button {
+.LehengaImages-Row2__button1 {
   margin-top: 5rem;
   margin-bottom: 1rem;
   border: none;
@@ -738,7 +738,27 @@ h1 {
   line-height: 140%; /* 19.6px */
   text-transform: uppercase;
 }
-.LehengaImages-Row2__button:focus {
+.LehengaImages-Row2__button1:focus {
+  border: none;
+  border-bottom: 2px solid var(--primary-3, #6926ff);
+}
+.LehengaImages-Row2__button2 {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 2px solid #f0e9ff;
+  background-color: white;
+  width: 10rem;
+  height: 3.5rem;
+  color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  font-family: "Taviraj", serif;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  text-transform: uppercase;
+}
+.LehengaImages-Row2__button2:focus {
   border: none;
   border-bottom: 2px solid var(--primary-3, #6926ff);
 }
@@ -813,6 +833,11 @@ h1 {
     margin-top: 2rem;
   }
 }
+[autoFocus] {
+  border: none !important;
+  border-bottom: 2px solid var(--primary-3, #6926ff) !important;
+}
+
 .Description {
   color: var(--neutral-700, #3F3F46);
   font-family: "Taviraj", serif;
