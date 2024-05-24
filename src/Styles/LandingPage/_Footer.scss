@@ -9,35 +9,30 @@
   &-container {
     margin-top: 2rem;
     line-height: 180%;
-    & dt {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      font-weight: 700;
-      font-style: normal;
-      line-height: 140%;
-      text-transform: capitalize;
-    }
-    & dd {
-      margin-bottom: 0.25rem;
-      color: #fff;
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 180%; /* 28.8px */
-      text-transform: capitalize;
-    }
+    font-style: normal;
     &__divider{
       border: none;
       border-right: #fff solid 2px;
     }
     &__location {
+      @extend .footer-container;
       font-size: 1rem;
-      font-style: normal;
       font-weight: 400;
-      line-height: 180%;
       text-transform: capitalize;
       display: flex;
+    }
+    & dt {
+      @extend .footer-container;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 140%;
+      text-transform: capitalize;
+    }
+    & dd {
+      @extend .footer-container__location ;
+      margin-bottom: 0.25rem;
+      color: #fff;
     }
   }
   &-end-section {

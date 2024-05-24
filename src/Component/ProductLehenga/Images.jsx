@@ -16,14 +16,8 @@ import LehengaDescription from "./description";
 import InformationLehenga from "./Information";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import OrderSummary from "../../Pages/orderSummary";
-import React, { useEffect, useRef } from "react";
-
 
 function ProductImages({ placement }) {
-
-
-  
-
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -41,18 +35,7 @@ function ProductImages({ placement }) {
     setQuantity(quantity + 1);
   };
 
-  const [togglefirst, setTogglefirst] = useState(true);
-  const [togglesecond, setTogglesecond] = useState(false);
-
-  const showComponent = (component) => {
-    if (component === "LehengaDescription") {
-      setTogglefirst(true);
-      setTogglesecond(false);
-    } else if (component === "InformationLehenga") {
-      setTogglefirst(false);
-      setTogglesecond(true);
-    }
-  };
+  const [descType, setDescType] = useState("description");
 
   return (
     <>
@@ -60,7 +43,7 @@ function ProductImages({ placement }) {
         <Container>
           <Row className="justify-content-sm-xs-center">
             <Col
-              md={{ span: 2, order: 1 }}
+              md={{ span: 1, order: 1 }}
               sm={{ span: 12, order: 2 }}
               xs={{ span: 12, order: 2 }}
             >
@@ -110,7 +93,7 @@ function ProductImages({ placement }) {
               </div>
             </Col>
             <Col
-              md={{ span: 5, order: 2 }}
+              md={{ span: 6, order: 2 }}
               sm={{ span: 12, order: 1 }}
               xs={{ span: 12, order: 1 }}
             >
@@ -238,15 +221,18 @@ function ProductImages({ placement }) {
           <Row>
             <Col>
               <button
-              autoFocus
-                className="LehengaImages-Row2__button1"
-                onClick={() => showComponent("LehengaDescription")}
+                className={`LehengaImages-Row2__button ${
+                  descType === "description" ? "activeButton" : ""
+                }`}
+                onClick={() => setDescType("description")}
               >
                 Description
               </button>
               <button
-                className="LehengaImages-Row2__button2"
-                onClick={() => showComponent("InformationLehenga")}
+                className={`LehengaImages-Row2__button ${
+                  descType === "information" ? "activeButton" : ""
+                }`}
+                onClick={() => setDescType("information")}
               >
                 INFORMATION
               </button>
@@ -254,186 +240,8 @@ function ProductImages({ placement }) {
           </Row>
           <Row>
             <Col md={12}>
-              {togglefirst && <LehengaDescription />}
-              {togglesecond && <InformationLehenga />}
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div className="LehengaImages-md">
-        <Container>
-          <Row>
-            <Col
-              md={{ span: 4, order: 1 }}
-              sm={{ span: 12, order: 2 }}
-              xs={{ span: 12, order: 2 }}
-            >
-              <div className="LehengaImages-col1">
-                <div>
-                  <img
-                    src={up}
-                    alt="Up arrow"
-                    className="LehengaImages__uparrow"
-                  />
-                </div>
-                <div>
-                  <img
-                    className="LehengaImages__img"
-                    src={img1}
-                    alt="Image of Lehenga"
-                  />{" "}
-                </div>
-                <div>
-                  <img
-                    className="LehengaImages__img"
-                    src={img1}
-                    alt="Image of Lehenga"
-                  />{" "}
-                </div>
-                <div>
-                  <img
-                    className="LehengaImages__img"
-                    src={img1}
-                    alt="Image of Lehenga"
-                  />{" "}
-                </div>
-                <div>
-                  <img
-                    className="LehengaImages__img"
-                    src={img1}
-                    alt="Image of Lehenga"
-                  />
-                </div>
-                <div>
-                  <img
-                    src={down}
-                    alt="Down Arrow"
-                    className="LehengaImages__downarrow"
-                  />
-                </div>
-              </div>
-            </Col>
-            <Col
-              md={{ span: 8, order: 2 }}
-              sm={{ span: 12, order: 1 }}
-              xs={{ span: 12, order: 1 }}
-            >
-              <img
-                src={img2}
-                alt="Image of Lehenga"
-                className="LehengaImages__imgbig"
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col md={{ span: 12 }} sm={{ span: 12 }} xs={{ span: 12 }}>
-              <p className="LehengaImages-description">
-                <span className=" LehengaImages-description__p1">
-                  Purple Embroidered Lehenga Choli
-                </span>{" "}
-                <br /> <br />
-                <span className="LehengaImages-description__p2">
-                  Rs. 6000
-                </span>{" "}
-                <br />
-                <span className="LehengaImages-description__p3">
-                  Incl. of all tax
-                  <img src={info} alt="Icon" />
-                </span>{" "}
-                <br /> <br />
-                <span className="LehengaImages-description__p4">
-                  In Stock
-                </span>{" "}
-                <br />
-                <br />
-                <span className="LehengaImages-description__p5">
-                  Select size
-                </span>{" "}
-                <br />
-                <span>
-                  {" "}
-                  <button className="LehengaImages-description__button">
-                    S
-                  </button>{" "}
-                  <button className="LehengaImages-description__button">
-                    M
-                  </button>{" "}
-                  <button className="LehengaImages-description__button">
-                    L
-                  </button>{" "}
-                  <button className="LehengaImages-description__button">
-                    XL
-                  </button>
-                </span>
-                <br /> <br />
-                <span className="LehengaImages-description__p6">
-                  Quantity
-                </span>{" "}
-                <br />
-                <span>
-                  {" "}
-                  <ButtonGroup aria-label="Basic example">
-                    <Button
-                      variant="secondary"
-                      id="LehengaImages-description__button2"
-                      onClick={decreaseValue}
-                    >
-                      <img src={remove} alt="Remove icon" />
-                    </Button>
-                    <Button
-                      variant="secondary"
-                      id="LehengaImages-description__button2"
-                    >
-                      {quantity}
-                    </Button>
-                    <Button
-                      variant="secondary"
-                      id="LehengaImages-description__button2"
-                      onClick={increaseValue}
-                    >
-                      <img src={add} alt="Add icon" />
-                    </Button>
-                  </ButtonGroup>
-                </span>{" "}
-                <br /> <br />
-                <span>
-                  {" "}
-                  <button
-                    onClick={handleShow}
-                    className="LehengaImages-description__buttonadd"
-                  >
-                    {" "}
-                    Add to Bag
-                  </button>{" "}
-                  <button className="LehengaImages-description__buttonbuy">
-                    {" "}
-                    <img src={whatsapp} alt="Icon of Whatsapp" /> Buy Now
-                  </button>
-                </span>
-              </p>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <button
-              autoFocus
-                className="LehengaImages-Row2__button1"
-                onClick={() => showComponent("LehengaDescription")}
-              >
-                Description
-              </button>
-              <button
-                className="LehengaImages-Row2__button2"
-                onClick={() => showComponent("InformationLehenga")}
-              >
-                INFORMATION
-              </button>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12}>
-              {togglefirst && <LehengaDescription />}
-              {togglesecond && <InformationLehenga />}
+              {descType === "description" && <LehengaDescription />}
+              {descType === "information" && <InformationLehenga />}
             </Col>
           </Row>
         </Container>
@@ -444,6 +252,4 @@ function ProductImages({ placement }) {
 
 export default ProductImages;
 
-function Example() {
-  return <ProductImages placement="end" />;
-}
+
