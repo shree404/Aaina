@@ -127,7 +127,6 @@ function MyAccount() {
                     Delete My Account
                   </button>{" "}
                 </ListGroup.Item>{" "}
-                <br /> <br />
                 {show && <AccountDelete Close={HandleDeleteOption} />}
               </ListGroup>
             </Col>

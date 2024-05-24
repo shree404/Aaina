@@ -78,13 +78,7 @@
       }
     }
     &__p6 {
-      color: rgba(0, 0, 0, 0.85);
-
-      font-family: $Lora;
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: 1.25rem; /* 125% */
-      text-transform: capitalize;
+      @extend .LehengaImages-description__p5;
     }
     &__buttonadd {
       border-radius: 4px;
@@ -101,21 +95,14 @@
       margin-right: 0.75rem;
     }
     &__buttonbuy {
+      @extend .LehengaImages-description__buttonadd;
       background-color: var(--primary-2, #a47bff);
       border: none;
       color: var(--0, #fdf6fb);
-      font-family: $Taviraj;
-      font-size: 1rem;
-      font-weight: 600;
-      line-height: 160%;
-      height: 3rem;
-      width: 11rem;
-      border-radius: 4px;
-      align-items: center;
     }
   }
   &-Row2 {
-    &__button1 {
+    &__button {
       margin-top: 5rem;
       margin-bottom: 1rem;
       border: none;
@@ -128,32 +115,8 @@
       font-family: $Taviraj;
       font-size: 0.88rem;
       font-weight: 400;
-      line-height: 140%; /* 19.6px */
+      line-height: 140%;
       text-transform: uppercase;
-      &:focus{
-        border: none;
-        border-bottom: 2px solid var(--primary-3, #6926ff);
-      }
-    }
-    &__button2 {
-      margin-top: 5rem;
-      margin-bottom: 1rem;
-      border: none;
-      border-bottom: 2px solid #f0e9ff;
-      background-color: white;
-      width: 10rem;
-      height: 3.5rem;
-      color: rgba(0, 0, 0, 0.85);
-      text-align: center;
-      font-family: $Taviraj;
-      font-size: 0.88rem;
-      font-weight: 400;
-      line-height: 140%; /* 19.6px */
-      text-transform: uppercase;
-      &:focus {
-        border: none;
-        border-bottom: 2px solid var(--primary-3, #6926ff);
-      }
     }
   }
 }
@@ -201,41 +164,47 @@
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .LehengaImages {
-    display: none;
-  }
-  .LehengaImages-md {
-    display: inline;
-  }
-}
-
-
-.OrderSummary__header{
-  color: var(--black, #231F20);
-font-family:  "Lora", serif;
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 500;
-line-height:  133.333% ;
-text-transform: capitalize;
-}
-
-.OrderSummary__header1{
-  color: var(--neutral-600, #52525B);
-text-align: center;
-font-family: Lora;
-font-size: 0.88rem;
-font-style: normal;
-font-weight: 400;
-line-height: 150% ;
-}
-
-@media screen and (max-width:1023px) {
-  .LehengaImages{
-      margin-top: 2rem;
+    &-col1 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+    &__imgbig {
+      width: 100%;
+    }
+    &__uparrow {
+      display: none;
+    }
+    &__downarrow {
+      display: none;
+    }
+    &-description {
+      &__buttonadd {
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
 
-[autoFocus] {
-  border: none !important ;
-  border-bottom: 2px solid var(--primary-3, #6926ff) !important;
+.OrderSummary__header {
+  color: var(--black, #231f20);
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+  text-transform: capitalize;
+}
+
+.OrderSummary__header1 {
+  @extend .OrderSummary__header;
+  color: var(--neutral-600, #52525b);
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.activeButton {
+  border-bottom: 2px solid var(--primary-3, #6926ff);
 }

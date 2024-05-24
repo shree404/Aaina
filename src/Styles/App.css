@@ -195,7 +195,7 @@
   line-height: 1.12rem;
   gap: 1rem;
 }
-.categoryContainer-Women {
+.categoryContainer-Women, .categoryContainer-Lehenga, .categoryContainer-Bridal, .categoryContainer-Men {
   width: 20%;
   height: auto;
 }
@@ -203,31 +203,20 @@
   text-decoration: none;
   color: var(--neutral-900, #18181B);
 }
-.categoryContainer__Topic {
+.categoryContainer__Topic, .categoryContainer__list, .categoryContainer-Lehenga__p {
   font-size: 0.99rem;
   font-weight: 500;
   font-family: Lora;
   margin-bottom: 1rem;
 }
-.categoryContainer__list {
+.categoryContainer__list, .categoryContainer-Lehenga__p {
   font-family: "Tenor Sans";
-  font-size: 0.99rem;
   font-weight: 400;
   margin-top: 1rem;
   text-decoration: none;
   color: var(--neutral-900, #18181B);
 }
-.categoryContainer-Men {
-  width: 20%;
-  height: auto;
-}
-.categoryContainer-Bridal {
-  width: 20%;
-  height: auto;
-}
 .categoryContainer-Lehenga {
-  width: 20%;
-  height: auto;
   text-align: center;
   background-color: #F4F4F5;
   text-decoration: none;
@@ -235,9 +224,6 @@
 }
 .categoryContainer-Lehenga__p {
   text-align: center;
-  font-family: "Tenor Sans";
-  font-size: 1rem;
-  font-weight: 400;
 }
 .categoryContainer-cancel {
   justify-content: end;
@@ -319,36 +305,12 @@ h1 {
   align-items: center;
   font-style: normal;
 }
-.container-kurtiSection-buynow-middleSection__description {
-  color: var(--secondary-500, #2a2940);
-  font-family: Lora;
-  font-size: 2.25rem;
-  font-weight: 600;
-  line-height: 120%;
-  letter-spacing: -0.02rem;
-  text-transform: capitalize;
-}
 .container-kurtiSection-buynow-middleSection__description__kurti-word {
   color: var(--secondary-500, #01666b);
   margin-left: -0.2rem;
 }
-.container-kurtiSection-buynow-middleSection__description2 {
-  color: #564f44;
-  font-family: "Tenor Sans";
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.0012rem;
-  text-transform: capitalize;
-  margin-top: -1rem;
-}
 .container-kurtiSection-buynow-middleSection__button {
-  border-radius: 5rem;
-  background: #01666b;
-  height: 2.5rem;
-  width: 9rem;
-  border: none;
-  color: white;
+  background: #01666b !important;
 }
 .kurta1 {
   width: 100%;
@@ -381,7 +343,7 @@ h1 {
   justify-content: center;
   font-style: normal;
 }
-.container-BrideandGroomSection-buynow-middleSection__description {
+.container-BrideandGroomSection-buynow-middleSection__description, .container-kurtiSection-buynow-middleSection__description {
   color: var(--secondary-500, #2A2940);
   font-family: Lora;
   font-size: 2.25rem;
@@ -394,7 +356,7 @@ h1 {
   color: #CA0114;
   margin-left: -0.2rem;
 }
-.container-BrideandGroomSection-buynow-middleSection__description2 {
+.container-BrideandGroomSection-buynow-middleSection__description2, .container-kurtiSection-buynow-middleSection__description2 {
   color: #564F44;
   font-family: "Tenor Sans";
   font-size: 1.25rem;
@@ -404,21 +366,21 @@ h1 {
   text-transform: capitalize;
   margin-top: -1rem;
 }
-.container-BrideandGroomSection-buynow-middleSection__button {
+.container-BrideandGroomSection-buynow-middleSection__button, .container-kurtiSection-buynow-middleSection__button {
   border-radius: 5rem;
   background: #CA0114;
   height: 2.5rem;
   width: 9rem;
   border: none;
-  font: 700;
+  font-weight: 500;
   color: white;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1024px) {
-  .container-BrideandGroomSection-buynow-middleSection__description {
+  .container-BrideandGroomSection-buynow-middleSection__description, .container-kurtiSection-buynow-middleSection__description {
     font-size: 1rem;
   }
-  .container-BrideandGroomSection-buynow-middleSection__description2 {
+  .container-BrideandGroomSection-buynow-middleSection__description2, .container-kurtiSection-buynow-middleSection__description2 {
     font-size: 0.88rem;
   }
 }
@@ -501,39 +463,31 @@ h1 {
   color: white;
   text-decoration: none;
 }
-.footer-container {
+.footer-container, .footer-container dt, .footer-container__location dt, .footer-container__location, .footer-container dd, .footer-container__location dd {
   margin-top: 2rem;
   line-height: 180%;
-}
-.footer-container dt {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
   font-style: normal;
-  line-height: 140%;
-  text-transform: capitalize;
-}
-.footer-container dd {
-  margin-bottom: 0.25rem;
-  color: #fff;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%; /* 28.8px */
-  text-transform: capitalize;
 }
 .footer-container__divider {
   border: none;
   border-right: #fff solid 2px;
 }
-.footer-container__location {
+.footer-container__location, .footer-container dd, .footer-container__location dd {
   font-size: 1rem;
-  font-style: normal;
   font-weight: 400;
-  line-height: 180%;
   text-transform: capitalize;
   display: flex;
+}
+.footer-container dt, .footer-container__location dt {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+.footer-container dd, .footer-container__location dd {
+  margin-bottom: 0.25rem;
+  color: #fff;
 }
 .footer-end-section-icons {
   margin-top: 1rem;
@@ -567,7 +521,7 @@ h1 {
 }
 .FooterMob-Button {
   border: none;
-  margin-top: 2rem;
+  margin-top: 1rem;
   background-color: none;
   color: #5F5F5F;
   font-size: 0.82rem;
@@ -659,7 +613,7 @@ h1 {
   line-height: 1.25rem;
   text-transform: capitalize;
 }
-.LehengaImages-description__p5 {
+.LehengaImages-description__p5, .LehengaImages-description__p6 {
   color: rgba(0, 0, 0, 0.85);
   font-family: "Lora", serif;
   font-size: 1rem;
@@ -687,15 +641,7 @@ h1 {
   background-color: var(--tertiary, #ee636f);
   color: white;
 }
-.LehengaImages-description__p6 {
-  color: rgba(0, 0, 0, 0.85);
-  font-family: "Lora", serif;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.25rem; /* 125% */
-  text-transform: capitalize;
-}
-.LehengaImages-description__buttonadd {
+.LehengaImages-description__buttonadd, .LehengaImages-description__buttonbuy {
   border-radius: 4px;
   border: 2px solid var(--tertiary, #ee636f);
   background-color: white;
@@ -713,16 +659,8 @@ h1 {
   background-color: var(--primary-2, #a47bff);
   border: none;
   color: var(--0, #fdf6fb);
-  font-family: "Taviraj", serif;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 160%;
-  height: 3rem;
-  width: 11rem;
-  border-radius: 4px;
-  align-items: center;
 }
-.LehengaImages-Row2__button1 {
+.LehengaImages-Row2__button {
   margin-top: 5rem;
   margin-bottom: 1rem;
   border: none;
@@ -735,32 +673,8 @@ h1 {
   font-family: "Taviraj", serif;
   font-size: 0.88rem;
   font-weight: 400;
-  line-height: 140%; /* 19.6px */
+  line-height: 140%;
   text-transform: uppercase;
-}
-.LehengaImages-Row2__button1:focus {
-  border: none;
-  border-bottom: 2px solid var(--primary-3, #6926ff);
-}
-.LehengaImages-Row2__button2 {
-  margin-top: 5rem;
-  margin-bottom: 1rem;
-  border: none;
-  border-bottom: 2px solid #f0e9ff;
-  background-color: white;
-  width: 10rem;
-  height: 3.5rem;
-  color: rgba(0, 0, 0, 0.85);
-  text-align: center;
-  font-family: "Taviraj", serif;
-  font-size: 0.88rem;
-  font-weight: 400;
-  line-height: 140%; /* 19.6px */
-  text-transform: uppercase;
-}
-.LehengaImages-Row2__button2:focus {
-  border: none;
-  border-bottom: 2px solid var(--primary-3, #6926ff);
 }
 
 #LehengaImages-description__button2 {
@@ -792,7 +706,7 @@ h1 {
   .LehengaImages__downarrow {
     display: none;
   }
-  .LehengaImages-description__buttonadd {
+  .LehengaImages-description__buttonadd, .LehengaImages-description__buttonbuy {
     margin-bottom: 1rem;
   }
 }
@@ -801,15 +715,26 @@ h1 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-  .LehengaImages {
+  .LehengaImages-col1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+  .LehengaImages__imgbig {
+    width: 100%;
+  }
+  .LehengaImages__uparrow {
     display: none;
   }
-  .LehengaImages-md {
-    display: inline;
+  .LehengaImages__downarrow {
+    display: none;
+  }
+  .LehengaImages-description__buttonadd, .LehengaImages-description__buttonbuy {
+    margin-bottom: 1rem;
   }
 }
-.OrderSummary__header {
-  color: var(--black, #231F20);
+.OrderSummary__header, .OrderSummary__header1 {
+  color: var(--black, #231f20);
   font-family: "Lora", serif;
   font-size: 1.5rem;
   font-style: normal;
@@ -819,23 +744,15 @@ h1 {
 }
 
 .OrderSummary__header1 {
-  color: var(--neutral-600, #52525B);
+  color: var(--neutral-600, #52525b);
   text-align: center;
-  font-family: Lora;
   font-size: 0.88rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
 }
 
-@media screen and (max-width: 1023px) {
-  .LehengaImages {
-    margin-top: 2rem;
-  }
-}
-[autoFocus] {
-  border: none !important;
-  border-bottom: 2px solid var(--primary-3, #6926ff) !important;
+.activeButton {
+  border-bottom: 2px solid var(--primary-3, #6926ff);
 }
 
 .Description {
