@@ -90,7 +90,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.Navbar-Container-middleSection-SearchOption__button, .Login-button, .Login-apple, .Login-google {
+.Navbar-Container-middleSection-SearchOption__button, .ForgetPassword-submit, .Login-button, .Login-apple, .Login-google {
   width: 8rem;
   height: 2.82rem;
   display: flex;
@@ -183,6 +183,11 @@
   }
   .Navbar-Container-CartSection__p {
     display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+  .Navbar-Container-middleSection-SearchOption__area {
+    width: 18rem;
   }
 }
 .categoryContainer {
@@ -1813,6 +1818,12 @@ h1 {
   color: #231f20;
 }
 
+@media screen and (max-width: 576px) {
+  .Auth {
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+  }
+}
 .ForgetPassword-button, .Login__signupButton {
   margin-top: 1rem;
   border: none;
@@ -1841,4 +1852,27 @@ h1 {
 }
 .Login-apple {
   background-color: #231f20;
+}
+
+@media screen and (max-width: 768px) {
+  .Login-apple {
+    margin-top: 1rem;
+  }
+}
+.ForgetPassword {
+  margin-top: 10rem;
+  text-align: start;
+  font-family: "Tenor Sans";
+}
+.ForgetPassword-head {
+  font-weight: 700;
+  color: #231f20;
+}
+.ForgetPassword-p {
+  font: 1rem;
+  color: #231f20;
+}
+.ForgetPassword-submit {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }/*# sourceMappingURL=App.css.map */
