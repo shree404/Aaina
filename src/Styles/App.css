@@ -90,7 +90,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.Navbar-Container-middleSection-SearchOption__button, .Login-button, .Login-google {
+.Navbar-Container-middleSection-SearchOption__button, .Login-button, .Login-apple, .Login-google {
   width: 8rem;
   height: 2.82rem;
   display: flex;
@@ -1802,7 +1802,7 @@ h1 {
   margin-top: 10rem;
 }
 .Auth-button {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   border: none;
   background-color: white;
@@ -1822,7 +1822,7 @@ h1 {
   font-size: 1rem;
 }
 
-.Login-button, .Login-google {
+.Login-button, .Login-apple, .Login-google {
   width: 100%;
   height: 2.82rem;
   border-radius: 0.25rem;
@@ -1835,4 +1835,10 @@ h1 {
 }
 .Login-google {
   background-color: #f5878a;
+}
+.Login__signupButton {
+  margin-top: 2rem;
+}
+.Login-apple {
+  background-color: #231f20;
 }/*# sourceMappingURL=App.css.map */
