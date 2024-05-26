@@ -27,6 +27,11 @@
 }
 &__signupButton{
     @extend .ForgetPassword-button;
+    margin-top: 2rem
+}
+&-apple{
+    @extend .Login-button;
+    background-color: #231f20;
 }
 }
 
