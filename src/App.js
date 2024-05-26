@@ -21,6 +21,7 @@ import NoItem from "./Pages/NoItem";
 import AccountPage from "./Pages/AccountPage";
 import ShippingPage from "./Pages/Shippingpage";
 import AuthPage from "./Pages/Authpage";
+import ForgetPasswordPage from "./Pages/ForgetPasswordPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -41,7 +42,8 @@ const router = createBrowserRouter(
       <Route path="/cart" element={<NoItem/>} />,
       <Route path="/account" element={<AccountPage/>} />,
       <Route path="/shipping" element={<ShippingPage/>} />,
-      <Route path="/auth" element={<AuthPage/>} />,
+      <Route path="/login" element={<AuthPage/>} />,
+      <Route path="/forgot-password" element={<ForgetPasswordPage/>} />,
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )

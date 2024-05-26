@@ -33,7 +33,7 @@ function Register({Login}) {
           required
         />
         <Row>
-          <Col>
+          <Col md={6} sm={12} xs={12}>
             <Form.Label htmlFor="inputpassword">Password</Form.Label>
             <InputGroup className="mb-3">
               <Form.Control
@@ -73,7 +73,7 @@ function Register({Login}) {
               </InputGroup.Text>
             </InputGroup>
           </Col>
-          <Col>
+          <Col md={6} sm={12} xs={12}>
             <Form.Label htmlFor="inputpassword">Re-type Password</Form.Label>
             <InputGroup className="mb-3">
               <Form.Control
@@ -118,7 +118,7 @@ function Register({Login}) {
         <hr />
         <p className="Login-or">OR</p>
         <Row>
-          <Col>
+          <Col md={6} sm={12} xs={12}>
             <button className="Login-google">
               {" "}
               <svg
@@ -134,7 +134,7 @@ function Register({Login}) {
               Sign Up with With Google
             </button>
           </Col>
-          <Col>
+          <Col md={6} sm={12} xs={12}>
             <button className="Login-apple">
               {" "}
               <svg

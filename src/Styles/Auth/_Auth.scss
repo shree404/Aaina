@@ -13,3 +13,10 @@
 .auth-button{
     color: #231f20;
 }
+
+@media screen and (max-width:576px) {
+    .Auth{
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+}
