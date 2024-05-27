@@ -1,8 +1,8 @@
 import Offcanvas from "react-bootstrap/Offcanvas";
 import React, { useState } from "react";
 import nav from "../../Assets/LandingPage/logo.png";
-import menu from "../../Assets/LandingPage/menu.png";
 import CategoryMob from "./CategoryMob";
+import { List } from "react-bootstrap-icons";
 
 function NavMobile() {
   const [show, setShow] = useState(false);
@@ -18,11 +18,8 @@ function NavMobile() {
           </div>
           <div className="MobileNav-Container__menu">
             <button onClick={handleShow}>
-              <img
-                src={menu}
-                alt="Menu Items"
-                className="MobileNav-Container__icon"
-              />
+             <List id="CategoryIcon"
+             />
             </button>
             <Offcanvas show={show} onHide={handleClose} responsive="lg"
             placement="end"
