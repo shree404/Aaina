@@ -14,6 +14,8 @@ function WomenCategoryColor({ onFilterChange }) {
   const [green, setgreen] = useState(true);
   const [purple, setpurple] = useState(true);
 
+  const [color , setColor] = useState(false)
+
   const handleFilterChange = () => {
     const selectedColors = [];
     if (pink) {
