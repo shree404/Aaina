@@ -9,3 +9,12 @@
 .order-button{
     color: #ee6367;
 }
+
+@media screen and (max-width:576px) {
+    .Order{
+        margin-top: 2rem;
+    }
+    .OrderList{
+        margin-bottom: 10rem;
+    }
+}

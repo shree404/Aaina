@@ -39,8 +39,8 @@ function AllOrder(){
         }
     ]
     return(
-        <>
-        <Container>
+        <div className="OrderList">
+        <Container >
             <Row>
                 <Col md={4}>
                 <OrderDropDown/>
@@ -74,7 +74,7 @@ function AllOrder(){
                 ))}
             </Row>
         </Container>
-        </>
+        </div>
     )
 }
 

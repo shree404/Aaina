@@ -1881,6 +1881,14 @@ h1 {
   color: #ee6367;
 }
 
+@media screen and (max-width: 576px) {
+  .Order {
+    margin-top: 2rem;
+  }
+  .OrderList {
+    margin-bottom: 10rem;
+  }
+}
 .OrderDropDown {
   margin-left: 30%;
 }
@@ -1920,7 +1928,7 @@ h1 {
 }
 .IndividualOrder-footer__ordername {
   font-size: 1rem;
-  color: var(--neutral-700, #3F3F46);
+  color: var(--neutral-700, #3f3f46);
   text-transform: capitalize;
 }
 .IndividualOrder-footer__quantity {
