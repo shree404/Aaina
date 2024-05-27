@@ -1,11 +1,11 @@
 .IndividualOrder {
-    font-family: "Taviraj", serif;
+  font-family: "Taviraj", serif;
   width: 80%;
   background-color: rgb(245, 243, 240);
   margin-top: 2rem;
   margin-left: 10%;
   margin-right: 10%;
-  &-head{
+  &-head {
     display: flex;
     justify-content: space-between;
     margin-left: 2%;
@@ -21,32 +21,32 @@
       font-size: 0.75rem;
       color: #888888;
     }
-    &__price{
-        color: red;
+    &__price {
+      color: red;
     }
   }
-  &-footer{
+  &-footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-right: 5%;
     margin-left: 5%;
-    &__ordername{
-        font-size: 1rem;
-        color: var(--neutral-700, #3F3F46);
-        text-transform: capitalize;
+    &__ordername {
+      font-size: 1rem;
+      color: var(--neutral-700, #3f3f46);
+      text-transform: capitalize;
     }
-    &__quantity{
-        color: #888888;
-        font-size:0.88rem ;
+    &__quantity {
+      color: #888888;
+      font-size: 0.88rem;
     }
-    &__status{
-        background-color: rgb(213, 187, 156);
-        height: 1.12rem;
-        font-size: 0.75rem;
-        width: 4rem;
-        text-align: center;
-        border-radius: 0.5rem;
+    &__status {
+      background-color: rgb(213, 187, 156);
+      height: 1.12rem;
+      font-size: 0.75rem;
+      width: 4rem;
+      text-align: center;
+      border-radius: 0.5rem;
     }
   }
 }
