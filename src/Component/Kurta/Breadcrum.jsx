@@ -1,14 +1,14 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import arrow from "../../Assets/Women/Vector.svg";
+import { ChevronRight, Funnel, ChevronDown } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
-import filter from "../../Assets/Women/filter_alt.svg";
-import downarrow from "../../Assets/Women/ChevronDownOutline.svg";
 import SelectCategoryWomen from "../Women/SelectCategory";
 import KurtiList from "./KurtiList";
 import { useState } from "react";
 import WomenCategoryColor from "../Women/CategoryColor";
+import Form from "react-bootstrap/Form";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 function WomenKurtaBreadcrum() {
   const [category, setCategory] = useState();
@@ -37,14 +37,14 @@ function WomenKurtaBreadcrum() {
                 Home{" "}
               </Link>
             </span>{" "}
-            <img src={arrow} alt="Arrow" />
+            <ChevronRight />
             <span>
               {" "}
               <Link to="/women" className="WomenBreadcrum-p__t2">
                 Women{" "}
               </Link>
             </span>
-            <img src={arrow} alt="Arrow" />
+            <ChevronRight />
             <span>
               {" "}
               <Link to="/women-kurta" className="WomenBreadcrum-p__t2">
@@ -55,29 +55,30 @@ function WomenKurtaBreadcrum() {
         </div>
       </div>
       <Container>
-      <div className="WomenFilter">
+        <div className="WomenFilter">
           <p>
-            <span className="WomenFilter__1">Filters</span>{" "}
-            <img src={filter} alt="" />
+            <span className="WomenFilter__1">Filters</span> <Funnel />
           </p>
           <div className="WomenFilters">
-            <button className="WomenFilter-select" onClick={CategorySelect}>
-              {" "}
-              <span className="WomenFilter-select-Container__prefix">
-                {" "}
-                Sort By : Best Match{" "}
-              </span>{" "}
-              &nbsp; &nbsp;
-              <img src={downarrow} alt="" />{" "}
-            </button>
-            {category && <SelectCategoryWomen />}
+            <Form.Select aria-label="Default select example">
+              <option className="options">Best Match</option>
+              <option value="1" className="options">
+                Price High to Low
+              </option>
+              <option value="2" className="options">
+                Price Low to High
+              </option>
+              <option value="3" className="options">
+                Latest Arrival
+              </option>
+            </Form.Select>
           </div>
         </div>
         <Row>
-          <Col md={4} >
+          <Col md={4}>
             <WomenCategoryColor onFilterChange={handleFilterChange} />
           </Col>
-          <Col  md={8}>
+          <Col md={8}>
             <KurtiList selectedColor={selectedColor} />
           </Col>
         </Row>

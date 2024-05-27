@@ -41,15 +41,3 @@ h1{
     font-family: "Taviraj", serif;
 }
 
-.NewProduct-S-md{
-    display: none;
-}
-
-@media screen and (max-width:1024px) and (min-width:576px) {
-    .NewProduct-md{
-        display: none;
-    }
-    .NewProduct-S-md{
-        display: inline;
-    }
-}

@@ -41,34 +41,6 @@ function BestSeller() {
               </Col>
             </Row>
           </div>
-          <div className="NewProduct-md">
-            <Row className="justify-content-md-sm-xs-center">
-              {bestSellerArray.map((product, index) => (
-                <Col md={3} sm={6} xs={12}>
-                  <div key={index}>
-                    <article>
-                      <Link
-                        to="/product-lehenga"
-                        className="product-details-container-single-product"
-                      >
-                        <img
-                          src={product.bestsellerImage}
-                          alt="Image of Maroon Lehenga"
-                        />
-                        <p className="product-details-container-single-product__name">
-                          {product.bestsellerName}{" "}
-                        </p>
-                        <p className="product-details-container-single-product__price">
-                          {" "}
-                          {product.bestsellerPrice}{" "}
-                        </p>
-                      </Link>
-                    </article>
-                  </div>
-                </Col>
-              ))}
-            </Row>
-          </div>
           <div className="NewProduct-S-md">
             <Row>
               {bestSellerArray.map((product, index) => (

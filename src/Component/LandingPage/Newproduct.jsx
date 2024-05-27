@@ -41,37 +41,6 @@ function NewProduct() {
               </Col>
             </Row>
           </div>
-          <div className="NewProduct-md">
-            <Row className="justify-content-md-sm-xs-center">
-              {newproductarray.map((product, index) => (
-                <Col md={3} sm={6} xs={12}>
-                  <div
-                    key={index}
-                    className="product-details-container-single-product"
-                  >
-                    <article>
-                      <Link
-                        to="/product-lehenga"
-                        className="product-details-container-single-product"
-                      >
-                        <img
-                          src={product.productimgae}
-                          alt="Image of Maroon Lehenga"
-                        />
-                        <p className="product-details-container-single-product__name">
-                          {product.productName}{" "}
-                        </p>
-                        <p className="product-details-container-single-product__price">
-                          {" "}
-                          {product.productPrice}{" "}
-                        </p>
-                      </Link>
-                    </article>
-                  </div>
-                </Col>
-              ))}
-            </Row>
-          </div>
           <div className="NewProduct-S-md">
             <Row>
               {newproductarray.map((product, index) => (

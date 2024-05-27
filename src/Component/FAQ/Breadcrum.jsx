@@ -1,5 +1,6 @@
-import arrow from "../../Assets/Women/Vector.svg";
+
 import { Link } from "react-router-dom";
+import { ChevronRight } from "react-bootstrap-icons";
 
 function FAQBreadcrum() {
   return (
@@ -13,7 +14,7 @@ function FAQBreadcrum() {
                 Home{" "}
               </Link>
             </span>{" "}
-            <img src={arrow} alt="Arrow" />
+            <ChevronRight/>
             <span>
               {" "}
               <Link to="/faqs" className="WomenBreadcrum-p__t2">

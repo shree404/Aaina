@@ -1,26 +1,14 @@
 import Container from "react-bootstrap/Container";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
+import {X} from 'react-bootstrap-icons';
 
 function AccountDelete({Close}) {
   return (
     <div className="AccountDelete">
       <Container className="mt-3">
         <button  onClick={Close} className="AccountDelete-button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            height="2rem"
-            width="2rem"
-          >
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
+          <X className="AccountDelete-icon" />
         </button>
         <h1>Are you sure want to delete your account ?</h1>
         <p className="AccountDelete-p">

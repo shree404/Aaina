@@ -134,7 +134,7 @@
   line-height: 160%;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .LehengaImages {
     &-col1 {
       flex-direction: row;
@@ -158,9 +158,13 @@
   }
 }
 
-.LehengaImages-md {
-  display: none;
-}
+// @media screen and (min-width:768px) and (max-width:992px) {
+//   .LehengaImages-description{
+//     &__p1{
+//       font-size: 1.25rem;
+//     }
+//   }
+// }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .LehengaImages {

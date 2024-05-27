@@ -79,36 +79,6 @@ function Testimonials() {
               ))}
             </Row>
           </div>
-          <div className="Testimonials-Md">
-            <Row className="justify-content-md-sm-xs-center mb-5">
-              {testimonialsOfUser.map((testimonial, index) => (
-                <Col md={12} sm={12} xs={12}>
-                  <div className="client-review-container">
-                    <div className="client-review-container-description">
-                      <div>
-                        {" "}
-                        <Star /> <p>{testimonial.clientDescription}</p>
-                        <div className="client-review-container-description-user-description">
-                          <div className="client-review-container-description-user-description__name">
-                            {testimonial.clientName} &nbsp; &nbsp;
-                          </div>
-                          <div className="client-review-container-description-user-description__position">
-                            {testimonial.clientPost}
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src={testimonial.clientImage}
-                          alt="Image of Reviewer"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              ))}
-            </Row>
-          </div>
         </Container>
       </div>
     </>
