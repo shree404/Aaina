@@ -1,0 +1,11 @@
+.Order{
+  margin-top: 10rem; 
+  &-buttons{
+    @extend .Auth-button;
+    font-size: 1.25rem;
+  } 
+}
+
+.order-button{
+    color: #ee6367;
+}

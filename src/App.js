@@ -22,6 +22,7 @@ import AccountPage from "./Pages/AccountPage";
 import ShippingPage from "./Pages/Shippingpage";
 import AuthPage from "./Pages/Authpage";
 import ForgetPasswordPage from "./Pages/ForgetPasswordPage";
+import OrderPage from "./Pages/OrderPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -44,6 +45,7 @@ const router = createBrowserRouter(
       <Route path="/shipping" element={<ShippingPage/>} />,
       <Route path="/login" element={<AuthPage/>} />,
       <Route path="/forgot-password" element={<ForgetPasswordPage/>} />,
+      <Route path="/order" element={<OrderPage/>} />,
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )

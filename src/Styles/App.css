@@ -1799,7 +1799,7 @@ h1 {
 .Auth {
   margin-top: 10rem;
 }
-.Auth-button {
+.Auth-button, .Order-buttons {
   font-size: 2rem;
   font-weight: 600;
   border: none;
@@ -1868,4 +1868,70 @@ h1 {
 .ForgetPassword-submit {
   margin-top: 2rem;
   margin-bottom: 3rem;
+}
+
+.Order {
+  margin-top: 10rem;
+}
+.Order-buttons {
+  font-size: 1.25rem;
+}
+
+.order-button {
+  color: #ee6367;
+}
+
+.OrderDropDown {
+  margin-left: 30%;
+}
+
+.IndividualOrder {
+  font-family: "Taviraj", serif;
+  width: 80%;
+  background-color: rgb(245, 243, 240);
+  margin-top: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.IndividualOrder-head {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.IndividualOrder-order__id {
+  color: rgb(25, 233, 233);
+  font-size: 0.88rem;
+}
+.IndividualOrder-order__placedate {
+  margin-left: 2%;
+  font-size: 0.75rem;
+  color: #888888;
+}
+.IndividualOrder-order__price {
+  color: red;
+}
+.IndividualOrder-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.IndividualOrder-footer__ordername {
+  font-size: 1rem;
+  color: var(--neutral-700, #3F3F46);
+  text-transform: capitalize;
+}
+.IndividualOrder-footer__quantity {
+  color: #888888;
+  font-size: 0.88rem;
+}
+.IndividualOrder-footer__status {
+  background-color: rgb(213, 187, 156);
+  height: 1.12rem;
+  font-size: 0.75rem;
+  width: 4rem;
+  text-align: center;
+  border-radius: 0.5rem;
 }/*# sourceMappingURL=App.css.map */
