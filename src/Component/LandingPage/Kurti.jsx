@@ -79,37 +79,6 @@ function Kurti() {
               </Col>
             </Row>
           </div>
-          <div className="NewProduct-md">
-            <Row className="justify-content-md-sm-xs-center">
-              {kurtiarray.map((product, index) => (
-                <Col md={3} sm={6} xs={12}>
-                  <div
-                    key={index}
-                    className="product-details-container-single-product"
-                  >
-                    <article>
-                      <Link
-                        to="/product-lehenga"
-                        className="product-details-container-single-product"
-                      >
-                        <img
-                          src={product.kurtiImage}
-                          alt="Image of Maroon Lehenga"
-                        />
-                        <p className="product-details-container-single-product__name">
-                          {product.kurtiName}{" "}
-                        </p>
-                        <p className="product-details-container-single-product__price">
-                          {" "}
-                          {product.kurtiprice}{" "}
-                        </p>
-                      </Link>
-                    </article>
-                  </div>
-                </Col>
-              ))}
-            </Row>
-          </div>
           <div className="NewProduct-S-md">
             <Row>
               {kurtiarray.map((product, index) => (

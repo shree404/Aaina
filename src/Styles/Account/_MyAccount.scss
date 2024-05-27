@@ -49,18 +49,12 @@
     width: 15rem;
     height: 3.5rem;
     border-radius: 0.5rem;
-    #MyAccount__icon{
-        fill:#1d2a35;
-    }
     &:hover{
         background-color: #f0f0f0;
     }
     &:active{
     background-color: #EE636F;
     color: white;
-    #MyAccount__icon{
-        fill: white;
-    }
     }
 }
 

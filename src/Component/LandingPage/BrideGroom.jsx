@@ -77,37 +77,6 @@ function BrideGroom() {
               </Col>
             </Row>
           </div>
-          <div className="NewProduct-md">
-            <Row className="justify-content-md-sm-xs-center">
-              {imageArray.map((product, index) => (
-                <Col md={3} sm={6} xs={12}>
-                  <div
-                    key={index}
-                    className="product-details-container-single-product"
-                  >
-                    <article>
-                      <Link
-                        to="/product-lehenga"
-                        className="product-details-container-single-product"
-                      >
-                        <img
-                          src={product.Image}
-                          alt="Image of Maroon Lehenga"
-                        />
-                        <p className="product-details-container-single-product__name">
-                          {product.Name}{" "}
-                        </p>
-                        <p className="product-details-container-single-product__price">
-                          {" "}
-                          {product.price}{" "}
-                        </p>
-                      </Link>
-                    </article>
-                  </div>
-                </Col>
-              ))}
-            </Row>
-          </div>
           <div className="NewProduct-S-md">
             <Row>
               {imageArray.map((product, index) => (

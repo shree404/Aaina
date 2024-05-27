@@ -294,18 +294,6 @@ h1 {
   font-family: "Taviraj", serif;
 }
 
-.NewProduct-S-md {
-  display: none;
-}
-
-@media screen and (max-width: 1024px) and (min-width: 576px) {
-  .NewProduct-md {
-    display: none;
-  }
-  .NewProduct-S-md {
-    display: inline;
-  }
-}
 .container-kurtiSection-buynow-middleSection {
   align-items: center;
   font-style: normal;
@@ -437,14 +425,6 @@ h1 {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
-  .Testimonials-Md {
-    display: inline;
-  }
-  .Testimonials {
-    display: none;
-  }
-}
 @media screen and (max-width: 576px) {
   .Testimonial-container {
     margin-bottom: 10rem;
@@ -696,7 +676,7 @@ h1 {
   line-height: 160%;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .LehengaImages-col1 {
     flex-direction: row;
     flex-wrap: wrap;
@@ -715,10 +695,6 @@ h1 {
     margin-bottom: 1rem;
   }
 }
-.LehengaImages-md {
-  display: none;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .LehengaImages-col1 {
     flex-direction: row;
@@ -897,18 +873,32 @@ h1 {
   background-color: white;
 }
 .WomenFilter-Container__prefix {
-  color: #0C0C0C;
-  font-family: "Taviraj", serif;
+  color: #0c0c0c;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.4rem;
   text-transform: capitalize;
 }
 
+.form-select {
+  border: none;
+}
+.form-select:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.options {
+  background-color: white;
+}
+.options:hover {
+  background-color: white;
+}
+
 @media screen and (max-width: 576px) {
   .WomenBreadcrum {
     margin-top: 2rem;
+    margin-bottom: 10rem;
   }
 }
 .Option {
@@ -1481,6 +1471,12 @@ h1 {
   background-color: white;
 }
 
+.socialMediaIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
 .ContactUS {
   font-family: "Taviraj", sans-serif;
   font-style: normal;
@@ -1562,6 +1558,9 @@ h1 {
   margin-top: 0rem;
   background-color: #ffe9e9;
 }
+.AccountDelete-icon {
+  font-size: 2rem;
+}
 .AccountDelete-button {
   background-color: #ffe9e9;
   border: none;
@@ -1635,18 +1634,12 @@ h1 {
   height: 3.5rem;
   border-radius: 0.5rem;
 }
-.account #MyAccount__icon {
-  fill: #1d2a35;
-}
 .account:hover {
   background-color: #f0f0f0;
 }
 .account:active {
   background-color: #EE636F;
   color: white;
-}
-.account:active #MyAccount__icon {
-  fill: white;
 }
 
 #DeleteAccount {

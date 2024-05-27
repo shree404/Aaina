@@ -10,12 +10,11 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 import add from "../../Assets/ProductLehenga/add.svg";
 import remove from "../../Assets/ProductLehenga/remove.svg";
 import whatsapp from "../../Assets/ProductLehenga/whatsapp.svg";
-import up from "../../Assets/ProductLehenga/4.svg";
-import down from "../../Assets/ProductLehenga/3.svg";
 import LehengaDescription from "./description";
 import InformationLehenga from "./Information";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import OrderSummary from "../../Pages/orderSummary";
+import { ChevronDown, ChevronUp } from "react-bootstrap-icons";
 
 function ProductImages({ placement }) {
   const [show, setShow] = useState(false);
@@ -49,11 +48,7 @@ function ProductImages({ placement }) {
             >
               <div className="LehengaImages-col1">
                 <div>
-                  <img
-                    src={up}
-                    alt="Up arrow"
-                    className="LehengaImages__uparrow"
-                  />
+                  <ChevronUp/>
                 </div>
                 <div>
                   <img
@@ -84,11 +79,7 @@ function ProductImages({ placement }) {
                   />
                 </div>
                 <div>
-                  <img
-                    src={down}
-                    alt="Down Arrow"
-                    className="LehengaImages__downarrow"
-                  />
+                  <ChevronDown className="LehengaImages__downarrow "/>
                 </div>
               </div>
             </Col>
@@ -251,5 +242,3 @@ function ProductImages({ placement }) {
 }
 
 export default ProductImages;
-
-
