@@ -524,6 +524,11 @@ h1 {
   fill: #EE626F;
 }
 
+#CategoryIcon {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
 .More-policies {
   color: #ee636f;
   font-size: 1.5rem;
@@ -828,12 +833,12 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 0.88rem;
-  margin-top: 10rem;
 }
 .WomenBreadcrum__normal {
   display: flex;
   justify-content: start;
-  margin-left: 8rem;
+  margin-left: 7%;
+  margin-top: 10rem;
 }
 .WomenBreadcrum-p {
   margin-top: 0.85rem;
@@ -854,30 +859,9 @@ h1 {
 .WomenFilter {
   font-family: "Taviraj", serif;
   font-style: normal;
-  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
-}
-.WomenFilter-b {
-  border: none;
-  background-color: white;
-}
-.WomenFilter-b:focus {
-  border: none;
-  background-color: white;
-}
-.WomenFilter-select {
-  height: 3rem;
-  width: 15rem;
-  border: #000000 1.5px solid;
-  background-color: white;
-}
-.WomenFilter-Container__prefix {
-  color: #0c0c0c;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4rem;
-  text-transform: capitalize;
+  margin-top: 2rem;
 }
 
 .form-select {
@@ -896,9 +880,8 @@ h1 {
 }
 
 @media screen and (max-width: 576px) {
-  .WomenBreadcrum {
+  .WomenBreadcrum__normal {
     margin-top: 2rem;
-    margin-bottom: 10rem;
   }
 }
 .Option {
@@ -938,7 +921,7 @@ h1 {
   flex-direction: column;
   font-family: "Taviraj", serif;
 }
-.CategoriesWomen__button1 {
+.CategoriesWomen__button1, .CategoriesWomen__button2 {
   color: #212529;
   text-align: start;
   font-size: 1.12rem;
@@ -955,17 +938,11 @@ h1 {
   margin-bottom: 1rem;
 }
 .CategoriesWomen__button2 {
-  height: 2rem;
-  width: 11rem;
   color: var(--10, #000);
   font-size: 0.9rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 240%;
-  border: none;
-  text-transform: capitalize;
   text-align: start;
-  background-color: white;
 }
 .CategoriesWomen__button2:hover {
   color: #ee636f;
@@ -1014,9 +991,6 @@ h1 {
   border-radius: 4px;
 }
 
-.ColorOptionWomen {
-  margin-top: 2rem;
-}
 .ColorOptionWomen__color {
   border: none;
   background-color: white;
@@ -1229,15 +1203,15 @@ h1 {
   font-size: 4rem;
   margin-top: 3rem;
 }
-.NotFound__button {
-  border-radius: 0.5rem;
+.NotFound__button, .noItem-button {
+  border-radius: 0.25rem;
   text-transform: uppercase;
-  width: 15rem;
-  height: 3rem;
+  width: 11rem;
+  height: 2.82rem;
   background-color: #EE626F;
   color: white;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   border: none;
   text-align: center;
   text-decoration: none;
@@ -1527,15 +1501,8 @@ h1 {
   margin-top: 0.5rem;
 }
 .noItem-button {
-  text-align: center;
-  border-radius: 0.5rem;
   border: 2px solid var(--tertiary, #ee636f);
-  background-color: var(--tertiary, #ee636f);
-  height: 2.5rem;
-  width: 40%;
-  font-size: 1.5rem;
-  color: white;
-  font-weight: 500;
+  width: 20rem;
   margin-top: 0.5rem;
 }
 
@@ -1876,6 +1843,9 @@ h1 {
 .Order-buttons {
   font-size: 1.25rem;
 }
+.Order-line {
+  width: 80%;
+}
 
 .order-button {
   color: #ee6367;
@@ -1885,8 +1855,16 @@ h1 {
   .Order {
     margin-top: 2rem;
   }
+  .Order-buttons {
+    margin-bottom: 2rem;
+  }
   .OrderList {
     margin-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Order-line {
+    width: 100%;
   }
 }
 .OrderDropDown {

@@ -21,7 +21,6 @@ function Womenbreadcrum() {
 
   return (
     <>
-      <div className="WomenBreadcrum">
         <div className="WomenBreadcrum__normal">
           <p className="WomenBreadcrum-p">
             <span>
@@ -39,7 +38,6 @@ function Womenbreadcrum() {
             </span>
           </p>
         </div>
-      </div>
       <Container className="mb-5">
         <div className="WomenFilter">
           <p>

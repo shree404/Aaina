@@ -20,23 +20,17 @@
     margin-bottom: 1rem;
   }
   &__button2 {
-    height: 2rem;
-    width: 11rem;
+    @extend .CategoriesWomen__button1;
     color: var(--10, #000);
     font-size: 0.9rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 240%;
-    border: none;
-    text-transform: capitalize;
     text-align: start;
-    background-color: white;
     &:hover {
       color: #ee636f;
     }
   }
   &__line1 {
-    // border: 6px solid #E6E6E6;
     display: none;
   }
   &__buttonCon {
@@ -82,7 +76,6 @@
 }
 
 .ColorOptionWomen {
-  margin-top: 2rem;
   &__color {
     border: none;
     background-color: white;
