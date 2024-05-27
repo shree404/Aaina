@@ -7,11 +7,11 @@
   font-style: normal;
   font-weight: 400;
   font-size: 0.88rem;
-  margin-top: 10rem;
   &__normal {
     display: flex;
     justify-content: start;
-    margin-left: 8rem;
+    margin-left: 7%;
+    margin-top: 10rem;
   }
   &-p {
     margin-top: 0.85rem;
@@ -33,33 +33,11 @@
 .WomenFilter {
   font-family: "Taviraj", serif;
   font-style: normal;
-  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
-  &-b {
-    border: none;
-    background-color: white;
-    &:focus {
-      border: none;
-      background-color: white;
-    }
+  margin-top: 2rem;
   }
-  &-select {
-    height: 3rem;
-    width: 15rem;
-    border: #000000 1.5px solid;
-    background-color: white;
-  }
-  &-Container {
-    &__prefix {
-      color: #0c0c0c;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.4rem;
-      text-transform: capitalize;
-    }
-  }
-}
+ 
 
 .form-select {
   border: none;
@@ -84,8 +62,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .WomenBreadcrum {
+  .WomenBreadcrum__normal {
     margin-top: 2rem;
-    margin-bottom: 10rem;
   }
 }

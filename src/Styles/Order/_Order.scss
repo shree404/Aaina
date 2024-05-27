@@ -4,6 +4,9 @@
     @extend .Auth-button;
     font-size: 1.25rem;
   } 
+  &-line{
+    width: 80%;
+  }
 }
 
 .order-button{
@@ -13,8 +16,17 @@
 @media screen and (max-width:576px) {
     .Order{
         margin-top: 2rem;
+        &-buttons{
+          margin-bottom: 2rem;
+        }
     }
     .OrderList{
         margin-bottom: 10rem;
     }
+}
+
+@media screen and (max-width:768px) {
+  .Order-line{
+    width: 100%;
+  }
 }

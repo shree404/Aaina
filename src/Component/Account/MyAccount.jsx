@@ -8,6 +8,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import EditAccount from "./EditAccount";
 import { Person, List,BoxArrowRight 
  } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
  
 
 function MyAccount() {
@@ -39,10 +40,12 @@ function MyAccount() {
                   <Person/>
                   &nbsp; Account Details
                 </button>
+                <Link  className="account" to="/order">
                 <button className="account">
                   <List />
                   &nbsp; My Orders
                 </button>
+                </Link>
                 <button className="account">
                   <BoxArrowRight/>
                   &nbsp; Log Out

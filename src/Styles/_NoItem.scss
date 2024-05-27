@@ -1,39 +1,32 @@
-.noItem{
-    margin-top: 10rem;
-    font-family: "Taviraj", sans-serif;
+.noItem {
+  margin-top: 10rem;
+  font-family: "Taviraj", sans-serif;
   font-style: normal;
   text-align: center;
-    &-p{
-        color: #181717;
-        font-size: 1rem;
-        line-height: 32px;
-        margin-top: 0.5rem;
-    }
-    &-button{
-        text-align: center;
-        border-radius: 0.5rem;
-    border: 2px solid var(--tertiary, #ee636f);
-    background-color: var(--tertiary, #ee636f);
-    height: 2.5rem;
-   width: 40%;
-    font-size: 1.5rem;
-    color: white;
-    font-weight: 500;
+  &-p {
+    color: #181717;
+    font-size: 1rem;
+    line-height: 32px;
     margin-top: 0.5rem;
-    }
+  }
+  &-button {
+    @extend .NotFound__button;
+    border: 2px solid var(--tertiary, #ee636f);
+    width: 20rem;
+    margin-top: 0.5rem;
+  }
 }
 
-@media screen and (max-width:576px) {
-    .noItem{
-        margin-top: 2rem;
-        margin-bottom: 10rem;
-        &-button{
-            width: 100%;
-        }
+@media screen and (max-width: 576px) {
+  .noItem {
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    &-button {
+      width: 100%;
     }
+  }
 }
 
-
-#noItem__svg{
-    width: 100%;
+#noItem__svg {
+  width: 100%;
 }
