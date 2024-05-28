@@ -7,7 +7,7 @@ import WomenFilter from "./Filter";
 import WomenProductList from "./ProductWomen";
 import WomenCategoryColor from "./CategoryColor";
 import { Funnel ,  ChevronRight } from "react-bootstrap-icons";
-import Form from "react-bootstrap/Form";
+import FilterCategory from "./FilterCategory";
 
 function Womenbreadcrum() {
   const [selectedColor, setSelectedColor] = useState(null);
@@ -45,18 +45,7 @@ function Womenbreadcrum() {
             <Funnel/>
           </p>
           <div className="WomenFilters">
-          <Form.Select aria-label="Default select example">
-              <option className="Option__button">Best Match</option>
-              <option value="1" className="Option__button">
-                Price High to Low
-              </option>
-              <option value="2" className="Option__button">
-                Price Low to High
-              </option>
-              <option value="3" className="Option__button">
-                Latest Arrival
-              </option>
-            </Form.Select>
+         <FilterCategory/>
           </div>
         </div>
         <Row>

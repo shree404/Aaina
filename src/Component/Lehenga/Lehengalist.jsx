@@ -15,7 +15,7 @@ const lehenga = products.filter(product => product.type === "lehenga")
         <div className="WomenFilterRed">
           <Row>
             {lehenga.map((product, index) => (
-              <ProductCard product={product} key={index} md={6} lg={4} />
+              <ProductCard product={product} key={index} md={6} lg={6} xl={4} />
             ))}
           </Row>
           </div>
