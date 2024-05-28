@@ -24,13 +24,24 @@
   }
 }
 
-.WomenFilterRed-md {
-  display: none;
-}
+
 
 @media screen and (max-width:576px) {
   .WomenFilterRed{
     margin-bottom: 10rem;
   }
   
+}
+
+.WomenFilterRed1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0rem;
+  text-align: center;
+}
+
+@media screen and (max-width:1238px) and (min-width:998px) {
+  .WomenFilterRed1{
+    justify-content: space-between;
+  }
 }

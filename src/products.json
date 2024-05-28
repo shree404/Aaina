@@ -1,0 +1,61 @@
+
+[
+    {
+      "Name": "Lehenga Blouse Set",
+      "Price": "Rs.6000",
+      "Img" : "/image/best-product2.png",
+      "type":"lehenga",
+      "status":"Best Sell"
+    },
+    {
+      "Name": "Lehenga Blouse Set",
+      "Price": "Rs.6000",
+      "Img" : "/image/best-product2.png",
+      "type":"lehenga",
+      "status":"Best Sell"
+    },
+    {
+      "Name": "Lehenga Blouse Set",
+      "Price": "Rs.6000",
+      "Img" : "/image/best-seller2.png",
+      "type":"lehenga",
+      "status":"Best Sell"
+    },
+    {
+      "Name": "Lehenga Blouse Set",
+      "Price": "Rs.6000",
+      "Img" : "/image/best-seller3.png",
+      "type":"lehenga",
+      "status":"Best Sell"
+    },
+    {
+      "Name": "Lehenga Blouse Set",
+      "Price": "Rs.6000",
+      "Img" : "/image/best-seller3.png",
+      "type":"kurta",
+      "status":"New Arrival"
+    },
+    {
+      "Name": "Lehenga Blouse Set",
+      "Price": "Rs.6000",
+      "Img" : "/image/bdimg3.png",
+      "type":"groom",
+      "status":"New Arrival"
+    },
+    {
+      "Name": "Lehenga Blouse Set",
+      "Price": "Rs.6000",
+      "Img" : "/image/bdimg1.png",
+      "type":"bride",
+      "status":"New Arrival"
+    },
+    {
+      "Name": "Lehenga Blouse Set",
+      "Price": "Rs.6000",
+      "Img" : "/image/bdimg2.png",
+      "type":"bride",
+      "status":"New Arrival"
+    }
+  ]
+
+

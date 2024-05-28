@@ -3,35 +3,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import bg1 from "../../Assets/LandingPage/bd1.png";
 import bg2 from "../../Assets/LandingPage/bd2.png";
-import img1 from "../../Assets/LandingPage/bdimg1.png";
-import img2 from "../../Assets/LandingPage/bdimg2.png";
-import img3 from "../../Assets/LandingPage/bdimg3.png";
-import img4 from "../../Assets/LandingPage/bdimg4.png";
 import { Link } from "react-router-dom";
+import ProductCard from "../ProductCard";
+import products from "../../products.json";
 
 function BrideGroom() {
-  let imageArray = [
-    {
-      Image: img1,
-      Name: "Bride Saree",
-      price: "Rs.28000",
-    },
-    {
-      Image: img2,
-      Name: "Groom wedding set",
-      price: "Rs.28000",
-    },
-    {
-      Image: img3,
-      Name: "Bride Saree",
-      price: "Rs.28000",
-    },
-    {
-      Image: img4,
-      Name: "Bride Saree",
-      price: "Rs.28000",
-    },
-  ];
+  const filtered = products.filter(product => product.type==="groom" ||product.type=== "bride")
   return (
     <>
       <div className="NewProduct">
@@ -79,32 +56,8 @@ function BrideGroom() {
           </div>
           <div className="NewProduct-S-md">
             <Row>
-              {imageArray.map((product, index) => (
-                <Col>
-                  <div
-                    key={index}
-                    className="product-details-container-single-product"
-                  >
-                    <article>
-                      <Link
-                        to="/product-lehenga"
-                        className="product-details-container-single-product"
-                      >
-                        <img
-                          src={product.Image}
-                          alt="Image of Maroon Lehenga"
-                        />
-                        <p className="product-details-container-single-product__name">
-                          {product.Name}{" "}
-                        </p>
-                        <p className="product-details-container-single-product__price">
-                          {" "}
-                          {product.price}{" "}
-                        </p>
-                      </Link>
-                    </article>
-                  </div>
-                </Col>
+              {filtered.map((product, index) => (
+               <ProductCard product={product} key={index}/>
               ))}
             </Row>
           </div>
