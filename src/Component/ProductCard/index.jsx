@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function ProductCard({product}) {
   return (
-    <Col md={3}>  
+    <Col  md={3}>  
     <div
      
       className="product-details-container-single-product"
