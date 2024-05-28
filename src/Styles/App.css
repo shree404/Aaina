@@ -942,6 +942,7 @@ h1 {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 240%;
+  border: none;
   text-align: start;
 }
 .CategoriesWomen__button2:hover {
@@ -1028,13 +1029,21 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.WomenFilterRed-md {
-  display: none;
-}
-
 @media screen and (max-width: 576px) {
   .WomenFilterRed {
     margin-bottom: 10rem;
+  }
+}
+.WomenFilterRed1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1238px) and (min-width: 998px) {
+  .WomenFilterRed1 {
+    justify-content: space-between;
   }
 }
 .UserDetails__head {
@@ -1867,6 +1876,13 @@ h1 {
     width: 100%;
   }
 }
+[value="1"] {
+  background-color: white;
+}
+[value="1"]:hover {
+  background-color: white;
+}
+
 .OrderDropDown {
   margin-left: 30%;
 }

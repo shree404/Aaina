@@ -1,35 +1,12 @@
-import bs1 from "../../Assets/LandingPage/best-product2.png";
-import bs2 from "../../Assets/LandingPage/best-product1.png";
-import bs3 from "../../Assets/LandingPage/best-seller2.png";
-import bs4 from "../../Assets/LandingPage/best-seller3.png";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Link } from "react-router-dom";
+import products from '../../products.json';
+import ProductCard from "../ProductCard";
 
-function BestSeller() {
-  let bestSellerArray = [
-    {
-      bestsellerImage: bs1,
-      bestsellerName: "Lehenga Blouse Set",
-      bestsellerPrice: "Rs.6000",
-    },
-    {
-      bestsellerImage: bs2,
-      bestsellerName: "Lehenga Blouse Set",
-      bestsellerPrice: "Rs.6000",
-    },
-    {
-      bestsellerImage: bs4,
-      bestsellerName: "Lehenga Blouse Set",
-      bestsellerPrice: "Rs.6000",
-    },
-    {
-      bestsellerImage: bs3,
-      bestsellerName: "Lehenga Blouse Set",
-      bestsellerPrice: "Rs.6000",
-    },
-  ];
+function BestSeller() { 
+  const bestsell =  products.filter(product => product.status == "Best Sell")
   return (
     <>
       <div className="NewProduct">
@@ -43,32 +20,8 @@ function BestSeller() {
           </div>
           <div className="NewProduct-S-md">
             <Row>
-              {bestSellerArray.map((product, index) => (
-                <Col>
-                  <div
-                    key={index}
-                    className="product-details-container-single-product"
-                  >
-                    <article>
-                      <Link
-                        to="/product-lehenga"
-                        className="product-details-container-single-product"
-                      >
-                        <img
-                          src={product.bestsellerImage}
-                          alt="Image of Maroon Lehenga"
-                        />
-                        <p className="product-details-container-single-product__name">
-                          {product.bestsellerName}{" "}
-                        </p>
-                        <p className="product-details-container-single-product__price">
-                          {" "}
-                          {product.bestsellerPrice}{" "}
-                        </p>
-                      </Link>
-                    </article>
-                  </div>
-                </Col>
+              {bestsell.map((product, index) => (
+             <ProductCard product={product} key={index}/>
               ))}
             </Row>
           </div>

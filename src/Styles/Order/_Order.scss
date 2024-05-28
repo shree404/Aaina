@@ -30,3 +30,10 @@
     width: 100%;
   }
 }
+
+[value="1"]{
+  background-color: white;
+  &:hover{
+background-color: white;
+  }
+}

@@ -15,92 +15,90 @@ import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 
 function WomenProductList({ products, selectedColor }) {
- 
-  let imageArray =
-   [
+  let imageArray = [
     {
       Image: img1,
       Name: "Lehenga Blouse Set ",
       price: "Rs.6000",
-      color:"green",
-      type:"lehenga",
+      color: "green",
+      type: "lehenga",
     },
     {
       Image: img2,
       Name: "Lehenga Blouse Set ",
       price: "Rs.6000",
-      color:"purple",
-      type:"lehenga",
+      color: "purple",
+      type: "lehenga",
     },
     {
       Image: img3,
       Name: "Lehenga Blouse Set ",
       price: "Rs.6000",
-      color:"green",
-      type:"kurti",
+      color: "green",
+      type: "kurti",
     },
     {
       Image: kurtha2,
       Name: "Lehenga Blouse Set ",
       price: "Rs.6000",
-      color:"green",
-      type:"kurti",
+      color: "green",
+      type: "kurti",
     },
     {
       Image: kurtha3,
       Name: "Lehenga Blouse Set ",
       price: "Rs.6000",
-      color:"yellow",
-      type:"kurti",
+      color: "yellow",
+      type: "kurti",
     },
     {
       Image: kurtha4,
       Name: "Lehenga Blouse Set ",
       price: "Rs.6000",
-      color:"pink",
-      type:"kurti",
+      color: "pink",
+      type: "kurti",
     },
     {
       Image: bs1,
       Name: "Lehenga Blouse Set ",
       price: "Rs.6000",
-      color:"red",
-      type:"lehenga",
+      color: "red",
+      type: "lehenga",
     },
     {
       Image: bs2,
       Name: "Lehenga Blouse Set ",
       price: "Rs.6000",
-      color:"red",
-      type:"lehenga",
+      color: "red",
+      type: "lehenga",
     },
     {
-        Image: img2,
-        Name: "Lehenga Blouse Set ",
-        price: "Rs.6000",
-        color:"purple",
-        type:"lehenga",
-      },
+      Image: img2,
+      Name: "Lehenga Blouse Set ",
+      price: "Rs.6000",
+      color: "purple",
+      type: "lehenga",
+    },
     {
       Image: imgr3,
       Name: "Bride Saree",
       price: "Rs.28000",
-      color:"red",
-      type:"groom",
+      color: "red",
+      type: "groom",
     },
     {
       Image: imgr4,
       Name: "Groom wedding set",
       price: "Rs.28000",
-      color:"red",
-      type:"saree",
+      color: "red",
+      type: "saree",
     },
     {
       Image: imgr2,
       Name: "Bride Saree",
       price: "Rs.28000",
-      color:"red",
-      type:"saree",
+      color: "red",
+      type: "saree",
     },
   ];
 
@@ -108,26 +106,43 @@ function WomenProductList({ products, selectedColor }) {
     ? imageArray.filter((products) => products.color === selectedColor)
     : imageArray;
 
-
-
   return (
     <>
       <Container>
+      {/* <div className="WomenFilterRed1">
+            {filteredProducts.map((product, index) => (
+              <div>
+                <div key={index}  className="WomenFilterRed-container">
+                  <Link
+                    className="WomenFilterRed-container"
+                    to="/product-lehenga"
+                  >
+                      <img src={product.Image} alt="Image of Maroon Lehenga" />
+                      <p className="WomenFilterRed__name">{product.Name} </p>
+                      <p className="WomenFilterRed__price"> {product.price} </p>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div> */}
         <div className="WomenFilterRed">
           <Row>
-            { filteredProducts.map((product, index) => (
-              <Col md={4}>
-                <div key={index}>
-                    <Link className="WomenFilterRed-container" to ="/product-lehenga">
-                    <img src={product.Image} alt="Image of Maroon Lehenga" />
-                    <p className="WomenFilterRed__name">{product.Name} </p>
-                    <p className="WomenFilterRed__price"> {product.price} </p>
-                    </Link>
+            {filteredProducts.map((product, index) => (
+              <Col   md={6} lg={4} sm={12}>
+                <div key={index}  className="WomenFilterRed-container">
+                  <Link
+                    className="WomenFilterRed-container"
+                    to="/product-lehenga"
+                  >
+                      <img src={product.Image} alt="Image of Maroon Lehenga" />
+                      <p className="WomenFilterRed__name">{product.Name} </p>
+                      <p className="WomenFilterRed__price"> {product.price} </p>
+                  </Link>
                 </div>
               </Col>
             ))}
           </Row>
-          </div>
+        </div>
       </Container>
     </>
   );
