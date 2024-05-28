@@ -56,7 +56,7 @@
       color: var(--0, #fdf6fb);
     }
   }
-  &__pricefilter{
+  &__pricefilter {
     display: flex;
     gap: 1rem;
   }
@@ -83,8 +83,33 @@
     gap: 2rem;
     margin-bottom: 2rem;
   }
-  &__colors{
-display: flex;
-flex-direction: row;
+  &__colors {
+    display: flex;
+    flex-direction: row;
+  }
+  &-pink{
+    height: 2rem;
+    width: 2rem;
+    fill:#EF88A2 ;
+  }
+  &-green{
+    @extend .ColorOptionWomen-pink;
+    fill: #033538;
+  }
+  &-yellow{
+    @extend .ColorOptionWomen-pink;
+    fill: #D3B633;
+  }
+  &-purple{
+    @extend .ColorOptionWomen-pink;
+    fill: #8478BC;
+  }
+  &-red{
+    @extend .ColorOptionWomen-pink;
+    fill: #C30024;
+  }
+  &-white{
+    @extend .ColorOptionWomen-pink;
+    fill: #D8DADD;
   }
 }
