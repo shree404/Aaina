@@ -22,7 +22,7 @@ function NewProduct() {
           <div className="NewProduct-S-md">
             <Row>
               {NewProduct.map((product, index) => (
-                <ProductCard product={product} key={index} />
+                <ProductCard product={product} key={index} md={3} />
               ))}
             </Row>
           </div>

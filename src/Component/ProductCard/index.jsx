@@ -2,9 +2,9 @@ import React from 'react'
 import { Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
-function ProductCard({product}) {
+function ProductCard({product,md}) {
   return (
-    <Col  md={3}>  
+    <Col  md={md}>  
     <div
      
       className="product-details-container-single-product"

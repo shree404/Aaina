@@ -15,7 +15,7 @@ const women = products.filter(product => product.gendercat === "women")
         <div className="WomenFilterRed">
           <Row>
             {women.map((product, index) => (
-              <ProductCard product={product} key={index} />
+              <ProductCard product={product} key={index}  md={4} />
             ))}
           </Row>
         </div>

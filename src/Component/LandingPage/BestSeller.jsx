@@ -21,7 +21,7 @@ function BestSeller() {
           <div className="NewProduct-S-md">
             <Row>
               {bestsell.map((product, index) => (
-             <ProductCard product={product} key={index}/>
+             <ProductCard product={product} key={index} md={3}/>
               ))}
             </Row>
           </div>
