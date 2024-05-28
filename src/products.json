@@ -64,7 +64,7 @@
       "color":"yellow"
     },
     {
-      "Name": "Lehenga Blouse Set",
+      "Name": "Kurti",
       "Price": "Rs.6000",
       "Img" : "/image/kurta4.png",
       "type":"kurta",
@@ -73,7 +73,7 @@
       "color":"pink"
     },
     {
-      "Name": "Lehenga Blouse Set",
+      "Name": "Groom Set",
       "Price": "Rs.6000",
       "Img" : "/image/bdimg3.png",
       "type":"groom",

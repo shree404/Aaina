@@ -1002,48 +1002,35 @@ h1 {
   display: flex;
   flex-direction: row;
 }
+.ColorOptionWomen-pink, .ColorOptionWomen-white, .ColorOptionWomen-red, .ColorOptionWomen-purple, .ColorOptionWomen-yellow, .ColorOptionWomen-green {
+  height: 2rem;
+  width: 2rem;
+  fill: #EF88A2;
+}
+.ColorOptionWomen-green {
+  fill: #033538;
+}
+.ColorOptionWomen-yellow {
+  fill: #D3B633;
+}
+.ColorOptionWomen-purple {
+  fill: #8478BC;
+}
+.ColorOptionWomen-red {
+  fill: #C30024;
+}
+.ColorOptionWomen-white {
+  fill: #D8DADD;
+}
 
 .WomenFilterRed {
   text-align: center;
   margin-top: 2rem;
 }
-.WomenFilterRed-container {
-  font-style: normal;
-  font-family: "Taviraj", serif;
-  color: var(--neutral-900, #18181b);
-  text-decoration: none;
-}
-.WomenFilterRed__name {
-  margin-top: 1rem;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 137.5%;
-  letter-spacing: 0.02rem;
-  text-transform: capitalize;
-}
-.WomenFilterRed__price {
-  font-size: 1.12rem;
-  font-weight: 500;
-  line-height: 111.111%;
-  letter-spacing: 0.034rem;
-  margin-bottom: 1rem;
-}
 
 @media screen and (max-width: 576px) {
   .WomenFilterRed {
     margin-bottom: 10rem;
-  }
-}
-.WomenFilterRed1 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0rem;
-  text-align: center;
-}
-
-@media screen and (max-width: 1238px) and (min-width: 998px) {
-  .WomenFilterRed1 {
-    justify-content: space-between;
   }
 }
 .UserDetails__head {

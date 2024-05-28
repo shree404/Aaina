@@ -14,7 +14,7 @@ function KurtiList(){
         <div className="WomenFilterRed">
           <Row>
             {kurti.map((product, index) => (
-            <ProductCard product={product} key={index} md={4} />
+            <ProductCard product={product} key={index} md={6} lg={4} />
             ))}
           </Row>
         </div>
