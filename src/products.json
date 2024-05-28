@@ -5,56 +5,99 @@
       "Price": "Rs.6000",
       "Img" : "/image/best-product2.png",
       "type":"lehenga",
-      "status":"Best Sell"
+      "status":"Best Sell",
+      "gendercat":"women",
+      "color":"red"
     },
     {
       "Name": "Lehenga Blouse Set",
       "Price": "Rs.6000",
       "Img" : "/image/best-product2.png",
       "type":"lehenga",
-      "status":"Best Sell"
+      "status":"Best Sell",
+      "gendercat":"women",
+      "color":"red"
     },
     {
       "Name": "Lehenga Blouse Set",
       "Price": "Rs.6000",
       "Img" : "/image/best-seller2.png",
       "type":"lehenga",
-      "status":"Best Sell"
+      "status":"Best Sell",
+      "gendercat":"women",
+      "color":"purple"
     },
     {
       "Name": "Lehenga Blouse Set",
       "Price": "Rs.6000",
       "Img" : "/image/best-seller3.png",
       "type":"lehenga",
-      "status":"Best Sell"
+      "status":"Best Sell",
+      "gendercat":"women",
+      "color":"pink"
     },
     {
       "Name": "Lehenga Blouse Set",
       "Price": "Rs.6000",
-      "Img" : "/image/best-seller3.png",
+      "Img" : "/image/kurta1.png",
       "type":"kurta",
-      "status":"New Arrival"
+      "status":"New Arrival",
+      "gendercat":"women",
+      "color":"green"
+    },
+    {
+      "Name": "Lehenga Blouse Set",
+      "Price": "Rs.6000",
+      "Img" : "/image/kurta2.png",
+      "type":"kurta",
+      "status":"New Arrival",
+      "gendercat":"women",
+      "color":"green"
+    },
+    {
+      "Name": "Lehenga Blouse Set",
+      "Price": "Rs.6000",
+      "Img" : "/image/kurta3.png",
+      "type":"kurta",
+      "status":"New Arrival",
+      "gendercat":"women",
+      "color":"yellow"
+    },
+    {
+      "Name": "Lehenga Blouse Set",
+      "Price": "Rs.6000",
+      "Img" : "/image/kurta4.png",
+      "type":"kurta",
+      "status":"New Arrival",
+      "gendercat":"women",
+      "color":"pink"
     },
     {
       "Name": "Lehenga Blouse Set",
       "Price": "Rs.6000",
       "Img" : "/image/bdimg3.png",
       "type":"groom",
-      "status":"New Arrival"
+      "status":"",
+      "gendercat":"men",
+      "color":"red"
     },
     {
       "Name": "Lehenga Blouse Set",
       "Price": "Rs.6000",
       "Img" : "/image/bdimg1.png",
       "type":"bride",
-      "status":"New Arrival"
+      "status":"",
+      "gendercat":"women",
+      "color":"red"
     },
     {
       "Name": "Lehenga Blouse Set",
       "Price": "Rs.6000",
       "Img" : "/image/bdimg2.png",
       "type":"bride",
-      "status":"New Arrival"
+      "status":"",
+      "gendercat":"women",
+      "color":"red"
     }
   ]
 
