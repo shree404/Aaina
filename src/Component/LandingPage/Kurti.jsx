@@ -1,37 +1,14 @@
 import img1 from "../../Assets/LandingPage/kurti1.png";
 import img2 from "../../Assets/LandingPage/kutri2.png";
-import kurtha1 from "../../Assets/LandingPage/kurta1.png";
-import kurtha2 from "../../Assets/LandingPage/kurta2.png";
-import kurtha3 from "../../Assets/LandingPage/kurta3.png";
-import kurtha4 from "../../Assets/LandingPage/kurta4.png";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
+import  products from '../../products.json';
+import ProductCard from "../ProductCard";
 
 function Kurti() {
-  let kurtiarray = [
-    {
-      kurtiImage: kurtha1,
-      kurtiName: "Bride Saree",
-      kurtiprice: "Rs.28000",
-    },
-    {
-      kurtiImage: kurtha2,
-      kurtiName: "Bride Saree",
-      kurtiprice: "Rs.28000",
-    },
-    {
-      kurtiImage: kurtha3,
-      kurtiName: "Bride Saree",
-      kurtiprice: "Rs.28000",
-    },
-    {
-      kurtiImage: kurtha4,
-      kurtiName: "Bride Saree",
-      kurtiprice: "Rs.28000",
-    },
-  ];
+  const kurti =products.filter (product => product.type === "kurta")
   return (
     <>
       <div className="NewProduct">
@@ -81,32 +58,8 @@ function Kurti() {
           </div>
           <div className="NewProduct-S-md">
             <Row>
-              {kurtiarray.map((product, index) => (
-                <Col>
-                  <div
-                    key={index}
-                    className="product-details-container-single-product"
-                  >
-                    <article>
-                      <Link
-                        to="/product-lehenga"
-                        className="product-details-container-single-product"
-                      >
-                        <img
-                          src={product.kurtiImage}
-                          alt="Image of Maroon Lehenga"
-                        />
-                        <p className="product-details-container-single-product__name">
-                          {product.kurtiName}{" "}
-                        </p>
-                        <p className="product-details-container-single-product__price">
-                          {" "}
-                          {product.kurtiprice}{" "}
-                        </p>
-                      </Link>
-                    </article>
-                  </div>
-                </Col>
+              {kurti.map((product, index) => (
+                <ProductCard product={product} key={index}/>
               ))}
             </Row>
           </div>
