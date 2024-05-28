@@ -7,7 +7,7 @@ function CategoryMob() {
   return (
     <>
       <Container className="mb-5">
-        <h2 className="FAQs__head">Categories</h2>
+        <h1 >Categories</h1>
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>Women</Accordion.Header>
