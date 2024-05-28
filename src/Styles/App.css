@@ -1516,9 +1516,9 @@ h1 {
 }
 
 .AccountDelete {
-  height: 400px;
   width: 100%;
   margin-top: 0rem;
+  margin-bottom: 2rem;
   background-color: #ffe9e9;
 }
 .AccountDelete-icon {

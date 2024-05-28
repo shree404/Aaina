@@ -21,7 +21,7 @@ function MyAccount() {
   const [show, setShow] = useState();
 
   const HandleDeleteOption = () => {
-    setShow(!show);
+    setShow(prevState => !prevState);
   };
 
   const [showedit, setShowedit] = useState(false);
@@ -94,18 +94,23 @@ function MyAccount() {
               </ListGroup>
 
               <h1 className="MyAccount__head">Delete Account</h1>
-              <ListGroup>
-                <ListGroup.Item id="DeleteAccount">
-                  {" "}
-                  <button
-                    className="MyAccount__deletebutton"
-                    onClick={HandleDeleteOption}
-                  >
-                    Delete My Account
-                  </button>{" "}
-                </ListGroup.Item>{" "}
-                {show && <AccountDelete Close={HandleDeleteOption} />}
-              </ListGroup>
+              {
+                show ? (
+                <AccountDelete Close={HandleDeleteOption}/>
+                ) : (
+                  <ListGroup>
+                  <ListGroup.Item id="DeleteAccount">
+                    {" "}
+                    <button
+                      className="MyAccount__deletebutton"
+                      onClick={HandleDeleteOption}
+                    >
+                      Delete My Account
+                    </button>{" "}
+                  </ListGroup.Item>{" "}
+                </ListGroup>
+                )
+              }
             </Col>
           </Row>
         </Container>

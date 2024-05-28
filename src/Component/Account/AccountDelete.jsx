@@ -8,7 +8,7 @@ function AccountDelete({Close}) {
     <div className="AccountDelete">
       <Container className="mt-3">
         <button  onClick={Close} className="AccountDelete-button">
-          <X className="AccountDelete-icon" />
+          <X  className="AccountDelete-icon" />
         </button>
         <h1>Are you sure want to delete your account ?</h1>
         <p className="AccountDelete-p">
