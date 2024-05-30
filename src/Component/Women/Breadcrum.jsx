@@ -7,7 +7,7 @@ import WomenFilter from "./Filter";
 import WomenProductList from "./ProductWomen";
 import WomenCategoryColor from "./CategoryColor";
 import { Funnel ,  ChevronRight } from "react-bootstrap-icons";
-import FilterCategory from "./FilterCategory";
+import FilterCategory from "./FilterCategory.jsx";
 
 function Womenbreadcrum() {
   const [selectedColor, setSelectedColor] = useState(null);
