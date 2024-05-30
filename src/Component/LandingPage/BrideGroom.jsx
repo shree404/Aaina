@@ -57,7 +57,7 @@ function BrideGroom() {
           <div className="NewProduct-S-md">
             <Row>
               {filtered.map((product, index) => (
-               <ProductCard product={product} key={index} md={3}/>
+               <ProductCard product={product} key={index}md={6} lg={3}/>
               ))}
             </Row>
           </div>

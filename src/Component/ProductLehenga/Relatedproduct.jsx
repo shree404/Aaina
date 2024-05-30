@@ -21,7 +21,7 @@ const relatedproduct = products.filter(product => product.type === "lehenga")
           <div className="NewProduct-S-md">
             <Row className="mb-5">
               {relatedproduct.map((product, index) => (
-                <ProductCard product={product} key={index} md={3}  />
+                <ProductCard product={product} key={index} md={6} lg={3}   />
               ))}
             </Row>
           </div>

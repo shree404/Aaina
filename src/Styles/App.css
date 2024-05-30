@@ -249,7 +249,7 @@
 
 @media screen and (max-width: 576px) {
   .Hero-image {
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 }
 .NewProduct {
@@ -506,12 +506,12 @@ h1 {
 }
 .FooterMob-Button {
   border: none;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   background-color: none;
   color: #5F5F5F;
   font-size: 0.82rem;
   background-color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
   text-decoration: none;
 }
 .FooterMob-Button #FooterMob-Button__icon {
@@ -741,6 +741,11 @@ h1 {
   border-bottom: 2px solid var(--primary-3, #6926ff);
 }
 
+@media screen and (max-width: 576px) {
+  .LehengaImages {
+    margin-top: 0rem;
+  }
+}
 .Description {
   color: var(--neutral-700, #3F3F46);
   font-family: "Taviraj", serif;
@@ -884,35 +889,30 @@ h1 {
     margin-top: 2rem;
   }
 }
-.Option {
-  width: 15rem;
-  display: flex;
-  flex-direction: column;
-}
-.Option__button {
+.Options {
+  text-align: center;
+  height: 2.5rem;
+  width: 10rem;
+  outline: none;
   border: none;
-  text-align: start;
-  color: var(--neutral-800, #27272a);
+  font-family: "Taviraj", sans-serif;
+  font-size: 0.88rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  text-transform: capitalize;
   background-color: white;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%; /* 25.2px */
-  text-transform: capitalize;
-  font-family: "Taviraj", serif;
-  font-size: 0.88rem;
-  height: 3rem;
-  width: 15rem;
+  color: var(--neutral-900, #18181b);
+  --bs-btn-active-bg: white;
 }
-.Option__button:focus {
-  border: none;
-  color: var(--tertiary, #ee636f);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%; /* 25.2px */
-  text-transform: capitalize;
-  font-family: "Taviraj", serif;
-  font-size: 0.88rem;
-  background-color: #f5f5f5;
+.Options:hover {
+  background-color: white;
+  color: var(--neutral-900, #18181b);
+}
+
+#Options_button:hover {
+  color: #ee636f !important;
+  background-color: white !important;
 }
 
 .CategoriesWomen {
@@ -1318,7 +1318,6 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 0.88rem;
-  margin-top: 10rem;
 }
 
 @media screen and (max-width: 576px) {
