@@ -6,8 +6,10 @@ import ProductCard from "../ProductCard";
 
 
 
-function KurtiList(){
-  const kurti= products.filter(product => product.type === "kurta")
+function KurtiList({selectedColors}){
+  const kurti= products.filter((product) => {
+    return product.type === "kurta" && (selectedColors.length === 0 || selectedColors.includes(product.color));
+  });
     return(
         <>
         <Container>

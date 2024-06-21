@@ -10,13 +10,10 @@ import FilterCategory from "../Women/FilterCategory";
 
 function WomenKurtaBreadcrum() {
 
-  const [selectedColor, setSelectedColor] = useState(null);
+  const [selectedColors, setSelectedColors] = useState([]);
+
   const handleFilterChange = (selectedColors) => {
-    if (selectedColors.length > 0) {
-      setSelectedColor(selectedColors[0]);
-    } else {
-      setSelectedColor(null);
-    }
+    setSelectedColors(selectedColors);
   };
 
   return (
@@ -59,7 +56,7 @@ function WomenKurtaBreadcrum() {
             <WomenCategoryColor onFilterChange={handleFilterChange} />
           </Col>
           <Col md={8}>
-            <KurtiList selectedColor={selectedColor} />
+            <KurtiList selectedColors={selectedColors} />
           </Col>
         </Row>
       </Container>
