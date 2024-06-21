@@ -1,43 +1,40 @@
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import WomenFilter from "./Filter";
+import WomenCategoryColor from "./CategoryColor"
 import WomenProductList from "./ProductWomen";
-import WomenCategoryColor from "./CategoryColor";
+import products from "../../products.json";
 import { Funnel ,  ChevronRight } from "react-bootstrap-icons";
 import FilterCategory from "./FilterCategory.jsx";
+import WomenFilter from "./Filter";
 
 function Womenbreadcrum() {
-  const [selectedColor, setSelectedColor] = useState(null);
+  const [selectedColors, setSelectedColors] = useState([]);
+
   const handleFilterChange = (selectedColors) => {
-    if (selectedColors.length > 0) {
-      setSelectedColor(selectedColors[0]);
-    } else {
-      setSelectedColor(null);
-    }
+    setSelectedColors(selectedColors);
   };
 
   return (
     <>
-        <div className="WomenBreadcrum__normal">
-          <p className="WomenBreadcrum-p">
-            <span>
-              <Link to="/" className="WomenBreadcrum-p__t1">
-                {" "}
-                Home{" "}
-              </Link>
-            </span>{" "}
-            <ChevronRight/>
-            <span>
-              {" "}
-              <Link to="/women" className="WomenBreadcrum-p__t2">
-                Women{" "}
-              </Link>
-            </span>
-          </p>
-        </div>
+      <div className="WomenBreadcrum__normal">
+        <p className="WomenBreadcrum-p">
+          <span>
+            <Link to="/" className="WomenBreadcrum-p__t1">
+              Home
+            </Link>
+          </span>{" "}
+          <ChevronRight />
+          <span>
+            {" "}
+            <Link to="/women" className="WomenBreadcrum-p__t2">
+              Women
+            </Link>
+          </span>
+        </p>
+      </div>
       <Container className="mb-5">
         <div className="WomenFilter">
           <p>
@@ -49,12 +46,12 @@ function Womenbreadcrum() {
           </div>
         </div>
         <Row>
-          <Col md={4} >
+        <Col md={4} >
             <WomenFilter />
             <WomenCategoryColor onFilterChange={handleFilterChange} />
           </Col>
           <Col md={8} >
-            <WomenProductList selectedColor={selectedColor} />
+          <WomenProductList selectedColors={selectedColors} />
           </Col>
         </Row>
       </Container>
