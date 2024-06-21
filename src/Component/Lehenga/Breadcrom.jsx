@@ -9,13 +9,10 @@ import { ChevronRight, Funnel } from "react-bootstrap-icons";
 import FilterCategory from "../Women/FilterCategory";
 
 function WomenLehengaBreadcrum() {
-  const [selectedColor, setSelectedColor] = useState(null);
+  const [selectedColors, setSelectedColors] = useState([]);
+
   const handleFilterChange = (selectedColors) => {
-    if (selectedColors.length > 0) {
-      setSelectedColor(selectedColors[0]);
-    } else {
-      setSelectedColor(null);
-    }
+    setSelectedColors(selectedColors);
   };
   return (
     <>
@@ -57,7 +54,7 @@ function WomenLehengaBreadcrum() {
             <WomenCategoryColor onFilterChange={handleFilterChange} />
           </Col>
           <Col md={8}>
-            <WomenLehengaList selectedColor={selectedColor} />
+            <WomenLehengaList selectedColors={selectedColors} />
           </Col>
         </Row>
       </Container>

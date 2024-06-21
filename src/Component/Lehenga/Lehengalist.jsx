@@ -7,8 +7,10 @@ import products from '../../products.json';
 
 
 
-function WomenLehengaList(){
-const lehenga = products.filter(product => product.type === "lehenga")
+function WomenLehengaList( { selectedColors }){
+const lehenga =products.filter((product) => {
+  return product.type === "lehenga" && (selectedColors.length === 0 || selectedColors.includes(product.color));
+});
     return(
         <>
   <Container>
