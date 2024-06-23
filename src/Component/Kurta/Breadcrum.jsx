@@ -12,8 +12,14 @@ function WomenKurtaBreadcrum() {
 
   const [selectedColors, setSelectedColors] = useState([]);
 
+  const [sortBy, setSortBy] = useState("Best Match");
+
   const handleFilterChange = (selectedColors) => {
     setSelectedColors(selectedColors);
+  };
+
+  const handleSortChange = (option) => {
+    setSortBy(option);
   };
 
   return (
@@ -48,7 +54,7 @@ function WomenKurtaBreadcrum() {
             <span className="WomenFilter__1">Filters</span> <Funnel />
           </p>
           <div className="WomenFilters">
-          <FilterCategory/>
+          <FilterCategory  onSortChange={handleSortChange}/>
           </div>
         </div>
         <Row>
@@ -56,7 +62,7 @@ function WomenKurtaBreadcrum() {
             <WomenCategoryColor onFilterChange={handleFilterChange} />
           </Col>
           <Col md={8}>
-            <KurtiList selectedColors={selectedColors} />
+            <KurtiList selectedColors={selectedColors} sortBy={sortBy} />
           </Col>
         </Row>
       </Container>
