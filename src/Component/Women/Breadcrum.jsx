@@ -3,11 +3,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
-import { ChevronRight } from "react-bootstrap-icons";
+import { ChevronRight , Funnel} from "react-bootstrap-icons";
 import FilterCategory from "./FilterCategory";
 import WomenCategoryColor from "./CategoryColor";
 import WomenProductList from "./ProductWomen";
 import products from "../../products.json";
+import WomenFilter from "./Filter";
 
 function Womenbreadcrum() {
   const [selectedColors, setSelectedColors] = useState([]);
@@ -43,6 +44,7 @@ function Womenbreadcrum() {
         <div className="WomenFilter">
           <p>
             <span className="WomenFilter__1">Filters</span>{" "}
+            <Funnel/>
           </p>
           <div className="WomenFilters">
             <FilterCategory onSortChange={handleSortChange} />
@@ -50,11 +52,11 @@ function Womenbreadcrum() {
         </div>
         <Row>
           <Col md={4}>
+          <WomenFilter />
             <WomenCategoryColor onFilterChange={handleFilterChange} />
           </Col>
           <Col md={8}>
             <WomenProductList
-              products={products}
               selectedColors={selectedColors}
               sortBy={sortBy}
             />
