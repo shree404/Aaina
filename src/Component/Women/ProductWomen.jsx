@@ -2,8 +2,9 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import ProductCard from "../ProductCard";
+import products from '../../products.json';
 
-function WomenProductList({ products, selectedColors, sortBy }) {
+function WomenProductList({ selectedColors, sortBy }) {
   let womenProducts = products.filter(
     (product) =>
       product.gendercat === "women" &&

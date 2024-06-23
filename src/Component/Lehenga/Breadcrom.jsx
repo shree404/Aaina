@@ -7,13 +7,21 @@ import WomenLehengaList from "./Lehengalist";
 import WomenCategoryColor from "../Women/CategoryColor";
 import { ChevronRight, Funnel } from "react-bootstrap-icons";
 import FilterCategory from "../Women/FilterCategory";
+import products from '../../products.json';
 
 function WomenLehengaBreadcrum() {
   const [selectedColors, setSelectedColors] = useState([]);
 
+  const [sortBy, setSortBy] = useState("Best Match");
+
   const handleFilterChange = (selectedColors) => {
     setSelectedColors(selectedColors);
   };
+
+  const handleSortChange = (option) => {
+    setSortBy(option);
+  };
+
   return (
     <>
       <div className="WomenBreadcrum__normal">
@@ -46,7 +54,7 @@ function WomenLehengaBreadcrum() {
             <span className="WomenFilter__1">Filters</span> <Funnel />
           </p>
           <div className="WomenFilters">
-            <FilterCategory />
+            <FilterCategory onSortChange={handleSortChange}/>
           </div>
         </div>
         <Row>
@@ -54,7 +62,7 @@ function WomenLehengaBreadcrum() {
             <WomenCategoryColor onFilterChange={handleFilterChange} />
           </Col>
           <Col md={8}>
-            <WomenLehengaList selectedColors={selectedColors} />
+            <WomenLehengaList selectedColors={selectedColors} sortBy={sortBy} />
           </Col>
         </Row>
       </Container>
