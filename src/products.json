@@ -7,61 +7,68 @@
       "type":"lehenga",
       "status":"Best Sell",
       "gendercat":"women",
-      "color":"red"
+      "color":"red",
+      "arrival_date":"2020-4-30"
     },
     {
       "Name": "Lehenga Blouse Set",
-      "Price": "Rs.6000",
+      "Price": "Rs.6060",
       "Img" : "/image/best-product2.png",
       "type":"lehenga",
       "status":"Best Sell",
       "gendercat":"women",
-      "color":"red"
+      "color":"red",
+       "arrival_date":"2022-3-30"
     },
     {
       "Name": "Lehenga Blouse Set",
-      "Price": "Rs.6000",
+      "Price": "Rs.6500",
       "Img" : "/image/best-seller2.png",
       "type":"lehenga",
       "status":"Best Sell",
       "gendercat":"women",
-      "color":"purple"
+      "color":"purple",
+       "arrival_date":"2024-4-30"
     },
     {
       "Name": "Lehenga Blouse Set",
-      "Price": "Rs.6000",
+      "Price": "Rs.5000",
       "Img" : "/image/best-seller3.png",
       "type":"lehenga",
       "status":"Best Sell",
       "gendercat":"women",
-      "color":"pink"
+      "color":"pink",
+       "arrival_date":"2024-4-3"
     },
     {
-      "Name": "Lehenga Blouse Set",
-      "Price": "Rs.6000",
+      "Name": "Kutri",
+      "Price": "Rs.1200",
       "Img" : "/image/kurta1.png",
       "type":"kurta",
       "status":"New Arrival",
       "gendercat":"women",
-      "color":"green"
+      "color":"green",
+       "arrival_date":"2024-2-20"
     },
     {
-      "Name": "Lehenga Blouse Set",
-      "Price": "Rs.6000",
+      "Name": "Kurti",
+      "Price": "Rs.5500",
       "Img" : "/image/kurta2.png",
       "type":"kurta",
       "status":"New Arrival",
       "gendercat":"women",
-      "color":"green"
+      "color":"green",
+       "arrival_date":"2020-3-3"
     },
     {
-      "Name": "Lehenga Blouse Set",
-      "Price": "Rs.6000",
+      "Name": "Kurti",
+      "Price": "Rs.1600",
       "Img" : "/image/kurta3.png",
       "type":"kurta",
       "status":"New Arrival",
       "gendercat":"women",
-      "color":"yellow"
+      "color":"yellow",
+       "arrival_date":"2022-4-30"
     },
     {
       "Name": "Kurti",
@@ -70,7 +77,8 @@
       "type":"kurta",
       "status":"New Arrival",
       "gendercat":"women",
-      "color":"pink"
+      "color":"pink",
+       "arrival_date":"2023-4-3"
     },
     {
       "Name": "Groom Set",
@@ -79,7 +87,8 @@
       "type":"groom",
       "status":"",
       "gendercat":"men",
-      "color":"red"
+      "color":"red",
+       "arrival_date":"2023-12-30"
     },
     {
       "Name": "Lehenga Blouse Set",
@@ -88,7 +97,8 @@
       "type":"bride",
       "status":"",
       "gendercat":"women",
-      "color":"red"
+      "color":"red",
+       "arrival_date":"2022-10-30"
     },
     {
       "Name": "Lehenga Blouse Set",
@@ -97,7 +107,8 @@
       "type":"bride",
       "status":"",
       "gendercat":"women",
-      "color":"red"
+      "color":"red",
+       "arrival_date":"2021-4-3"
     }
   ]
 
